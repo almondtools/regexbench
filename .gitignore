@@ -1,1 +1,6 @@
 /target
+/benchmarks.jar
+/.settings
+/.classpath
+/.project
+/result.txt

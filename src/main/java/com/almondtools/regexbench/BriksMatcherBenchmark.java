@@ -1,5 +1,7 @@
 package com.almondtools.regexbench;
 
+import static com.almondtools.regexbench.AutomatonType.DFA;
+
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
@@ -8,9 +10,9 @@ import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
 @State(Scope.Thread)
-public class BriksMatcherSPM extends SearchPerformanceModule {
+public class BriksMatcherBenchmark extends MatcherBenchmark {
 
-	private static final String ID = "BM";
+	private static final String ID = "dk.brics.automaton (DFA)";
 
 	private RunAutomaton ra;
 
@@ -21,7 +23,7 @@ public class BriksMatcherSPM extends SearchPerformanceModule {
 	}
 
 	@Override
-	public int match(String text) {
+	public int find(String text) {
 		int result = 0;
 		AutomatonMatcher matcher = ra.newMatcher(text);
 		while (matcher.find()) {
@@ -33,6 +35,11 @@ public class BriksMatcherSPM extends SearchPerformanceModule {
 	@Override
 	public String getId() {
 		return ID;
+	}
+	
+	@Override
+	public AutomatonType getType() {
+		return DFA;
 	}
 
 }

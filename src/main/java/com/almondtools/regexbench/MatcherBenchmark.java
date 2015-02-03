@@ -1,12 +1,13 @@
 package com.almondtools.regexbench;
 
-import static java.util.concurrent.TimeUnit.MICROSECONDS;
+import java.util.concurrent.TimeUnit;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
@@ -14,15 +15,15 @@ import org.openjdk.jmh.annotations.TearDown;
 import org.openjdk.jmh.annotations.Warmup;
 
 @State(Scope.Thread)
-@BenchmarkMode(Mode.AverageTime)
-public abstract class SearchPerformanceModule {
+public abstract class MatcherBenchmark {
 
 	private Sample sample;
-	private int result;
+	
 
+	public abstract AutomatonType getType();
 	public abstract void prepare(String pattern);
 
-	public abstract int match(String text);
+	public abstract int find(String text);
 
 	public abstract String getId();
 
@@ -33,18 +34,29 @@ public abstract class SearchPerformanceModule {
 	}
 
 	@Benchmark
+	@BenchmarkMode(Mode.AverageTime)
+	@OutputTimeUnit(TimeUnit.MICROSECONDS)
 	@Warmup(iterations = 10)
-	@Measurement(iterations = 10, timeUnit=MICROSECONDS)
-	@Fork(9)
-	public void benchmark() {
-		result = match(sample.getSample());
+	@Measurement(iterations = 10)
+	@Fork(1)
+	public void benchmarkPrepare() {
+		prepare(sample.getPattern());
+	}
+
+	@Benchmark
+	@BenchmarkMode(Mode.AverageTime)
+	@OutputTimeUnit(TimeUnit.MICROSECONDS)
+	@Warmup(iterations = 10)
+	@Measurement(iterations = 10)
+	@Fork(1)
+	public void benchmarkFind() {
+		int result = find(sample.getSample());
+		sample.validate(result, getType());
 	}
 
 	@TearDown
 	public void tearDown() {
-		if (result != sample.getExpected()) {
-			throw new RuntimeException("Matcher " + getId() + " produces wrong results. Expected: " + sample.getExpected() + ", Actual: " + result);
-		}
+		this.sample = null;
 	}
 
 }

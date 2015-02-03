@@ -1,38 +1,50 @@
 package com.almondtools.regexbench;
 
+import static com.almondtools.regexbench.AutomatonType.DFA;
+import static com.almondtools.regexbench.AutomatonType.NFA;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.EnumMap;
+import java.util.Map;
 
+import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
-@State(Scope.Thread)
+@State(Scope.Benchmark)
 public class Sample {
-	
+
+	@Param({"test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9"})
+	private String name;
 	private String sample;
 	private String pattern;
-	private int expected;
+	private Map<AutomatonType, Integer> expected;
 	
 	@Setup
-	public synchronized void setup(Samples samples) throws IOException {
-		String sampleFile = samples.next();
-		this.sample = readSample(sampleFile);
-		this.pattern = readPattern(sampleFile);
-		this.expected = readExpected(sampleFile);
+	public void setup() throws IOException {
+		this.sample = readFile("samples/" + name + ".sample");
+		this.pattern = readFile("samples/" + name + ".pattern");
+		this.expected = readExpected("samples/" + name + ".expected"); 
+			
 	}
 
 	@TearDown
 	public synchronized void tearDown() {
 		this.sample = null;
 		this.pattern = null;
-		this.expected = -1;
+		this.expected = null;
 	}
 	
-	public int getExpected() {
-		return expected;
+	public String getName() {
+		return name;
+	}
+	
+	public int getExpected(AutomatonType type) {
+		return expected.get(type);
 	}
 	
 	public String getPattern() {
@@ -43,22 +55,37 @@ public class Sample {
 		return sample;
 	}
 
-	public String readSample(String file) throws IOException {
-		return readFile(file);
+	public void validate(int result, AutomatonType type) {
+		if (result != getExpected(type)) {
+			throw new IllegalStateException("expected " + getExpected(type) + " matches, but found " + result);
+		}
 	}
 
-	public String readPattern(String file) throws IOException {
-		return readFile(file.replace(".sample", ".pattern"));
-	}
-
-	public int readExpected(String file) throws IOException {
-		return Integer.parseInt(readFile(file.replace(".sample", ".expected")));
+	private EnumMap<AutomatonType, Integer> readExpected(String file) throws IOException {
+		String[] expectedByType = readFile(file).split("/");
+		EnumMap<AutomatonType, Integer> enumMap = new EnumMap<AutomatonType, Integer>(AutomatonType.class);
+		try {
+			if (expectedByType.length == 1) {
+				enumMap.put(NFA, Integer.parseInt(expectedByType[0]));
+				enumMap.put(DFA, Integer.parseInt(expectedByType[0]));
+			} else {
+				enumMap.put(NFA, Integer.parseInt(expectedByType[0]));
+				enumMap.put(DFA, Integer.parseInt(expectedByType[1]));
+			}
+		} catch (NullPointerException e) {
+			enumMap.put(NFA, 0);
+			enumMap.put(DFA, 0);
+		} catch (NumberFormatException e) {
+			enumMap.put(NFA, 0);
+			enumMap.put(DFA, 0);
+		}
+		return enumMap;
 	}
 
 	private String readFile(String file) throws IOException {
 		BufferedReader r = null;
 		try {
-			r = new BufferedReader(new InputStreamReader(Samples.class.getClassLoader().getResourceAsStream(file)));
+			r = new BufferedReader(new InputStreamReader(Sample.class.getClassLoader().getResourceAsStream(file)));
 			StringBuilder buffer = new StringBuilder();
 			char[] chars = new char[4096];
 			while (true) {

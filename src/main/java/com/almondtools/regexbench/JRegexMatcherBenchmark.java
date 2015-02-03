@@ -1,25 +1,26 @@
 package com.almondtools.regexbench;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import static com.almondtools.regexbench.AutomatonType.NFA;
+import jregex.Matcher;
+import jregex.Pattern;
 
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 @State(Scope.Thread)
-public class JavaMatcherSPM extends SearchPerformanceModule {
+public class JRegexMatcherBenchmark extends MatcherBenchmark {
 
-	private static final String ID = "JM";
+	private static final String ID = "JRegex (NFA)";
 
 	private Pattern pattern;
 
 	@Override
 	public void prepare(String pattern) {
-		this.pattern = Pattern.compile(pattern);
+		this.pattern = new Pattern(pattern);
 	}
 
 	@Override
-	public int match(String text) {
+	public int find(String text) {
 		int result = 0;
 		Matcher matcher = pattern.matcher(text);
 		while (matcher.find()) {
@@ -32,6 +33,11 @@ public class JavaMatcherSPM extends SearchPerformanceModule {
 	@Override
 	public String getId() {
 		return ID;
+	}
+
+	@Override
+	public AutomatonType getType() {
+		return NFA;
 	}
 
 }

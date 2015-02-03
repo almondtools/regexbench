@@ -1,26 +1,28 @@
 package com.almondtools.regexbench;
 
+import static com.almondtools.regexbench.AutomatonType.DFA;
+
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
+import com.almondtools.relex.pattern.DefaultMatcherBuilder;
 import com.almondtools.relex.pattern.Finder;
-import com.almondtools.relex.pattern.OptimizedMatcherBuilder;
 import com.almondtools.relex.pattern.Pattern;
 
 @State(Scope.Thread)
-public class OptimizedMatcherSPM extends SearchPerformanceModule {
+public class RelexDefaultMatcherBenchmark extends MatcherBenchmark {
 
-	private static final String ID = "OM";
+	private static final String ID = "com.almondtools.relex Default (DFA)";
 
 	private Pattern pattern;
 
 	@Override
 	public void prepare(String pattern) {
-		this.pattern = Pattern.compile(pattern, new OptimizedMatcherBuilder());
+		this.pattern = Pattern.compile(pattern, new DefaultMatcherBuilder());
 	}
 
 	@Override
-	public int match(String text) {
+	public int find(String text) {
 		int result = 0;
 		Finder matcher = pattern.finder(text);
 		while (matcher.find()) {
@@ -32,6 +34,11 @@ public class OptimizedMatcherSPM extends SearchPerformanceModule {
 	@Override
 	public String getId() {
 		return ID;
+	}
+
+	@Override
+	public AutomatonType getType() {
+		return DFA;
 	}
 
 }
