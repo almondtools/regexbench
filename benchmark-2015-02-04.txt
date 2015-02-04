@@ -1,0 +1,4431 @@
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test1)
+
+# Run progress: 0,00% complete, ETA 00:36:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,047 us/op
+# Warmup Iteration   2: 0,045 us/op
+# Warmup Iteration   3: 0,044 us/op
+# Warmup Iteration   4: 0,045 us/op
+# Warmup Iteration   5: 0,065 us/op
+# Warmup Iteration   6: 0,054 us/op
+# Warmup Iteration   7: 0,046 us/op
+# Warmup Iteration   8: 0,045 us/op
+# Warmup Iteration   9: 0,048 us/op
+# Warmup Iteration  10: 0,044 us/op
+Iteration   1: 0,045 us/op
+Iteration   2: 0,044 us/op
+Iteration   3: 0,044 us/op
+Iteration   4: 0,044 us/op
+Iteration   5: 0,044 us/op
+Iteration   6: 0,044 us/op
+Iteration   7: 0,045 us/op
+Iteration   8: 0,045 us/op
+Iteration   9: 0,045 us/op
+Iteration  10: 0,062 us/op
+
+
+Result: 0,046 ñ(99.9%) 0,009 us/op [Average]
+  Statistics: (min, avg, max) = (0,044, 0,046, 0,062), stdev = 0,006
+  Confidence interval (99.9%): [0,038, 0,055]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test2)
+
+# Run progress: 0,93% complete, ETA 00:36:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,315 us/op
+# Warmup Iteration   2: 0,224 us/op
+# Warmup Iteration   3: 0,232 us/op
+# Warmup Iteration   4: 0,227 us/op
+# Warmup Iteration   5: 0,225 us/op
+# Warmup Iteration   6: 0,230 us/op
+# Warmup Iteration   7: 0,230 us/op
+# Warmup Iteration   8: 0,228 us/op
+# Warmup Iteration   9: 0,226 us/op
+# Warmup Iteration  10: 0,225 us/op
+Iteration   1: 0,225 us/op
+Iteration   2: 0,226 us/op
+Iteration   3: 0,228 us/op
+Iteration   4: 0,227 us/op
+Iteration   5: 0,226 us/op
+Iteration   6: 0,259 us/op
+Iteration   7: 0,221 us/op
+Iteration   8: 0,222 us/op
+Iteration   9: 0,225 us/op
+Iteration  10: 0,228 us/op
+
+
+Result: 0,229 ñ(99.9%) 0,016 us/op [Average]
+  Statistics: (min, avg, max) = (0,221, 0,229, 0,259), stdev = 0,011
+  Confidence interval (99.9%): [0,212, 0,245]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test3)
+
+# Run progress: 1,85% complete, ETA 00:35:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,267 us/op
+# Warmup Iteration   2: 3,191 us/op
+# Warmup Iteration   3: 3,185 us/op
+# Warmup Iteration   4: 3,180 us/op
+# Warmup Iteration   5: 3,181 us/op
+# Warmup Iteration   6: 3,186 us/op
+# Warmup Iteration   7: 3,189 us/op
+# Warmup Iteration   8: 3,212 us/op
+# Warmup Iteration   9: 3,195 us/op
+# Warmup Iteration  10: 3,182 us/op
+Iteration   1: 3,166 us/op
+Iteration   2: 3,206 us/op
+Iteration   3: 3,190 us/op
+Iteration   4: 3,182 us/op
+Iteration   5: 3,229 us/op
+Iteration   6: 3,205 us/op
+Iteration   7: 3,176 us/op
+Iteration   8: 3,189 us/op
+Iteration   9: 3,182 us/op
+Iteration  10: 3,188 us/op
+
+
+Result: 3,191 ñ(99.9%) 0,027 us/op [Average]
+  Statistics: (min, avg, max) = (3,166, 3,191, 3,229), stdev = 0,018
+  Confidence interval (99.9%): [3,164, 3,218]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test4)
+
+# Run progress: 2,78% complete, ETA 00:35:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 2,470 us/op
+# Warmup Iteration   2: 2,455 us/op
+# Warmup Iteration   3: 2,403 us/op
+# Warmup Iteration   4: 2,414 us/op
+# Warmup Iteration   5: 2,461 us/op
+# Warmup Iteration   6: 2,425 us/op
+# Warmup Iteration   7: 2,410 us/op
+# Warmup Iteration   8: 2,447 us/op
+# Warmup Iteration   9: 2,417 us/op
+# Warmup Iteration  10: 2,410 us/op
+Iteration   1: 2,452 us/op
+Iteration   2: 2,442 us/op
+Iteration   3: 2,584 us/op
+Iteration   4: 2,458 us/op
+Iteration   5: 2,428 us/op
+Iteration   6: 2,378 us/op
+Iteration   7: 2,387 us/op
+Iteration   8: 2,390 us/op
+Iteration   9: 2,395 us/op
+Iteration  10: 2,409 us/op
+
+
+Result: 2,432 ñ(99.9%) 0,091 us/op [Average]
+  Statistics: (min, avg, max) = (2,378, 2,432, 2,584), stdev = 0,060
+  Confidence interval (99.9%): [2,341, 2,524]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test5)
+
+# Run progress: 3,70% complete, ETA 00:35:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 4,241 us/op
+# Warmup Iteration   2: 4,086 us/op
+# Warmup Iteration   3: 4,084 us/op
+# Warmup Iteration   4: 4,061 us/op
+# Warmup Iteration   5: 4,016 us/op
+# Warmup Iteration   6: 4,080 us/op
+# Warmup Iteration   7: 4,284 us/op
+# Warmup Iteration   8: 4,258 us/op
+# Warmup Iteration   9: 4,187 us/op
+# Warmup Iteration  10: 4,214 us/op
+Iteration   1: 4,246 us/op
+Iteration   2: 4,230 us/op
+Iteration   3: 4,226 us/op
+Iteration   4: 4,062 us/op
+Iteration   5: 4,570 us/op
+Iteration   6: 4,083 us/op
+Iteration   7: 4,112 us/op
+Iteration   8: 4,075 us/op
+Iteration   9: 4,116 us/op
+Iteration  10: 4,151 us/op
+
+
+Result: 4,187 ñ(99.9%) 0,228 us/op [Average]
+  Statistics: (min, avg, max) = (4,062, 4,187, 4,570), stdev = 0,151
+  Confidence interval (99.9%): [3,959, 4,415]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test6)
+
+# Run progress: 4,63% complete, ETA 00:34:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 2,099 us/op
+# Warmup Iteration   2: 2,047 us/op
+# Warmup Iteration   3: 1,973 us/op
+# Warmup Iteration   4: 1,983 us/op
+# Warmup Iteration   5: 2,000 us/op
+# Warmup Iteration   6: 1,940 us/op
+# Warmup Iteration   7: 1,955 us/op
+# Warmup Iteration   8: 1,993 us/op
+# Warmup Iteration   9: 2,013 us/op
+# Warmup Iteration  10: 1,982 us/op
+Iteration   1: 1,940 us/op
+Iteration   2: 1,971 us/op
+Iteration   3: 1,934 us/op
+Iteration   4: 2,028 us/op
+Iteration   5: 1,967 us/op
+Iteration   6: 1,913 us/op
+Iteration   7: 1,978 us/op
+Iteration   8: 1,940 us/op
+Iteration   9: 1,952 us/op
+Iteration  10: 2,005 us/op
+
+
+Result: 1,963 ñ(99.9%) 0,052 us/op [Average]
+  Statistics: (min, avg, max) = (1,913, 1,963, 2,028), stdev = 0,035
+  Confidence interval (99.9%): [1,910, 2,015]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test7)
+
+# Run progress: 5,56% complete, ETA 00:34:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,197 us/op
+# Warmup Iteration   2: 1,133 us/op
+# Warmup Iteration   3: 1,135 us/op
+# Warmup Iteration   4: 1,136 us/op
+# Warmup Iteration   5: 1,138 us/op
+# Warmup Iteration   6: 1,135 us/op
+# Warmup Iteration   7: 1,151 us/op
+# Warmup Iteration   8: 1,158 us/op
+# Warmup Iteration   9: 1,141 us/op
+# Warmup Iteration  10: 1,146 us/op
+Iteration   1: 1,141 us/op
+Iteration   2: 1,162 us/op
+Iteration   3: 1,321 us/op
+Iteration   4: 1,240 us/op
+Iteration   5: 1,150 us/op
+Iteration   6: 1,132 us/op
+Iteration   7: 1,143 us/op
+Iteration   8: 1,153 us/op
+Iteration   9: 1,135 us/op
+Iteration  10: 1,144 us/op
+
+
+Result: 1,172 ñ(99.9%) 0,092 us/op [Average]
+  Statistics: (min, avg, max) = (1,132, 1,172, 1,321), stdev = 0,061
+  Confidence interval (99.9%): [1,080, 1,264]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test8)
+
+# Run progress: 6,48% complete, ETA 00:34:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 5,636 us/op
+# Warmup Iteration   2: 5,439 us/op
+# Warmup Iteration   3: 5,583 us/op
+# Warmup Iteration   4: 5,417 us/op
+# Warmup Iteration   5: 5,424 us/op
+# Warmup Iteration   6: 5,399 us/op
+# Warmup Iteration   7: 5,469 us/op
+# Warmup Iteration   8: 5,687 us/op
+# Warmup Iteration   9: 5,697 us/op
+# Warmup Iteration  10: 5,676 us/op
+Iteration   1: 5,581 us/op
+Iteration   2: 5,479 us/op
+Iteration   3: 5,484 us/op
+Iteration   4: 5,482 us/op
+Iteration   5: 5,536 us/op
+Iteration   6: 5,407 us/op
+Iteration   7: 5,434 us/op
+Iteration   8: 5,517 us/op
+Iteration   9: 5,406 us/op
+Iteration  10: 5,393 us/op
+
+
+Result: 5,472 ñ(99.9%) 0,094 us/op [Average]
+  Statistics: (min, avg, max) = (5,393, 5,472, 5,581), stdev = 0,062
+  Confidence interval (99.9%): [5,378, 5,566]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkFind
+# Parameters: (name = test9)
+
+# Run progress: 7,41% complete, ETA 00:33:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,331 us/op
+# Warmup Iteration   2: 3,275 us/op
+# Warmup Iteration   3: 3,271 us/op
+# Warmup Iteration   4: 3,401 us/op
+# Warmup Iteration   5: 3,345 us/op
+# Warmup Iteration   6: 3,415 us/op
+# Warmup Iteration   7: 3,468 us/op
+# Warmup Iteration   8: 3,308 us/op
+# Warmup Iteration   9: 3,348 us/op
+# Warmup Iteration  10: 3,354 us/op
+Iteration   1: 3,366 us/op
+Iteration   2: 3,324 us/op
+Iteration   3: 3,263 us/op
+Iteration   4: 3,249 us/op
+Iteration   5: 3,258 us/op
+Iteration   6: 3,351 us/op
+Iteration   7: 3,298 us/op
+Iteration   8: 3,251 us/op
+Iteration   9: 3,278 us/op
+Iteration  10: 3,380 us/op
+
+
+Result: 3,302 ñ(99.9%) 0,076 us/op [Average]
+  Statistics: (min, avg, max) = (3,249, 3,302, 3,380), stdev = 0,050
+  Confidence interval (99.9%): [3,226, 3,377]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test1)
+
+# Run progress: 8,33% complete, ETA 00:33:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 732,607 us/op
+# Warmup Iteration   2: 583,483 us/op
+# Warmup Iteration   3: 496,388 us/op
+# Warmup Iteration   4: 475,440 us/op
+# Warmup Iteration   5: 534,879 us/op
+# Warmup Iteration   6: 498,362 us/op
+# Warmup Iteration   7: 546,744 us/op
+# Warmup Iteration   8: 394,051 us/op
+# Warmup Iteration   9: 430,051 us/op
+# Warmup Iteration  10: 405,239 us/op
+Iteration   1: 376,887 us/op
+Iteration   2: 304,613 us/op
+Iteration   3: 283,799 us/op
+Iteration   4: 287,923 us/op
+Iteration   5: 313,974 us/op
+Iteration   6: 282,436 us/op
+Iteration   7: 306,616 us/op
+Iteration   8: 283,105 us/op
+Iteration   9: 326,619 us/op
+Iteration  10: 285,548 us/op
+
+
+Result: 305,152 ñ(99.9%) 44,583 us/op [Average]
+  Statistics: (min, avg, max) = (282,436, 305,152, 376,887), stdev = 29,489
+  Confidence interval (99.9%): [260,570, 349,735]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test2)
+
+# Run progress: 9,26% complete, ETA 00:33:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 1122,124 us/op
+# Warmup Iteration   2: 946,538 us/op
+# Warmup Iteration   3: 914,814 us/op
+# Warmup Iteration   4: 730,287 us/op
+# Warmup Iteration   5: 720,221 us/op
+# Warmup Iteration   6: 675,692 us/op
+# Warmup Iteration   7: 659,260 us/op
+# Warmup Iteration   8: 691,493 us/op
+# Warmup Iteration   9: 654,579 us/op
+# Warmup Iteration  10: 301,761 us/op
+Iteration   1: 292,462 us/op
+Iteration   2: 288,601 us/op
+Iteration   3: 291,833 us/op
+Iteration   4: 340,576 us/op
+Iteration   5: 284,723 us/op
+Iteration   6: 286,156 us/op
+Iteration   7: 289,160 us/op
+Iteration   8: 292,336 us/op
+Iteration   9: 296,825 us/op
+Iteration  10: 306,692 us/op
+
+
+Result: 296,936 ñ(99.9%) 25,006 us/op [Average]
+  Statistics: (min, avg, max) = (284,723, 296,936, 340,576), stdev = 16,540
+  Confidence interval (99.9%): [271,930, 321,942]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test3)
+
+# Run progress: 10,19% complete, ETA 00:32:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 705,407 us/op
+# Warmup Iteration   2: 551,255 us/op
+# Warmup Iteration   3: 646,461 us/op
+# Warmup Iteration   4: 499,743 us/op
+# Warmup Iteration   5: 453,553 us/op
+# Warmup Iteration   6: 421,683 us/op
+# Warmup Iteration   7: 371,986 us/op
+# Warmup Iteration   8: 371,190 us/op
+# Warmup Iteration   9: 487,581 us/op
+# Warmup Iteration  10: 442,558 us/op
+Iteration   1: 459,578 us/op
+Iteration   2: 389,732 us/op
+Iteration   3: 453,759 us/op
+Iteration   4: 382,025 us/op
+Iteration   5: 379,454 us/op
+Iteration   6: 422,479 us/op
+Iteration   7: 413,013 us/op
+Iteration   8: 390,153 us/op
+Iteration   9: 379,559 us/op
+Iteration  10: 379,381 us/op
+
+
+Result: 404,913 ñ(99.9%) 46,907 us/op [Average]
+  Statistics: (min, avg, max) = (379,381, 404,913, 459,578), stdev = 31,026
+  Confidence interval (99.9%): [358,007, 451,820]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test4)
+
+# Run progress: 11,11% complete, ETA 00:32:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 659,632 us/op
+# Warmup Iteration   2: 588,726 us/op
+# Warmup Iteration   3: 528,290 us/op
+# Warmup Iteration   4: 517,888 us/op
+# Warmup Iteration   5: 445,410 us/op
+# Warmup Iteration   6: 446,044 us/op
+# Warmup Iteration   7: 437,874 us/op
+# Warmup Iteration   8: 382,348 us/op
+# Warmup Iteration   9: 408,613 us/op
+# Warmup Iteration  10: 412,402 us/op
+Iteration   1: 375,334 us/op
+Iteration   2: 390,214 us/op
+Iteration   3: 381,174 us/op
+Iteration   4: 398,509 us/op
+Iteration   5: 389,649 us/op
+Iteration   6: 398,497 us/op
+Iteration   7: 384,127 us/op
+Iteration   8: 393,526 us/op
+Iteration   9: 388,514 us/op
+Iteration  10: 403,519 us/op
+
+
+Result: 390,306 ñ(99.9%) 13,032 us/op [Average]
+  Statistics: (min, avg, max) = (375,334, 390,306, 403,519), stdev = 8,620
+  Confidence interval (99.9%): [377,274, 403,338]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test5)
+
+# Run progress: 12,04% complete, ETA 00:32:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 192,104 us/op
+# Warmup Iteration   2: 136,316 us/op
+# Warmup Iteration   3: 159,449 us/op
+# Warmup Iteration   4: 185,397 us/op
+# Warmup Iteration   5: 157,698 us/op
+# Warmup Iteration   6: 147,494 us/op
+# Warmup Iteration   7: 146,130 us/op
+# Warmup Iteration   8: 140,632 us/op
+# Warmup Iteration   9: 129,101 us/op
+# Warmup Iteration  10: 124,630 us/op
+Iteration   1: 124,828 us/op
+Iteration   2: 124,454 us/op
+Iteration   3: 132,096 us/op
+Iteration   4: 127,557 us/op
+Iteration   5: 130,378 us/op
+Iteration   6: 134,557 us/op
+Iteration   7: 126,940 us/op
+Iteration   8: 129,226 us/op
+Iteration   9: 135,696 us/op
+Iteration  10: 141,426 us/op
+
+
+Result: 130,716 ñ(99.9%) 8,073 us/op [Average]
+  Statistics: (min, avg, max) = (124,454, 130,716, 141,426), stdev = 5,340
+  Confidence interval (99.9%): [122,643, 138,789]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test6)
+
+# Run progress: 12,96% complete, ETA 00:31:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 240,275 us/op
+# Warmup Iteration   2: 165,105 us/op
+# Warmup Iteration   3: 157,480 us/op
+# Warmup Iteration   4: 166,780 us/op
+# Warmup Iteration   5: 156,329 us/op
+# Warmup Iteration   6: 148,421 us/op
+# Warmup Iteration   7: 146,748 us/op
+# Warmup Iteration   8: 149,991 us/op
+# Warmup Iteration   9: 156,530 us/op
+# Warmup Iteration  10: 148,836 us/op
+Iteration   1: 159,123 us/op
+Iteration   2: 150,579 us/op
+Iteration   3: 167,225 us/op
+Iteration   4: 146,572 us/op
+Iteration   5: 151,159 us/op
+Iteration   6: 149,106 us/op
+Iteration   7: 130,628 us/op
+Iteration   8: 131,257 us/op
+Iteration   9: 130,078 us/op
+Iteration  10: 129,973 us/op
+
+
+Result: 144,570 ñ(99.9%) 20,308 us/op [Average]
+  Statistics: (min, avg, max) = (129,973, 144,570, 167,225), stdev = 13,432
+  Confidence interval (99.9%): [124,262, 164,878]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test7)
+
+# Run progress: 13,89% complete, ETA 00:31:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 106,184 us/op
+# Warmup Iteration   2: 76,291 us/op
+# Warmup Iteration   3: 71,533 us/op
+# Warmup Iteration   4: 70,747 us/op
+# Warmup Iteration   5: 72,652 us/op
+# Warmup Iteration   6: 103,843 us/op
+# Warmup Iteration   7: 106,847 us/op
+# Warmup Iteration   8: 112,810 us/op
+# Warmup Iteration   9: 110,762 us/op
+# Warmup Iteration  10: 94,928 us/op
+Iteration   1: 74,500 us/op
+Iteration   2: 71,007 us/op
+Iteration   3: 73,650 us/op
+Iteration   4: 78,067 us/op
+Iteration   5: 73,192 us/op
+Iteration   6: 71,407 us/op
+Iteration   7: 72,007 us/op
+Iteration   8: 76,624 us/op
+Iteration   9: 75,859 us/op
+Iteration  10: 82,281 us/op
+
+
+Result: 74,859 ñ(99.9%) 5,256 us/op [Average]
+  Statistics: (min, avg, max) = (71,007, 74,859, 82,281), stdev = 3,476
+  Confidence interval (99.9%): [69,604, 80,115]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test8)
+
+# Run progress: 14,81% complete, ETA 00:31:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 2239,029 us/op
+# Warmup Iteration   2: 1845,973 us/op
+# Warmup Iteration   3: 2182,867 us/op
+# Warmup Iteration   4: 2244,172 us/op
+# Warmup Iteration   5: 2224,664 us/op
+# Warmup Iteration   6: 2430,586 us/op
+# Warmup Iteration   7: 2240,199 us/op
+# Warmup Iteration   8: 2227,153 us/op
+# Warmup Iteration   9: 2210,756 us/op
+# Warmup Iteration  10: 1767,373 us/op
+Iteration   1: 1638,849 us/op
+Iteration   2: 1172,967 us/op
+Iteration   3: 1062,457 us/op
+Iteration   4: 1111,101 us/op
+Iteration   5: 1050,414 us/op
+Iteration   6: 951,898 us/op
+Iteration   7: 963,217 us/op
+Iteration   8: 916,834 us/op
+Iteration   9: 911,983 us/op
+Iteration  10: 859,272 us/op
+
+
+Result: 1063,899 ñ(99.9%) 339,611 us/op [Average]
+  Statistics: (min, avg, max) = (859,272, 1063,899, 1638,849), stdev = 224,632
+  Confidence interval (99.9%): [724,288, 1403,510]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.BriksMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test9)
+
+# Run progress: 15,74% complete, ETA 00:30:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 2653,731 us/op
+# Warmup Iteration   2: 1991,128 us/op
+# Warmup Iteration   3: 1963,501 us/op
+# Warmup Iteration   4: 1722,617 us/op
+# Warmup Iteration   5: 2012,005 us/op
+# Warmup Iteration   6: 1363,632 us/op
+# Warmup Iteration   7: 1163,670 us/op
+# Warmup Iteration   8: 1118,791 us/op
+# Warmup Iteration   9: 1162,477 us/op
+# Warmup Iteration  10: 969,589 us/op
+Iteration   1: 819,634 us/op
+Iteration   2: 786,933 us/op
+Iteration   3: 790,908 us/op
+Iteration   4: 783,669 us/op
+Iteration   5: 792,213 us/op
+Iteration   6: 782,957 us/op
+Iteration   7: 780,320 us/op
+Iteration   8: 783,442 us/op
+Iteration   9: 783,470 us/op
+Iteration  10: 783,343 us/op
+
+
+Result: 788,689 ñ(99.9%) 17,380 us/op [Average]
+  Statistics: (min, avg, max) = (780,320, 788,689, 819,634), stdev = 11,496
+  Confidence interval (99.9%): [771,308, 806,069]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test1)
+
+# Run progress: 16,67% complete, ETA 00:30:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,414 us/op
+# Warmup Iteration   2: 1,295 us/op
+# Warmup Iteration   3: 1,327 us/op
+# Warmup Iteration   4: 1,257 us/op
+# Warmup Iteration   5: 1,299 us/op
+# Warmup Iteration   6: 1,257 us/op
+# Warmup Iteration   7: 1,258 us/op
+# Warmup Iteration   8: 1,256 us/op
+# Warmup Iteration   9: 1,256 us/op
+# Warmup Iteration  10: 1,253 us/op
+Iteration   1: 1,264 us/op
+Iteration   2: 1,255 us/op
+Iteration   3: 1,278 us/op
+Iteration   4: 1,261 us/op
+Iteration   5: 1,259 us/op
+Iteration   6: 1,257 us/op
+Iteration   7: 1,262 us/op
+Iteration   8: 1,258 us/op
+Iteration   9: 1,263 us/op
+Iteration  10: 1,265 us/op
+
+
+Result: 1,262 ñ(99.9%) 0,009 us/op [Average]
+  Statistics: (min, avg, max) = (1,255, 1,262, 1,278), stdev = 0,006
+  Confidence interval (99.9%): [1,253, 1,272]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test2)
+
+# Run progress: 17,59% complete, ETA 00:30:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 6,279 us/op
+# Warmup Iteration   2: 5,920 us/op
+# Warmup Iteration   3: 5,830 us/op
+# Warmup Iteration   4: 5,829 us/op
+# Warmup Iteration   5: 5,834 us/op
+# Warmup Iteration   6: 5,855 us/op
+# Warmup Iteration   7: 5,843 us/op
+# Warmup Iteration   8: 5,839 us/op
+# Warmup Iteration   9: 5,863 us/op
+# Warmup Iteration  10: 6,312 us/op
+Iteration   1: 5,879 us/op
+Iteration   2: 5,929 us/op
+Iteration   3: 6,054 us/op
+Iteration   4: 5,817 us/op
+Iteration   5: 5,828 us/op
+Iteration   6: 5,833 us/op
+Iteration   7: 5,977 us/op
+Iteration   8: 5,981 us/op
+Iteration   9: 5,986 us/op
+Iteration  10: 5,980 us/op
+
+
+Result: 5,926 ñ(99.9%) 0,124 us/op [Average]
+  Statistics: (min, avg, max) = (5,817, 5,926, 6,054), stdev = 0,082
+  Confidence interval (99.9%): [5,802, 6,051]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test3)
+
+# Run progress: 18,52% complete, ETA 00:29:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 80,161 us/op
+# Warmup Iteration   2: 76,036 us/op
+# Warmup Iteration   3: 75,831 us/op
+# Warmup Iteration   4: 76,453 us/op
+# Warmup Iteration   5: 76,382 us/op
+# Warmup Iteration   6: 76,057 us/op
+# Warmup Iteration   7: 75,971 us/op
+# Warmup Iteration   8: 76,140 us/op
+# Warmup Iteration   9: 75,962 us/op
+# Warmup Iteration  10: 75,980 us/op
+Iteration   1: 75,939 us/op
+Iteration   2: 75,728 us/op
+Iteration   3: 75,704 us/op
+Iteration   4: 76,026 us/op
+Iteration   5: 75,558 us/op
+Iteration   6: 75,797 us/op
+Iteration   7: 76,060 us/op
+Iteration   8: 75,751 us/op
+Iteration   9: 75,961 us/op
+Iteration  10: 75,981 us/op
+
+
+Result: 75,850 ñ(99.9%) 0,250 us/op [Average]
+  Statistics: (min, avg, max) = (75,558, 75,850, 76,060), stdev = 0,165
+  Confidence interval (99.9%): [75,600, 76,100]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test4)
+
+# Run progress: 19,44% complete, ETA 00:29:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 81,380 us/op
+# Warmup Iteration   2: 80,967 us/op
+# Warmup Iteration   3: 80,295 us/op
+# Warmup Iteration   4: 80,996 us/op
+# Warmup Iteration   5: 80,165 us/op
+# Warmup Iteration   6: 71,806 us/op
+# Warmup Iteration   7: 71,811 us/op
+# Warmup Iteration   8: 71,781 us/op
+# Warmup Iteration   9: 72,322 us/op
+# Warmup Iteration  10: 71,683 us/op
+Iteration   1: 71,646 us/op
+Iteration   2: 71,566 us/op
+Iteration   3: 71,769 us/op
+Iteration   4: 71,398 us/op
+Iteration   5: 71,586 us/op
+Iteration   6: 71,679 us/op
+Iteration   7: 71,510 us/op
+Iteration   8: 71,814 us/op
+Iteration   9: 71,867 us/op
+Iteration  10: 71,655 us/op
+
+
+Result: 71,649 ñ(99.9%) 0,216 us/op [Average]
+  Statistics: (min, avg, max) = (71,398, 71,649, 71,867), stdev = 0,143
+  Confidence interval (99.9%): [71,433, 71,865]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test5)
+
+# Run progress: 20,37% complete, ETA 00:29:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 5,296 us/op
+# Warmup Iteration   2: 4,700 us/op
+# Warmup Iteration   3: 4,686 us/op
+# Warmup Iteration   4: 4,689 us/op
+# Warmup Iteration   5: 4,689 us/op
+# Warmup Iteration   6: 4,687 us/op
+# Warmup Iteration   7: 4,690 us/op
+# Warmup Iteration   8: 4,707 us/op
+# Warmup Iteration   9: 4,722 us/op
+# Warmup Iteration  10: 4,892 us/op
+Iteration   1: 4,673 us/op
+Iteration   2: 4,745 us/op
+Iteration   3: 4,861 us/op
+Iteration   4: 4,698 us/op
+Iteration   5: 5,178 us/op
+Iteration   6: 5,105 us/op
+Iteration   7: 4,901 us/op
+Iteration   8: 4,890 us/op
+Iteration   9: 4,831 us/op
+Iteration  10: 4,788 us/op
+
+
+Result: 4,867 ñ(99.9%) 0,249 us/op [Average]
+  Statistics: (min, avg, max) = (4,673, 4,867, 5,178), stdev = 0,165
+  Confidence interval (99.9%): [4,618, 5,116]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test6)
+
+# Run progress: 21,30% complete, ETA 00:28:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,120 us/op
+# Warmup Iteration   2: 2,599 us/op
+# Warmup Iteration   3: 2,560 us/op
+# Warmup Iteration   4: 2,515 us/op
+# Warmup Iteration   5: 2,531 us/op
+# Warmup Iteration   6: 2,507 us/op
+# Warmup Iteration   7: 2,557 us/op
+# Warmup Iteration   8: 2,502 us/op
+# Warmup Iteration   9: 2,538 us/op
+# Warmup Iteration  10: 2,508 us/op
+Iteration   1: 2,494 us/op
+Iteration   2: 2,470 us/op
+Iteration   3: 2,490 us/op
+Iteration   4: 2,479 us/op
+Iteration   5: 2,477 us/op
+Iteration   6: 2,489 us/op
+Iteration   7: 2,491 us/op
+Iteration   8: 2,492 us/op
+Iteration   9: 2,496 us/op
+Iteration  10: 2,491 us/op
+
+
+Result: 2,487 ñ(99.9%) 0,013 us/op [Average]
+  Statistics: (min, avg, max) = (2,470, 2,487, 2,496), stdev = 0,008
+  Confidence interval (99.9%): [2,474, 2,500]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test7)
+
+# Run progress: 22,22% complete, ETA 00:28:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,391 us/op
+# Warmup Iteration   2: 3,206 us/op
+# Warmup Iteration   3: 3,211 us/op
+# Warmup Iteration   4: 3,208 us/op
+# Warmup Iteration   5: 3,213 us/op
+# Warmup Iteration   6: 3,215 us/op
+# Warmup Iteration   7: 3,220 us/op
+# Warmup Iteration   8: 3,216 us/op
+# Warmup Iteration   9: 3,219 us/op
+# Warmup Iteration  10: 3,225 us/op
+Iteration   1: 3,226 us/op
+Iteration   2: 3,224 us/op
+Iteration   3: 3,240 us/op
+Iteration   4: 3,250 us/op
+Iteration   5: 3,227 us/op
+Iteration   6: 3,263 us/op
+Iteration   7: 3,313 us/op
+Iteration   8: 3,296 us/op
+Iteration   9: 3,353 us/op
+Iteration  10: 3,467 us/op
+
+
+Result: 3,286 ñ(99.9%) 0,116 us/op [Average]
+  Statistics: (min, avg, max) = (3,224, 3,286, 3,467), stdev = 0,077
+  Confidence interval (99.9%): [3,170, 3,402]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test8)
+
+# Run progress: 23,15% complete, ETA 00:28:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 30,518 us/op
+# Warmup Iteration   2: 26,375 us/op
+# Warmup Iteration   3: 26,218 us/op
+# Warmup Iteration   4: 26,019 us/op
+# Warmup Iteration   5: 26,145 us/op
+# Warmup Iteration   6: 26,743 us/op
+# Warmup Iteration   7: 25,967 us/op
+# Warmup Iteration   8: 25,972 us/op
+# Warmup Iteration   9: 27,069 us/op
+# Warmup Iteration  10: 25,928 us/op
+Iteration   1: 26,355 us/op
+Iteration   2: 27,399 us/op
+Iteration   3: 30,929 us/op
+Iteration   4: 28,068 us/op
+Iteration   5: 27,745 us/op
+Iteration   6: 26,734 us/op
+Iteration   7: 27,059 us/op
+Iteration   8: 26,576 us/op
+Iteration   9: 26,507 us/op
+Iteration  10: 26,697 us/op
+
+
+Result: 27,407 ñ(99.9%) 2,056 us/op [Average]
+  Statistics: (min, avg, max) = (26,355, 27,407, 30,929), stdev = 1,360
+  Confidence interval (99.9%): [25,351, 29,462]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkFind
+# Parameters: (name = test9)
+
+# Run progress: 24,07% complete, ETA 00:27:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 35,382 us/op
+# Warmup Iteration   2: 33,315 us/op
+# Warmup Iteration   3: 33,442 us/op
+# Warmup Iteration   4: 30,653 us/op
+# Warmup Iteration   5: 30,797 us/op
+# Warmup Iteration   6: 32,215 us/op
+# Warmup Iteration   7: 30,825 us/op
+# Warmup Iteration   8: 30,376 us/op
+# Warmup Iteration   9: 32,397 us/op
+# Warmup Iteration  10: 31,495 us/op
+Iteration   1: 30,488 us/op
+Iteration   2: 31,603 us/op
+Iteration   3: 31,550 us/op
+Iteration   4: 30,886 us/op
+Iteration   5: 32,223 us/op
+Iteration   6: 30,510 us/op
+Iteration   7: 29,980 us/op
+Iteration   8: 30,084 us/op
+Iteration   9: 30,292 us/op
+Iteration  10: 30,101 us/op
+
+
+Result: 30,772 ñ(99.9%) 1,165 us/op [Average]
+  Statistics: (min, avg, max) = (29,980, 30,772, 32,223), stdev = 0,771
+  Confidence interval (99.9%): [29,607, 31,937]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test1)
+
+# Run progress: 25,00% complete, ETA 00:27:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,824 us/op
+# Warmup Iteration   2: 0,645 us/op
+# Warmup Iteration   3: 0,653 us/op
+# Warmup Iteration   4: 0,760 us/op
+# Warmup Iteration   5: 0,649 us/op
+# Warmup Iteration   6: 0,762 us/op
+# Warmup Iteration   7: 0,833 us/op
+# Warmup Iteration   8: 0,711 us/op
+# Warmup Iteration   9: 0,692 us/op
+# Warmup Iteration  10: 0,615 us/op
+Iteration   1: 0,773 us/op
+Iteration   2: 0,625 us/op
+Iteration   3: 0,621 us/op
+Iteration   4: 0,621 us/op
+Iteration   5: 0,620 us/op
+Iteration   6: 0,620 us/op
+Iteration   7: 0,652 us/op
+Iteration   8: 0,934 us/op
+Iteration   9: 0,683 us/op
+Iteration  10: 0,867 us/op
+
+
+Result: 0,702 ñ(99.9%) 0,175 us/op [Average]
+  Statistics: (min, avg, max) = (0,620, 0,702, 0,934), stdev = 0,116
+  Confidence interval (99.9%): [0,526, 0,877]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test2)
+
+# Run progress: 25,93% complete, ETA 00:27:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,985 us/op
+# Warmup Iteration   2: 1,044 us/op
+# Warmup Iteration   3: 0,686 us/op
+# Warmup Iteration   4: 0,622 us/op
+# Warmup Iteration   5: 0,618 us/op
+# Warmup Iteration   6: 0,618 us/op
+# Warmup Iteration   7: 0,648 us/op
+# Warmup Iteration   8: 0,699 us/op
+# Warmup Iteration   9: 0,660 us/op
+# Warmup Iteration  10: 0,803 us/op
+Iteration   1: 0,624 us/op
+Iteration   2: 0,621 us/op
+Iteration   3: 0,621 us/op
+Iteration   4: 0,619 us/op
+Iteration   5: 0,621 us/op
+Iteration   6: 0,620 us/op
+Iteration   7: 0,622 us/op
+Iteration   8: 0,624 us/op
+Iteration   9: 0,619 us/op
+Iteration  10: 0,620 us/op
+
+
+Result: 0,621 ñ(99.9%) 0,003 us/op [Average]
+  Statistics: (min, avg, max) = (0,619, 0,621, 0,624), stdev = 0,002
+  Confidence interval (99.9%): [0,618, 0,624]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test3)
+
+# Run progress: 26,85% complete, ETA 00:26:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,971 us/op
+# Warmup Iteration   2: 0,629 us/op
+# Warmup Iteration   3: 0,742 us/op
+# Warmup Iteration   4: 0,618 us/op
+# Warmup Iteration   5: 0,620 us/op
+# Warmup Iteration   6: 0,623 us/op
+# Warmup Iteration   7: 0,620 us/op
+# Warmup Iteration   8: 0,621 us/op
+# Warmup Iteration   9: 0,630 us/op
+# Warmup Iteration  10: 0,632 us/op
+Iteration   1: 0,633 us/op
+Iteration   2: 0,748 us/op
+Iteration   3: 0,760 us/op
+Iteration   4: 0,616 us/op
+Iteration   5: 0,816 us/op
+Iteration   6: 0,720 us/op
+Iteration   7: 0,806 us/op
+Iteration   8: 0,667 us/op
+Iteration   9: 0,774 us/op
+Iteration  10: 0,623 us/op
+
+
+Result: 0,716 ñ(99.9%) 0,115 us/op [Average]
+  Statistics: (min, avg, max) = (0,616, 0,716, 0,816), stdev = 0,076
+  Confidence interval (99.9%): [0,601, 0,832]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test4)
+
+# Run progress: 27,78% complete, ETA 00:26:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,810 us/op
+# Warmup Iteration   2: 0,617 us/op
+# Warmup Iteration   3: 0,617 us/op
+# Warmup Iteration   4: 0,632 us/op
+# Warmup Iteration   5: 0,627 us/op
+# Warmup Iteration   6: 0,619 us/op
+# Warmup Iteration   7: 0,769 us/op
+# Warmup Iteration   8: 0,625 us/op
+# Warmup Iteration   9: 0,619 us/op
+# Warmup Iteration  10: 0,623 us/op
+Iteration   1: 0,623 us/op
+Iteration   2: 0,629 us/op
+Iteration   3: 0,613 us/op
+Iteration   4: 0,613 us/op
+Iteration   5: 0,614 us/op
+Iteration   6: 0,615 us/op
+Iteration   7: 0,614 us/op
+Iteration   8: 0,613 us/op
+Iteration   9: 0,613 us/op
+Iteration  10: 0,637 us/op
+
+
+Result: 0,618 ñ(99.9%) 0,013 us/op [Average]
+  Statistics: (min, avg, max) = (0,613, 0,618, 0,637), stdev = 0,009
+  Confidence interval (99.9%): [0,605, 0,631]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test5)
+
+# Run progress: 28,70% complete, ETA 00:26:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,466 us/op
+# Warmup Iteration   2: 0,331 us/op
+# Warmup Iteration   3: 0,402 us/op
+# Warmup Iteration   4: 0,351 us/op
+# Warmup Iteration   5: 0,304 us/op
+# Warmup Iteration   6: 0,302 us/op
+# Warmup Iteration   7: 0,348 us/op
+# Warmup Iteration   8: 0,339 us/op
+# Warmup Iteration   9: 0,381 us/op
+# Warmup Iteration  10: 0,362 us/op
+Iteration   1: 0,344 us/op
+Iteration   2: 0,302 us/op
+Iteration   3: 0,300 us/op
+Iteration   4: 0,301 us/op
+Iteration   5: 0,353 us/op
+Iteration   6: 0,373 us/op
+Iteration   7: 0,301 us/op
+Iteration   8: 0,300 us/op
+Iteration   9: 0,299 us/op
+Iteration  10: 0,352 us/op
+
+
+Result: 0,322 ñ(99.9%) 0,044 us/op [Average]
+  Statistics: (min, avg, max) = (0,299, 0,322, 0,373), stdev = 0,029
+  Confidence interval (99.9%): [0,278, 0,367]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test6)
+
+# Run progress: 29,63% complete, ETA 00:25:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,396 us/op
+# Warmup Iteration   2: 0,323 us/op
+# Warmup Iteration   3: 0,348 us/op
+# Warmup Iteration   4: 0,358 us/op
+# Warmup Iteration   5: 0,496 us/op
+# Warmup Iteration   6: 0,445 us/op
+# Warmup Iteration   7: 0,405 us/op
+# Warmup Iteration   8: 0,388 us/op
+# Warmup Iteration   9: 0,356 us/op
+# Warmup Iteration  10: 0,309 us/op
+Iteration   1: 0,307 us/op
+Iteration   2: 0,309 us/op
+Iteration   3: 0,354 us/op
+Iteration   4: 0,397 us/op
+Iteration   5: 0,350 us/op
+Iteration   6: 0,304 us/op
+Iteration   7: 0,305 us/op
+Iteration   8: 0,325 us/op
+Iteration   9: 0,345 us/op
+Iteration  10: 0,315 us/op
+
+
+Result: 0,331 ñ(99.9%) 0,046 us/op [Average]
+  Statistics: (min, avg, max) = (0,304, 0,331, 0,397), stdev = 0,030
+  Confidence interval (99.9%): [0,286, 0,377]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test7)
+
+# Run progress: 30,56% complete, ETA 00:25:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,904 us/op
+# Warmup Iteration   2: 0,601 us/op
+# Warmup Iteration   3: 0,587 us/op
+# Warmup Iteration   4: 0,642 us/op
+# Warmup Iteration   5: 0,778 us/op
+# Warmup Iteration   6: 0,739 us/op
+# Warmup Iteration   7: 0,860 us/op
+# Warmup Iteration   8: 0,603 us/op
+# Warmup Iteration   9: 0,601 us/op
+# Warmup Iteration  10: 0,662 us/op
+Iteration   1: 0,599 us/op
+Iteration   2: 0,661 us/op
+Iteration   3: 0,679 us/op
+Iteration   4: 0,878 us/op
+Iteration   5: 0,724 us/op
+Iteration   6: 0,719 us/op
+Iteration   7: 0,604 us/op
+Iteration   8: 0,684 us/op
+Iteration   9: 0,638 us/op
+Iteration  10: 0,798 us/op
+
+
+Result: 0,698 ñ(99.9%) 0,131 us/op [Average]
+  Statistics: (min, avg, max) = (0,599, 0,698, 0,878), stdev = 0,087
+  Confidence interval (99.9%): [0,567, 0,830]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test8)
+
+# Run progress: 31,48% complete, ETA 00:25:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,152 us/op
+# Warmup Iteration   2: 3,163 us/op
+# Warmup Iteration   3: 3,063 us/op
+# Warmup Iteration   4: 3,679 us/op
+# Warmup Iteration   5: 3,779 us/op
+# Warmup Iteration   6: 3,622 us/op
+# Warmup Iteration   7: 3,620 us/op
+# Warmup Iteration   8: 2,617 us/op
+# Warmup Iteration   9: 2,494 us/op
+# Warmup Iteration  10: 2,490 us/op
+Iteration   1: 2,497 us/op
+Iteration   2: 2,541 us/op
+Iteration   3: 3,087 us/op
+Iteration   4: 2,982 us/op
+Iteration   5: 4,325 us/op
+Iteration   6: 3,712 us/op
+Iteration   7: 2,566 us/op
+Iteration   8: 2,488 us/op
+Iteration   9: 2,491 us/op
+Iteration  10: 2,616 us/op
+
+
+Result: 2,930 ñ(99.9%) 0,949 us/op [Average]
+  Statistics: (min, avg, max) = (2,488, 2,930, 4,325), stdev = 0,628
+  Confidence interval (99.9%): [1,982, 3,879]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JRegexMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test9)
+
+# Run progress: 32,41% complete, ETA 00:24:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,745 us/op
+# Warmup Iteration   2: 1,762 us/op
+# Warmup Iteration   3: 1,772 us/op
+# Warmup Iteration   4: 1,382 us/op
+# Warmup Iteration   5: 1,382 us/op
+# Warmup Iteration   6: 1,427 us/op
+# Warmup Iteration   7: 1,375 us/op
+# Warmup Iteration   8: 1,379 us/op
+# Warmup Iteration   9: 1,381 us/op
+# Warmup Iteration  10: 1,390 us/op
+Iteration   1: 1,384 us/op
+Iteration   2: 1,383 us/op
+Iteration   3: 1,384 us/op
+Iteration   4: 1,383 us/op
+Iteration   5: 1,386 us/op
+Iteration   6: 1,387 us/op
+Iteration   7: 1,385 us/op
+Iteration   8: 1,382 us/op
+Iteration   9: 1,383 us/op
+Iteration  10: 1,953 us/op
+
+
+Result: 1,441 ñ(99.9%) 0,272 us/op [Average]
+  Statistics: (min, avg, max) = (1,382, 1,441, 1,953), stdev = 0,180
+  Confidence interval (99.9%): [1,169, 1,713]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test1)
+
+# Run progress: 33,33% complete, ETA 00:24:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,449 us/op
+# Warmup Iteration   2: 0,399 us/op
+# Warmup Iteration   3: 0,367 us/op
+# Warmup Iteration   4: 0,367 us/op
+# Warmup Iteration   5: 0,362 us/op
+# Warmup Iteration   6: 0,361 us/op
+# Warmup Iteration   7: 0,362 us/op
+# Warmup Iteration   8: 0,363 us/op
+# Warmup Iteration   9: 0,364 us/op
+# Warmup Iteration  10: 0,363 us/op
+Iteration   1: 0,362 us/op
+Iteration   2: 0,361 us/op
+Iteration   3: 0,362 us/op
+Iteration   4: 0,362 us/op
+Iteration   5: 0,362 us/op
+Iteration   6: 0,363 us/op
+Iteration   7: 0,360 us/op
+Iteration   8: 0,366 us/op
+Iteration   9: 0,377 us/op
+Iteration  10: 0,384 us/op
+
+
+Result: 0,366 ñ(99.9%) 0,012 us/op [Average]
+  Statistics: (min, avg, max) = (0,360, 0,366, 0,384), stdev = 0,008
+  Confidence interval (99.9%): [0,354, 0,378]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test2)
+
+# Run progress: 34,26% complete, ETA 00:24:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,859 us/op
+# Warmup Iteration   2: 1,881 us/op
+# Warmup Iteration   3: 1,754 us/op
+# Warmup Iteration   4: 1,758 us/op
+# Warmup Iteration   5: 1,689 us/op
+# Warmup Iteration   6: 1,882 us/op
+# Warmup Iteration   7: 1,698 us/op
+# Warmup Iteration   8: 1,707 us/op
+# Warmup Iteration   9: 1,736 us/op
+# Warmup Iteration  10: 1,718 us/op
+Iteration   1: 1,678 us/op
+Iteration   2: 1,679 us/op
+Iteration   3: 1,686 us/op
+Iteration   4: 1,720 us/op
+Iteration   5: 1,703 us/op
+Iteration   6: 1,688 us/op
+Iteration   7: 1,727 us/op
+Iteration   8: 1,777 us/op
+Iteration   9: 1,760 us/op
+Iteration  10: 1,751 us/op
+
+
+Result: 1,717 ñ(99.9%) 0,054 us/op [Average]
+  Statistics: (min, avg, max) = (1,678, 1,717, 1,777), stdev = 0,036
+  Confidence interval (99.9%): [1,662, 1,771]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test3)
+
+# Run progress: 35,19% complete, ETA 00:23:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 24,050 us/op
+# Warmup Iteration   2: 24,058 us/op
+# Warmup Iteration   3: 24,195 us/op
+# Warmup Iteration   4: 23,609 us/op
+# Warmup Iteration   5: 23,291 us/op
+# Warmup Iteration   6: 23,091 us/op
+# Warmup Iteration   7: 23,058 us/op
+# Warmup Iteration   8: 24,418 us/op
+# Warmup Iteration   9: 25,514 us/op
+# Warmup Iteration  10: 25,752 us/op
+Iteration   1: 25,889 us/op
+Iteration   2: 26,346 us/op
+Iteration   3: 23,109 us/op
+Iteration   4: 23,054 us/op
+Iteration   5: 23,015 us/op
+Iteration   6: 23,033 us/op
+Iteration   7: 23,667 us/op
+Iteration   8: 23,687 us/op
+Iteration   9: 23,618 us/op
+Iteration  10: 23,689 us/op
+
+
+Result: 23,911 ñ(99.9%) 1,819 us/op [Average]
+  Statistics: (min, avg, max) = (23,015, 23,911, 26,346), stdev = 1,203
+  Confidence interval (99.9%): [22,091, 25,730]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test4)
+
+# Run progress: 36,11% complete, ETA 00:23:19
+# Fork: 1 of 1
+# Warmup Iteration   1: 26,117 us/op
+# Warmup Iteration   2: 25,752 us/op
+# Warmup Iteration   3: 26,090 us/op
+# Warmup Iteration   4: 25,623 us/op
+# Warmup Iteration   5: 24,921 us/op
+# Warmup Iteration   6: 24,630 us/op
+# Warmup Iteration   7: 24,656 us/op
+# Warmup Iteration   8: 24,638 us/op
+# Warmup Iteration   9: 24,713 us/op
+# Warmup Iteration  10: 24,778 us/op
+Iteration   1: 24,643 us/op
+Iteration   2: 24,702 us/op
+Iteration   3: 24,686 us/op
+Iteration   4: 24,621 us/op
+Iteration   5: 24,639 us/op
+Iteration   6: 24,669 us/op
+Iteration   7: 24,664 us/op
+Iteration   8: 24,697 us/op
+Iteration   9: 24,805 us/op
+Iteration  10: 24,718 us/op
+
+
+Result: 24,685 ñ(99.9%) 0,079 us/op [Average]
+  Statistics: (min, avg, max) = (24,621, 24,685, 24,805), stdev = 0,052
+  Confidence interval (99.9%): [24,606, 24,764]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test5)
+
+# Run progress: 37,04% complete, ETA 00:22:59
+# Fork: 1 of 1
+# Warmup Iteration   1: 4,510 us/op
+# Warmup Iteration   2: 4,380 us/op
+# Warmup Iteration   3: 4,368 us/op
+# Warmup Iteration   4: 4,372 us/op
+# Warmup Iteration   5: 4,559 us/op
+# Warmup Iteration   6: 4,373 us/op
+# Warmup Iteration   7: 4,366 us/op
+# Warmup Iteration   8: 4,379 us/op
+# Warmup Iteration   9: 4,382 us/op
+# Warmup Iteration  10: 4,368 us/op
+Iteration   1: 4,373 us/op
+Iteration   2: 4,374 us/op
+Iteration   3: 4,353 us/op
+Iteration   4: 4,375 us/op
+Iteration   5: 4,370 us/op
+Iteration   6: 4,367 us/op
+Iteration   7: 4,370 us/op
+Iteration   8: 4,359 us/op
+Iteration   9: 4,367 us/op
+Iteration  10: 4,364 us/op
+
+
+Result: 4,367 ñ(99.9%) 0,010 us/op [Average]
+  Statistics: (min, avg, max) = (4,353, 4,367, 4,375), stdev = 0,007
+  Confidence interval (99.9%): [4,357, 4,378]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test6)
+
+# Run progress: 37,96% complete, ETA 00:22:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,962 us/op
+# Warmup Iteration   2: 3,871 us/op
+# Warmup Iteration   3: 3,857 us/op
+# Warmup Iteration   4: 3,844 us/op
+# Warmup Iteration   5: 3,843 us/op
+# Warmup Iteration   6: 3,829 us/op
+# Warmup Iteration   7: 3,847 us/op
+# Warmup Iteration   8: 3,833 us/op
+# Warmup Iteration   9: 3,826 us/op
+# Warmup Iteration  10: 3,986 us/op
+Iteration   1: 3,830 us/op
+Iteration   2: 3,829 us/op
+Iteration   3: 3,868 us/op
+Iteration   4: 3,831 us/op
+Iteration   5: 3,827 us/op
+Iteration   6: 3,828 us/op
+Iteration   7: 3,844 us/op
+Iteration   8: 4,249 us/op
+Iteration   9: 3,901 us/op
+Iteration  10: 3,855 us/op
+
+
+Result: 3,886 ñ(99.9%) 0,196 us/op [Average]
+  Statistics: (min, avg, max) = (3,827, 3,886, 4,249), stdev = 0,130
+  Confidence interval (99.9%): [3,690, 4,082]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test7)
+
+# Run progress: 38,89% complete, ETA 00:22:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,371 us/op
+# Warmup Iteration   2: 0,354 us/op
+# Warmup Iteration   3: 0,330 us/op
+# Warmup Iteration   4: 0,330 us/op
+# Warmup Iteration   5: 0,330 us/op
+# Warmup Iteration   6: 0,329 us/op
+# Warmup Iteration   7: 0,330 us/op
+# Warmup Iteration   8: 0,331 us/op
+# Warmup Iteration   9: 0,331 us/op
+# Warmup Iteration  10: 0,331 us/op
+Iteration   1: 0,331 us/op
+Iteration   2: 0,333 us/op
+Iteration   3: 0,335 us/op
+Iteration   4: 0,329 us/op
+Iteration   5: 0,330 us/op
+Iteration   6: 0,331 us/op
+Iteration   7: 0,332 us/op
+Iteration   8: 0,333 us/op
+Iteration   9: 0,333 us/op
+Iteration  10: 0,334 us/op
+
+
+Result: 0,332 ñ(99.9%) 0,003 us/op [Average]
+  Statistics: (min, avg, max) = (0,329, 0,332, 0,335), stdev = 0,002
+  Confidence interval (99.9%): [0,329, 0,335]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test8)
+
+# Run progress: 39,81% complete, ETA 00:21:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 8,590 us/op
+# Warmup Iteration   2: 8,292 us/op
+# Warmup Iteration   3: 8,160 us/op
+# Warmup Iteration   4: 8,349 us/op
+# Warmup Iteration   5: 8,411 us/op
+# Warmup Iteration   6: 8,249 us/op
+# Warmup Iteration   7: 8,508 us/op
+# Warmup Iteration   8: 8,340 us/op
+# Warmup Iteration   9: 8,217 us/op
+# Warmup Iteration  10: 8,183 us/op
+Iteration   1: 8,213 us/op
+Iteration   2: 8,234 us/op
+Iteration   3: 8,206 us/op
+Iteration   4: 8,238 us/op
+Iteration   5: 8,647 us/op
+Iteration   6: 8,513 us/op
+Iteration   7: 8,306 us/op
+Iteration   8: 8,232 us/op
+Iteration   9: 8,221 us/op
+Iteration  10: 8,214 us/op
+
+
+Result: 8,302 ñ(99.9%) 0,230 us/op [Average]
+  Statistics: (min, avg, max) = (8,206, 8,302, 8,647), stdev = 0,152
+  Confidence interval (99.9%): [8,072, 8,533]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkFind
+# Parameters: (name = test9)
+
+# Run progress: 40,74% complete, ETA 00:21:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 10,673 us/op
+# Warmup Iteration   2: 10,293 us/op
+# Warmup Iteration   3: 9,591 us/op
+# Warmup Iteration   4: 9,604 us/op
+# Warmup Iteration   5: 9,566 us/op
+# Warmup Iteration   6: 9,593 us/op
+# Warmup Iteration   7: 9,596 us/op
+# Warmup Iteration   8: 9,614 us/op
+# Warmup Iteration   9: 9,624 us/op
+# Warmup Iteration  10: 9,749 us/op
+Iteration   1: 9,868 us/op
+Iteration   2: 9,734 us/op
+Iteration   3: 9,961 us/op
+Iteration   4: 9,728 us/op
+Iteration   5: 9,691 us/op
+Iteration   6: 10,039 us/op
+Iteration   7: 9,844 us/op
+Iteration   8: 9,811 us/op
+Iteration   9: 9,716 us/op
+Iteration  10: 9,848 us/op
+
+
+Result: 9,824 ñ(99.9%) 0,171 us/op [Average]
+  Statistics: (min, avg, max) = (9,691, 9,824, 10,039), stdev = 0,113
+  Confidence interval (99.9%): [9,653, 9,995]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test1)
+
+# Run progress: 41,67% complete, ETA 00:21:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,551 us/op
+# Warmup Iteration   2: 0,453 us/op
+# Warmup Iteration   3: 0,425 us/op
+# Warmup Iteration   4: 0,422 us/op
+# Warmup Iteration   5: 0,467 us/op
+# Warmup Iteration   6: 0,427 us/op
+# Warmup Iteration   7: 0,445 us/op
+# Warmup Iteration   8: 0,419 us/op
+# Warmup Iteration   9: 0,418 us/op
+# Warmup Iteration  10: 0,418 us/op
+Iteration   1: 0,418 us/op
+Iteration   2: 0,440 us/op
+Iteration   3: 0,433 us/op
+Iteration   4: 0,417 us/op
+Iteration   5: 0,416 us/op
+Iteration   6: 0,415 us/op
+Iteration   7: 0,415 us/op
+Iteration   8: 0,416 us/op
+Iteration   9: 0,416 us/op
+Iteration  10: 0,418 us/op
+
+
+Result: 0,420 ñ(99.9%) 0,013 us/op [Average]
+  Statistics: (min, avg, max) = (0,415, 0,420, 0,440), stdev = 0,009
+  Confidence interval (99.9%): [0,407, 0,434]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test2)
+
+# Run progress: 42,59% complete, ETA 00:20:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,558 us/op
+# Warmup Iteration   2: 0,466 us/op
+# Warmup Iteration   3: 0,421 us/op
+# Warmup Iteration   4: 0,437 us/op
+# Warmup Iteration   5: 0,421 us/op
+# Warmup Iteration   6: 0,422 us/op
+# Warmup Iteration   7: 0,423 us/op
+# Warmup Iteration   8: 0,426 us/op
+# Warmup Iteration   9: 0,426 us/op
+# Warmup Iteration  10: 0,426 us/op
+Iteration   1: 0,425 us/op
+Iteration   2: 0,427 us/op
+Iteration   3: 0,425 us/op
+Iteration   4: 0,425 us/op
+Iteration   5: 0,426 us/op
+Iteration   6: 0,426 us/op
+Iteration   7: 0,426 us/op
+Iteration   8: 0,426 us/op
+Iteration   9: 0,426 us/op
+Iteration  10: 0,426 us/op
+
+
+Result: 0,426 ñ(99.9%) 0,001 us/op [Average]
+  Statistics: (min, avg, max) = (0,425, 0,426, 0,427), stdev = 0,000
+  Confidence interval (99.9%): [0,425, 0,426]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test3)
+
+# Run progress: 43,52% complete, ETA 00:20:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,503 us/op
+# Warmup Iteration   2: 0,433 us/op
+# Warmup Iteration   3: 0,419 us/op
+# Warmup Iteration   4: 0,420 us/op
+# Warmup Iteration   5: 0,421 us/op
+# Warmup Iteration   6: 0,421 us/op
+# Warmup Iteration   7: 0,422 us/op
+# Warmup Iteration   8: 0,424 us/op
+# Warmup Iteration   9: 0,424 us/op
+# Warmup Iteration  10: 0,424 us/op
+Iteration   1: 0,425 us/op
+Iteration   2: 0,425 us/op
+Iteration   3: 0,424 us/op
+Iteration   4: 0,425 us/op
+Iteration   5: 0,424 us/op
+Iteration   6: 0,424 us/op
+Iteration   7: 0,425 us/op
+Iteration   8: 0,425 us/op
+Iteration   9: 0,424 us/op
+Iteration  10: 0,425 us/op
+
+
+Result: 0,425 ñ(99.9%) 0,001 us/op [Average]
+  Statistics: (min, avg, max) = (0,424, 0,425, 0,425), stdev = 0,001
+  Confidence interval (99.9%): [0,424, 0,425]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test4)
+
+# Run progress: 44,44% complete, ETA 00:20:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,484 us/op
+# Warmup Iteration   2: 0,439 us/op
+# Warmup Iteration   3: 0,418 us/op
+# Warmup Iteration   4: 0,417 us/op
+# Warmup Iteration   5: 0,418 us/op
+# Warmup Iteration   6: 0,420 us/op
+# Warmup Iteration   7: 0,420 us/op
+# Warmup Iteration   8: 0,422 us/op
+# Warmup Iteration   9: 0,424 us/op
+# Warmup Iteration  10: 0,423 us/op
+Iteration   1: 0,423 us/op
+Iteration   2: 0,422 us/op
+Iteration   3: 0,422 us/op
+Iteration   4: 0,422 us/op
+Iteration   5: 0,423 us/op
+Iteration   6: 0,420 us/op
+Iteration   7: 0,422 us/op
+Iteration   8: 0,423 us/op
+Iteration   9: 0,422 us/op
+Iteration  10: 0,422 us/op
+
+
+Result: 0,422 ñ(99.9%) 0,001 us/op [Average]
+  Statistics: (min, avg, max) = (0,420, 0,422, 0,423), stdev = 0,001
+  Confidence interval (99.9%): [0,421, 0,423]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test5)
+
+# Run progress: 45,37% complete, ETA 00:19:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,161 us/op
+# Warmup Iteration   2: 0,145 us/op
+# Warmup Iteration   3: 0,130 us/op
+# Warmup Iteration   4: 0,131 us/op
+# Warmup Iteration   5: 0,131 us/op
+# Warmup Iteration   6: 0,132 us/op
+# Warmup Iteration   7: 0,132 us/op
+# Warmup Iteration   8: 0,132 us/op
+# Warmup Iteration   9: 0,132 us/op
+# Warmup Iteration  10: 0,132 us/op
+Iteration   1: 0,132 us/op
+Iteration   2: 0,132 us/op
+Iteration   3: 0,132 us/op
+Iteration   4: 0,132 us/op
+Iteration   5: 0,132 us/op
+Iteration   6: 0,132 us/op
+Iteration   7: 0,131 us/op
+Iteration   8: 0,131 us/op
+Iteration   9: 0,132 us/op
+Iteration  10: 0,131 us/op
+
+
+Result: 0,132 ñ(99.9%) 0,001 us/op [Average]
+  Statistics: (min, avg, max) = (0,131, 0,132, 0,132), stdev = 0,000
+  Confidence interval (99.9%): [0,131, 0,132]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test6)
+
+# Run progress: 46,30% complete, ETA 00:19:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,158 us/op
+# Warmup Iteration   2: 0,132 us/op
+# Warmup Iteration   3: 0,131 us/op
+# Warmup Iteration   4: 0,131 us/op
+# Warmup Iteration   5: 0,132 us/op
+# Warmup Iteration   6: 0,132 us/op
+# Warmup Iteration   7: 0,132 us/op
+# Warmup Iteration   8: 0,132 us/op
+# Warmup Iteration   9: 0,132 us/op
+# Warmup Iteration  10: 0,132 us/op
+Iteration   1: 0,132 us/op
+Iteration   2: 0,132 us/op
+Iteration   3: 0,131 us/op
+Iteration   4: 0,131 us/op
+Iteration   5: 0,132 us/op
+Iteration   6: 0,132 us/op
+Iteration   7: 0,131 us/op
+Iteration   8: 0,132 us/op
+Iteration   9: 0,131 us/op
+Iteration  10: 0,131 us/op
+
+
+Result: 0,132 ñ(99.9%) 0,000 us/op [Average]
+  Statistics: (min, avg, max) = (0,131, 0,132, 0,132), stdev = 0,000
+  Confidence interval (99.9%): [0,131, 0,132]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test7)
+
+# Run progress: 47,22% complete, ETA 00:19:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,404 us/op
+# Warmup Iteration   2: 0,340 us/op
+# Warmup Iteration   3: 0,339 us/op
+# Warmup Iteration   4: 0,340 us/op
+# Warmup Iteration   5: 0,343 us/op
+# Warmup Iteration   6: 0,341 us/op
+# Warmup Iteration   7: 0,343 us/op
+# Warmup Iteration   8: 0,343 us/op
+# Warmup Iteration   9: 0,342 us/op
+# Warmup Iteration  10: 0,343 us/op
+Iteration   1: 0,342 us/op
+Iteration   2: 0,343 us/op
+Iteration   3: 0,343 us/op
+Iteration   4: 0,342 us/op
+Iteration   5: 0,342 us/op
+Iteration   6: 0,343 us/op
+Iteration   7: 0,351 us/op
+Iteration   8: 0,339 us/op
+Iteration   9: 0,339 us/op
+Iteration  10: 0,339 us/op
+
+
+Result: 0,342 ñ(99.9%) 0,005 us/op [Average]
+  Statistics: (min, avg, max) = (0,339, 0,342, 0,351), stdev = 0,003
+  Confidence interval (99.9%): [0,337, 0,347]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test8)
+
+# Run progress: 48,15% complete, ETA 00:18:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,091 us/op
+# Warmup Iteration   2: 0,984 us/op
+# Warmup Iteration   3: 0,906 us/op
+# Warmup Iteration   4: 0,903 us/op
+# Warmup Iteration   5: 0,907 us/op
+# Warmup Iteration   6: 0,903 us/op
+# Warmup Iteration   7: 0,903 us/op
+# Warmup Iteration   8: 0,905 us/op
+# Warmup Iteration   9: 0,906 us/op
+# Warmup Iteration  10: 0,908 us/op
+Iteration   1: 0,916 us/op
+Iteration   2: 0,915 us/op
+Iteration   3: 0,917 us/op
+Iteration   4: 0,919 us/op
+Iteration   5: 0,916 us/op
+Iteration   6: 0,913 us/op
+Iteration   7: 0,921 us/op
+Iteration   8: 0,918 us/op
+Iteration   9: 0,918 us/op
+Iteration  10: 0,923 us/op
+
+
+Result: 0,918 ñ(99.9%) 0,005 us/op [Average]
+  Statistics: (min, avg, max) = (0,913, 0,918, 0,923), stdev = 0,003
+  Confidence interval (99.9%): [0,913, 0,922]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.JdkMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test9)
+
+# Run progress: 49,07% complete, ETA 00:18:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,600 us/op
+# Warmup Iteration   2: 0,572 us/op
+# Warmup Iteration   3: 0,530 us/op
+# Warmup Iteration   4: 0,529 us/op
+# Warmup Iteration   5: 0,531 us/op
+# Warmup Iteration   6: 0,532 us/op
+# Warmup Iteration   7: 0,530 us/op
+# Warmup Iteration   8: 0,531 us/op
+# Warmup Iteration   9: 0,534 us/op
+# Warmup Iteration  10: 0,536 us/op
+Iteration   1: 0,537 us/op
+Iteration   2: 0,536 us/op
+Iteration   3: 0,538 us/op
+Iteration   4: 0,538 us/op
+Iteration   5: 0,537 us/op
+Iteration   6: 0,536 us/op
+Iteration   7: 0,537 us/op
+Iteration   8: 0,536 us/op
+Iteration   9: 0,536 us/op
+Iteration  10: 0,536 us/op
+
+
+Result: 0,537 ñ(99.9%) 0,001 us/op [Average]
+  Statistics: (min, avg, max) = (0,536, 0,537, 0,538), stdev = 0,001
+  Confidence interval (99.9%): [0,535, 0,538]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test1)
+
+# Run progress: 50,00% complete, ETA 00:18:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,198 us/op
+# Warmup Iteration   2: 0,176 us/op
+# Warmup Iteration   3: 0,150 us/op
+# Warmup Iteration   4: 0,151 us/op
+# Warmup Iteration   5: 0,151 us/op
+# Warmup Iteration   6: 0,152 us/op
+# Warmup Iteration   7: 0,152 us/op
+# Warmup Iteration   8: 0,152 us/op
+# Warmup Iteration   9: 0,152 us/op
+# Warmup Iteration  10: 0,152 us/op
+Iteration   1: 0,152 us/op
+Iteration   2: 0,151 us/op
+Iteration   3: 0,152 us/op
+Iteration   4: 0,152 us/op
+Iteration   5: 0,151 us/op
+Iteration   6: 0,152 us/op
+Iteration   7: 0,152 us/op
+Iteration   8: 0,151 us/op
+Iteration   9: 0,165 us/op
+Iteration  10: 0,150 us/op
+
+
+Result: 0,153 ñ(99.9%) 0,007 us/op [Average]
+  Statistics: (min, avg, max) = (0,150, 0,153, 0,165), stdev = 0,004
+  Confidence interval (99.9%): [0,146, 0,159]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test2)
+
+# Run progress: 50,93% complete, ETA 00:17:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,775 us/op
+# Warmup Iteration   2: 0,697 us/op
+# Warmup Iteration   3: 0,691 us/op
+# Warmup Iteration   4: 0,690 us/op
+# Warmup Iteration   5: 0,690 us/op
+# Warmup Iteration   6: 0,697 us/op
+# Warmup Iteration   7: 0,696 us/op
+# Warmup Iteration   8: 0,696 us/op
+# Warmup Iteration   9: 0,696 us/op
+# Warmup Iteration  10: 0,698 us/op
+Iteration   1: 0,698 us/op
+Iteration   2: 0,698 us/op
+Iteration   3: 0,696 us/op
+Iteration   4: 0,696 us/op
+Iteration   5: 0,698 us/op
+Iteration   6: 0,698 us/op
+Iteration   7: 0,698 us/op
+Iteration   8: 0,697 us/op
+Iteration   9: 0,696 us/op
+Iteration  10: 0,697 us/op
+
+
+Result: 0,697 ñ(99.9%) 0,001 us/op [Average]
+  Statistics: (min, avg, max) = (0,696, 0,697, 0,698), stdev = 0,001
+  Confidence interval (99.9%): [0,696, 0,698]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test3)
+
+# Run progress: 51,85% complete, ETA 00:17:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 7,541 us/op
+# Warmup Iteration   2: 7,176 us/op
+# Warmup Iteration   3: 7,157 us/op
+# Warmup Iteration   4: 7,292 us/op
+# Warmup Iteration   5: 7,243 us/op
+# Warmup Iteration   6: 7,268 us/op
+# Warmup Iteration   7: 7,261 us/op
+# Warmup Iteration   8: 7,265 us/op
+# Warmup Iteration   9: 7,253 us/op
+# Warmup Iteration  10: 7,270 us/op
+Iteration   1: 7,274 us/op
+Iteration   2: 7,283 us/op
+Iteration   3: 7,261 us/op
+Iteration   4: 7,247 us/op
+Iteration   5: 7,270 us/op
+Iteration   6: 7,285 us/op
+Iteration   7: 7,139 us/op
+Iteration   8: 7,118 us/op
+Iteration   9: 7,145 us/op
+Iteration  10: 7,136 us/op
+
+
+Result: 7,216 ñ(99.9%) 0,108 us/op [Average]
+  Statistics: (min, avg, max) = (7,118, 7,216, 7,285), stdev = 0,071
+  Confidence interval (99.9%): [7,108, 7,324]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test4)
+
+# Run progress: 52,78% complete, ETA 00:17:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 5,429 us/op
+# Warmup Iteration   2: 5,228 us/op
+# Warmup Iteration   3: 5,203 us/op
+# Warmup Iteration   4: 5,214 us/op
+# Warmup Iteration   5: 5,219 us/op
+# Warmup Iteration   6: 5,224 us/op
+# Warmup Iteration   7: 5,208 us/op
+# Warmup Iteration   8: 5,212 us/op
+# Warmup Iteration   9: 5,205 us/op
+# Warmup Iteration  10: 5,211 us/op
+Iteration   1: 5,218 us/op
+Iteration   2: 5,207 us/op
+Iteration   3: 5,205 us/op
+Iteration   4: 5,211 us/op
+Iteration   5: 5,209 us/op
+Iteration   6: 5,210 us/op
+Iteration   7: 5,210 us/op
+Iteration   8: 5,487 us/op
+Iteration   9: 5,208 us/op
+Iteration  10: 5,210 us/op
+
+
+Result: 5,237 ñ(99.9%) 0,133 us/op [Average]
+  Statistics: (min, avg, max) = (5,205, 5,237, 5,487), stdev = 0,088
+  Confidence interval (99.9%): [5,105, 5,370]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test5)
+
+# Run progress: 53,70% complete, ETA 00:16:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 6,536 us/op
+# Warmup Iteration   2: 6,514 us/op
+# Warmup Iteration   3: 6,481 us/op
+# Warmup Iteration   4: 6,519 us/op
+# Warmup Iteration   5: 6,507 us/op
+# Warmup Iteration   6: 6,520 us/op
+# Warmup Iteration   7: 6,527 us/op
+# Warmup Iteration   8: 6,476 us/op
+# Warmup Iteration   9: 6,496 us/op
+# Warmup Iteration  10: 6,492 us/op
+Iteration   1: 6,495 us/op
+Iteration   2: 6,482 us/op
+Iteration   3: 6,506 us/op
+Iteration   4: 6,482 us/op
+Iteration   5: 6,483 us/op
+Iteration   6: 6,506 us/op
+Iteration   7: 6,505 us/op
+Iteration   8: 6,505 us/op
+Iteration   9: 6,514 us/op
+Iteration  10: 6,510 us/op
+
+
+Result: 6,499 ñ(99.9%) 0,018 us/op [Average]
+  Statistics: (min, avg, max) = (6,482, 6,499, 6,514), stdev = 0,012
+  Confidence interval (99.9%): [6,480, 6,517]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test6)
+
+# Run progress: 54,63% complete, ETA 00:16:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 4,615 us/op
+# Warmup Iteration   2: 4,610 us/op
+# Warmup Iteration   3: 4,438 us/op
+# Warmup Iteration   4: 4,439 us/op
+# Warmup Iteration   5: 4,451 us/op
+# Warmup Iteration   6: 4,421 us/op
+# Warmup Iteration   7: 4,414 us/op
+# Warmup Iteration   8: 4,429 us/op
+# Warmup Iteration   9: 4,422 us/op
+# Warmup Iteration  10: 4,417 us/op
+Iteration   1: 4,418 us/op
+Iteration   2: 4,417 us/op
+Iteration   3: 4,413 us/op
+Iteration   4: 4,424 us/op
+Iteration   5: 4,419 us/op
+Iteration   6: 4,416 us/op
+Iteration   7: 4,423 us/op
+Iteration   8: 4,415 us/op
+Iteration   9: 4,418 us/op
+Iteration  10: 4,425 us/op
+
+
+Result: 4,419 ñ(99.9%) 0,006 us/op [Average]
+  Statistics: (min, avg, max) = (4,413, 4,419, 4,425), stdev = 0,004
+  Confidence interval (99.9%): [4,413, 4,425]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test7)
+
+# Run progress: 55,56% complete, ETA 00:16:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 2,639 us/op
+# Warmup Iteration   2: 2,489 us/op
+# Warmup Iteration   3: 2,477 us/op
+# Warmup Iteration   4: 2,474 us/op
+# Warmup Iteration   5: 2,486 us/op
+# Warmup Iteration   6: 2,479 us/op
+# Warmup Iteration   7: 2,475 us/op
+# Warmup Iteration   8: 2,475 us/op
+# Warmup Iteration   9: 2,484 us/op
+# Warmup Iteration  10: 2,476 us/op
+Iteration   1: 2,473 us/op
+Iteration   2: 2,480 us/op
+Iteration   3: 2,473 us/op
+Iteration   4: 2,477 us/op
+Iteration   5: 2,480 us/op
+Iteration   6: 2,584 us/op
+Iteration   7: 2,489 us/op
+Iteration   8: 2,484 us/op
+Iteration   9: 2,484 us/op
+Iteration  10: 2,485 us/op
+
+
+Result: 2,491 ñ(99.9%) 0,050 us/op [Average]
+  Statistics: (min, avg, max) = (2,473, 2,491, 2,584), stdev = 0,033
+  Confidence interval (99.9%): [2,441, 2,541]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test8)
+
+# Run progress: 56,48% complete, ETA 00:15:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 11,498 us/op
+# Warmup Iteration   2: 11,003 us/op
+# Warmup Iteration   3: 11,001 us/op
+# Warmup Iteration   4: 10,990 us/op
+# Warmup Iteration   5: 10,991 us/op
+# Warmup Iteration   6: 10,977 us/op
+# Warmup Iteration   7: 11,019 us/op
+# Warmup Iteration   8: 11,000 us/op
+# Warmup Iteration   9: 10,995 us/op
+# Warmup Iteration  10: 11,008 us/op
+Iteration   1: 11,016 us/op
+Iteration   2: 11,000 us/op
+Iteration   3: 10,996 us/op
+Iteration   4: 11,026 us/op
+Iteration   5: 11,004 us/op
+Iteration   6: 10,998 us/op
+Iteration   7: 11,029 us/op
+Iteration   8: 11,030 us/op
+Iteration   9: 11,003 us/op
+Iteration  10: 11,014 us/op
+
+
+Result: 11,012 ñ(99.9%) 0,020 us/op [Average]
+  Statistics: (min, avg, max) = (10,996, 11,012, 11,030), stdev = 0,013
+  Confidence interval (99.9%): [10,992, 11,032]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkFind
+# Parameters: (name = test9)
+
+# Run progress: 57,41% complete, ETA 00:15:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 7,326 us/op
+# Warmup Iteration   2: 7,127 us/op
+# Warmup Iteration   3: 7,011 us/op
+# Warmup Iteration   4: 6,984 us/op
+# Warmup Iteration   5: 6,990 us/op
+# Warmup Iteration   6: 7,006 us/op
+# Warmup Iteration   7: 7,011 us/op
+# Warmup Iteration   8: 6,992 us/op
+# Warmup Iteration   9: 7,020 us/op
+# Warmup Iteration  10: 6,995 us/op
+Iteration   1: 6,994 us/op
+Iteration   2: 7,003 us/op
+Iteration   3: 6,993 us/op
+Iteration   4: 6,987 us/op
+Iteration   5: 7,007 us/op
+Iteration   6: 6,993 us/op
+Iteration   7: 7,006 us/op
+Iteration   8: 7,003 us/op
+Iteration   9: 7,007 us/op
+Iteration  10: 6,991 us/op
+
+
+Result: 6,998 ñ(99.9%) 0,011 us/op [Average]
+  Statistics: (min, avg, max) = (6,987, 6,998, 7,007), stdev = 0,007
+  Confidence interval (99.9%): [6,987, 7,010]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test1)
+
+# Run progress: 58,33% complete, ETA 00:15:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 1088,572 us/op
+# Warmup Iteration   2: 884,782 us/op
+# Warmup Iteration   3: 579,708 us/op
+# Warmup Iteration   4: 512,027 us/op
+# Warmup Iteration   5: 522,197 us/op
+# Warmup Iteration   6: 503,024 us/op
+# Warmup Iteration   7: 503,877 us/op
+# Warmup Iteration   8: 503,569 us/op
+# Warmup Iteration   9: 503,023 us/op
+# Warmup Iteration  10: 504,119 us/op
+Iteration   1: 503,362 us/op
+Iteration   2: 504,086 us/op
+Iteration   3: 504,375 us/op
+Iteration   4: 505,328 us/op
+Iteration   5: 549,863 us/op
+Iteration   6: 506,136 us/op
+Iteration   7: 504,911 us/op
+Iteration   8: 505,181 us/op
+Iteration   9: 507,334 us/op
+Iteration  10: 506,348 us/op
+
+
+Result: 509,693 ñ(99.9%) 21,411 us/op [Average]
+  Statistics: (min, avg, max) = (503,362, 509,693, 549,863), stdev = 14,162
+  Confidence interval (99.9%): [488,281, 531,104]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test2)
+
+# Run progress: 59,26% complete, ETA 00:14:54
+# Fork: 1 of 1
+# Warmup Iteration   1: 1108,059 us/op
+# Warmup Iteration   2: 765,990 us/op
+# Warmup Iteration   3: 644,588 us/op
+# Warmup Iteration   4: 512,431 us/op
+# Warmup Iteration   5: 525,107 us/op
+# Warmup Iteration   6: 503,558 us/op
+# Warmup Iteration   7: 503,168 us/op
+# Warmup Iteration   8: 504,246 us/op
+# Warmup Iteration   9: 502,852 us/op
+# Warmup Iteration  10: 503,628 us/op
+Iteration   1: 505,352 us/op
+Iteration   2: 504,194 us/op
+Iteration   3: 504,009 us/op
+Iteration   4: 506,756 us/op
+Iteration   5: 506,959 us/op
+Iteration   6: 509,609 us/op
+Iteration   7: 510,761 us/op
+Iteration   8: 511,335 us/op
+Iteration   9: 509,843 us/op
+Iteration  10: 509,252 us/op
+
+
+Result: 507,807 ñ(99.9%) 4,094 us/op [Average]
+  Statistics: (min, avg, max) = (504,009, 507,807, 511,335), stdev = 2,708
+  Confidence interval (99.9%): [503,713, 511,900]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test3)
+
+# Run progress: 60,19% complete, ETA 00:14:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 1034,130 us/op
+# Warmup Iteration   2: 722,382 us/op
+# Warmup Iteration   3: 580,483 us/op
+# Warmup Iteration   4: 527,473 us/op
+# Warmup Iteration   5: 506,064 us/op
+# Warmup Iteration   6: 504,652 us/op
+# Warmup Iteration   7: 503,053 us/op
+# Warmup Iteration   8: 504,093 us/op
+# Warmup Iteration   9: 503,036 us/op
+# Warmup Iteration  10: 504,559 us/op
+Iteration   1: 503,807 us/op
+Iteration   2: 504,179 us/op
+Iteration   3: 505,865 us/op
+Iteration   4: 506,450 us/op
+Iteration   5: 508,310 us/op
+Iteration   6: 510,655 us/op
+Iteration   7: 510,237 us/op
+Iteration   8: 511,300 us/op
+Iteration   9: 512,610 us/op
+Iteration  10: 510,770 us/op
+
+
+Result: 508,418 ñ(99.9%) 4,764 us/op [Average]
+  Statistics: (min, avg, max) = (503,807, 508,418, 512,610), stdev = 3,151
+  Confidence interval (99.9%): [503,655, 513,182]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test4)
+
+# Run progress: 61,11% complete, ETA 00:14:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 1081,202 us/op
+# Warmup Iteration   2: 741,228 us/op
+# Warmup Iteration   3: 582,179 us/op
+# Warmup Iteration   4: 544,058 us/op
+# Warmup Iteration   5: 537,847 us/op
+# Warmup Iteration   6: 510,972 us/op
+# Warmup Iteration   7: 509,067 us/op
+# Warmup Iteration   8: 509,052 us/op
+# Warmup Iteration   9: 508,674 us/op
+# Warmup Iteration  10: 509,147 us/op
+Iteration   1: 509,619 us/op
+Iteration   2: 509,767 us/op
+Iteration   3: 548,981 us/op
+Iteration   4: 510,287 us/op
+Iteration   5: 508,215 us/op
+Iteration   6: 507,814 us/op
+Iteration   7: 513,203 us/op
+Iteration   8: 512,012 us/op
+Iteration   9: 512,587 us/op
+Iteration  10: 514,087 us/op
+
+
+Result: 514,657 ñ(99.9%) 18,507 us/op [Average]
+  Statistics: (min, avg, max) = (507,814, 514,657, 548,981), stdev = 12,241
+  Confidence interval (99.9%): [496,150, 533,164]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test5)
+
+# Run progress: 62,04% complete, ETA 00:13:54
+# Fork: 1 of 1
+# Warmup Iteration   1: 155,602 us/op
+# Warmup Iteration   2: 88,825 us/op
+# Warmup Iteration   3: 59,762 us/op
+# Warmup Iteration   4: 56,679 us/op
+# Warmup Iteration   5: 57,581 us/op
+# Warmup Iteration   6: 56,715 us/op
+# Warmup Iteration   7: 56,944 us/op
+# Warmup Iteration   8: 57,196 us/op
+# Warmup Iteration   9: 57,513 us/op
+# Warmup Iteration  10: 57,053 us/op
+Iteration   1: 57,280 us/op
+Iteration   2: 57,614 us/op
+Iteration   3: 57,350 us/op
+Iteration   4: 57,590 us/op
+Iteration   5: 57,823 us/op
+Iteration   6: 58,122 us/op
+Iteration   7: 58,059 us/op
+Iteration   8: 58,370 us/op
+Iteration   9: 58,064 us/op
+Iteration  10: 58,171 us/op
+
+
+Result: 57,844 ñ(99.9%) 0,560 us/op [Average]
+  Statistics: (min, avg, max) = (57,280, 57,844, 58,370), stdev = 0,370
+  Confidence interval (99.9%): [57,284, 58,405]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test6)
+
+# Run progress: 62,96% complete, ETA 00:13:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 131,558 us/op
+# Warmup Iteration   2: 93,871 us/op
+# Warmup Iteration   3: 67,126 us/op
+# Warmup Iteration   4: 56,201 us/op
+# Warmup Iteration   5: 56,316 us/op
+# Warmup Iteration   6: 55,594 us/op
+# Warmup Iteration   7: 55,968 us/op
+# Warmup Iteration   8: 55,990 us/op
+# Warmup Iteration   9: 56,084 us/op
+# Warmup Iteration  10: 56,298 us/op
+Iteration   1: 56,047 us/op
+Iteration   2: 56,251 us/op
+Iteration   3: 56,553 us/op
+Iteration   4: 56,263 us/op
+Iteration   5: 56,854 us/op
+Iteration   6: 57,359 us/op
+Iteration   7: 57,070 us/op
+Iteration   8: 56,992 us/op
+Iteration   9: 56,760 us/op
+Iteration  10: 57,192 us/op
+
+
+Result: 56,734 ñ(99.9%) 0,668 us/op [Average]
+  Statistics: (min, avg, max) = (56,047, 56,734, 57,359), stdev = 0,442
+  Confidence interval (99.9%): [56,066, 57,402]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test7)
+
+# Run progress: 63,89% complete, ETA 00:13:13
+# Fork: 1 of 1
+# Warmup Iteration   1: 1018,151 us/op
+# Warmup Iteration   2: 732,260 us/op
+# Warmup Iteration   3: 566,823 us/op
+# Warmup Iteration   4: 575,654 us/op
+# Warmup Iteration   5: 552,821 us/op
+# Warmup Iteration   6: 543,393 us/op
+# Warmup Iteration   7: 543,881 us/op
+# Warmup Iteration   8: 543,720 us/op
+# Warmup Iteration   9: 544,188 us/op
+# Warmup Iteration  10: 544,390 us/op
+Iteration   1: 546,031 us/op
+Iteration   2: 587,542 us/op
+Iteration   3: 544,358 us/op
+Iteration   4: 543,446 us/op
+Iteration   5: 544,428 us/op
+Iteration   6: 544,125 us/op
+Iteration   7: 547,063 us/op
+Iteration   8: 550,504 us/op
+Iteration   9: 548,213 us/op
+Iteration  10: 550,485 us/op
+
+
+Result: 550,620 ñ(99.9%) 19,994 us/op [Average]
+  Statistics: (min, avg, max) = (543,446, 550,620, 587,542), stdev = 13,225
+  Confidence interval (99.9%): [530,626, 570,613]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test8)
+
+# Run progress: 64,81% complete, ETA 00:12:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 19254,483 us/op
+# Warmup Iteration   2: 16702,601 us/op
+# Warmup Iteration   3: 16038,239 us/op
+# Warmup Iteration   4: 14903,108 us/op
+# Warmup Iteration   5: 14765,328 us/op
+# Warmup Iteration   6: 14682,064 us/op
+# Warmup Iteration   7: 14753,045 us/op
+# Warmup Iteration   8: 14658,482 us/op
+# Warmup Iteration   9: 14646,875 us/op
+# Warmup Iteration  10: 14699,647 us/op
+Iteration   1: 14694,523 us/op
+Iteration   2: 14691,509 us/op
+Iteration   3: 14716,817 us/op
+Iteration   4: 14753,837 us/op
+Iteration   5: 14811,744 us/op
+Iteration   6: 14834,442 us/op
+Iteration   7: 14821,721 us/op
+Iteration   8: 14781,317 us/op
+Iteration   9: 14854,680 us/op
+Iteration  10: 14810,730 us/op
+
+
+Result: 14777,132 ñ(99.9%) 90,103 us/op [Average]
+  Statistics: (min, avg, max) = (14691,509, 14777,132, 14854,680), stdev = 59,597
+  Confidence interval (99.9%): [14687,029, 14867,235]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexDefaultMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test9)
+
+# Run progress: 65,74% complete, ETA 00:12:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 11708,189 us/op
+# Warmup Iteration   2: 9793,804 us/op
+# Warmup Iteration   3: 8262,712 us/op
+# Warmup Iteration   4: 8479,864 us/op
+# Warmup Iteration   5: 8134,460 us/op
+# Warmup Iteration   6: 8104,924 us/op
+# Warmup Iteration   7: 8082,196 us/op
+# Warmup Iteration   8: 8107,963 us/op
+# Warmup Iteration   9: 8090,061 us/op
+# Warmup Iteration  10: 8103,811 us/op
+Iteration   1: 8120,879 us/op
+Iteration   2: 8175,796 us/op
+Iteration   3: 8186,708 us/op
+Iteration   4: 8176,170 us/op
+Iteration   5: 8202,584 us/op
+Iteration   6: 8174,751 us/op
+Iteration   7: 8171,634 us/op
+Iteration   8: 8167,306 us/op
+Iteration   9: 8155,506 us/op
+Iteration  10: 8126,578 us/op
+
+
+Result: 8165,791 ñ(99.9%) 38,301 us/op [Average]
+  Statistics: (min, avg, max) = (8120,879, 8165,791, 8202,584), stdev = 25,334
+  Confidence interval (99.9%): [8127,490, 8204,093]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test1)
+
+# Run progress: 66,67% complete, ETA 00:12:13
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,300 us/op
+# Warmup Iteration   2: 0,273 us/op
+# Warmup Iteration   3: 0,260 us/op
+# Warmup Iteration   4: 0,259 us/op
+# Warmup Iteration   5: 0,260 us/op
+# Warmup Iteration   6: 0,261 us/op
+# Warmup Iteration   7: 0,261 us/op
+# Warmup Iteration   8: 0,262 us/op
+# Warmup Iteration   9: 0,262 us/op
+# Warmup Iteration  10: 0,273 us/op
+Iteration   1: 0,259 us/op
+Iteration   2: 0,260 us/op
+Iteration   3: 0,259 us/op
+Iteration   4: 0,260 us/op
+Iteration   5: 0,260 us/op
+Iteration   6: 0,261 us/op
+Iteration   7: 0,261 us/op
+Iteration   8: 0,261 us/op
+Iteration   9: 0,260 us/op
+Iteration  10: 0,260 us/op
+
+
+Result: 0,260 ñ(99.9%) 0,001 us/op [Average]
+  Statistics: (min, avg, max) = (0,259, 0,260, 0,261), stdev = 0,001
+  Confidence interval (99.9%): [0,259, 0,261]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test2)
+
+# Run progress: 67,59% complete, ETA 00:11:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,946 us/op
+# Warmup Iteration   2: 0,869 us/op
+# Warmup Iteration   3: 0,826 us/op
+# Warmup Iteration   4: 0,830 us/op
+# Warmup Iteration   5: 0,827 us/op
+# Warmup Iteration   6: 0,827 us/op
+# Warmup Iteration   7: 0,832 us/op
+# Warmup Iteration   8: 0,831 us/op
+# Warmup Iteration   9: 0,837 us/op
+# Warmup Iteration  10: 0,837 us/op
+Iteration   1: 0,837 us/op
+Iteration   2: 0,835 us/op
+Iteration   3: 0,836 us/op
+Iteration   4: 0,837 us/op
+Iteration   5: 0,838 us/op
+Iteration   6: 0,838 us/op
+Iteration   7: 0,841 us/op
+Iteration   8: 0,841 us/op
+Iteration   9: 0,839 us/op
+Iteration  10: 0,842 us/op
+
+
+Result: 0,838 ñ(99.9%) 0,003 us/op [Average]
+  Statistics: (min, avg, max) = (0,835, 0,838, 0,842), stdev = 0,002
+  Confidence interval (99.9%): [0,835, 0,842]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test3)
+
+# Run progress: 68,52% complete, ETA 00:11:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 6,220 us/op
+# Warmup Iteration   2: 6,054 us/op
+# Warmup Iteration   3: 6,001 us/op
+# Warmup Iteration   4: 6,004 us/op
+# Warmup Iteration   5: 6,011 us/op
+# Warmup Iteration   6: 6,020 us/op
+# Warmup Iteration   7: 6,003 us/op
+# Warmup Iteration   8: 6,014 us/op
+# Warmup Iteration   9: 6,022 us/op
+# Warmup Iteration  10: 6,017 us/op
+Iteration   1: 6,014 us/op
+Iteration   2: 6,015 us/op
+Iteration   3: 6,011 us/op
+Iteration   4: 6,005 us/op
+Iteration   5: 6,015 us/op
+Iteration   6: 6,006 us/op
+Iteration   7: 6,103 us/op
+Iteration   8: 6,102 us/op
+Iteration   9: 6,090 us/op
+Iteration  10: 6,086 us/op
+
+
+Result: 6,045 ñ(99.9%) 0,066 us/op [Average]
+  Statistics: (min, avg, max) = (6,005, 6,045, 6,103), stdev = 0,044
+  Confidence interval (99.9%): [5,978, 6,111]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test4)
+
+# Run progress: 69,44% complete, ETA 00:11:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 5,574 us/op
+# Warmup Iteration   2: 5,397 us/op
+# Warmup Iteration   3: 5,339 us/op
+# Warmup Iteration   4: 5,324 us/op
+# Warmup Iteration   5: 5,328 us/op
+# Warmup Iteration   6: 5,334 us/op
+# Warmup Iteration   7: 5,338 us/op
+# Warmup Iteration   8: 5,439 us/op
+# Warmup Iteration   9: 5,331 us/op
+# Warmup Iteration  10: 5,329 us/op
+Iteration   1: 5,324 us/op
+Iteration   2: 5,319 us/op
+Iteration   3: 5,329 us/op
+Iteration   4: 5,327 us/op
+Iteration   5: 5,325 us/op
+Iteration   6: 5,336 us/op
+Iteration   7: 5,351 us/op
+Iteration   8: 5,328 us/op
+Iteration   9: 5,344 us/op
+Iteration  10: 5,346 us/op
+
+
+Result: 5,333 ñ(99.9%) 0,016 us/op [Average]
+  Statistics: (min, avg, max) = (5,319, 5,333, 5,351), stdev = 0,011
+  Confidence interval (99.9%): [5,317, 5,349]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test5)
+
+# Run progress: 70,37% complete, ETA 00:10:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,552 us/op
+# Warmup Iteration   2: 0,549 us/op
+# Warmup Iteration   3: 0,470 us/op
+# Warmup Iteration   4: 0,470 us/op
+# Warmup Iteration   5: 0,472 us/op
+# Warmup Iteration   6: 0,471 us/op
+# Warmup Iteration   7: 0,470 us/op
+# Warmup Iteration   8: 0,471 us/op
+# Warmup Iteration   9: 0,470 us/op
+# Warmup Iteration  10: 0,472 us/op
+Iteration   1: 0,471 us/op
+Iteration   2: 0,471 us/op
+Iteration   3: 0,470 us/op
+Iteration   4: 0,472 us/op
+Iteration   5: 0,471 us/op
+Iteration   6: 0,471 us/op
+Iteration   7: 0,472 us/op
+Iteration   8: 0,471 us/op
+Iteration   9: 0,470 us/op
+Iteration  10: 0,471 us/op
+
+
+Result: 0,471 ñ(99.9%) 0,001 us/op [Average]
+  Statistics: (min, avg, max) = (0,470, 0,471, 0,472), stdev = 0,001
+  Confidence interval (99.9%): [0,470, 0,472]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test6)
+
+# Run progress: 71,30% complete, ETA 00:10:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,780 us/op
+# Warmup Iteration   2: 0,735 us/op
+# Warmup Iteration   3: 0,740 us/op
+# Warmup Iteration   4: 0,739 us/op
+# Warmup Iteration   5: 0,740 us/op
+# Warmup Iteration   6: 0,745 us/op
+# Warmup Iteration   7: 0,747 us/op
+# Warmup Iteration   8: 0,740 us/op
+# Warmup Iteration   9: 0,743 us/op
+# Warmup Iteration  10: 0,746 us/op
+Iteration   1: 0,747 us/op
+Iteration   2: 0,746 us/op
+Iteration   3: 0,745 us/op
+Iteration   4: 0,745 us/op
+Iteration   5: 0,745 us/op
+Iteration   6: 0,749 us/op
+Iteration   7: 0,749 us/op
+Iteration   8: 0,747 us/op
+Iteration   9: 0,751 us/op
+Iteration  10: 0,749 us/op
+
+
+Result: 0,747 ñ(99.9%) 0,003 us/op [Average]
+  Statistics: (min, avg, max) = (0,745, 0,747, 0,751), stdev = 0,002
+  Confidence interval (99.9%): [0,744, 0,750]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test7)
+
+# Run progress: 72,22% complete, ETA 00:10:11
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,536 us/op
+# Warmup Iteration   2: 0,488 us/op
+# Warmup Iteration   3: 0,493 us/op
+# Warmup Iteration   4: 0,470 us/op
+# Warmup Iteration   5: 0,485 us/op
+# Warmup Iteration   6: 0,470 us/op
+# Warmup Iteration   7: 0,482 us/op
+# Warmup Iteration   8: 0,471 us/op
+# Warmup Iteration   9: 0,470 us/op
+# Warmup Iteration  10: 0,470 us/op
+Iteration   1: 0,472 us/op
+Iteration   2: 0,470 us/op
+Iteration   3: 0,471 us/op
+Iteration   4: 0,471 us/op
+Iteration   5: 0,471 us/op
+Iteration   6: 0,470 us/op
+Iteration   7: 0,469 us/op
+Iteration   8: 0,469 us/op
+Iteration   9: 0,470 us/op
+Iteration  10: 0,471 us/op
+
+
+Result: 0,470 ñ(99.9%) 0,002 us/op [Average]
+  Statistics: (min, avg, max) = (0,469, 0,470, 0,472), stdev = 0,001
+  Confidence interval (99.9%): [0,469, 0,472]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test8)
+
+# Run progress: 73,15% complete, ETA 00:09:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 4,831 us/op
+# Warmup Iteration   2: 4,069 us/op
+# Warmup Iteration   3: 3,951 us/op
+# Warmup Iteration   4: 4,089 us/op
+# Warmup Iteration   5: 3,933 us/op
+# Warmup Iteration   6: 3,952 us/op
+# Warmup Iteration   7: 3,929 us/op
+# Warmup Iteration   8: 3,934 us/op
+# Warmup Iteration   9: 3,936 us/op
+# Warmup Iteration  10: 3,931 us/op
+Iteration   1: 3,933 us/op
+Iteration   2: 3,939 us/op
+Iteration   3: 3,933 us/op
+Iteration   4: 3,937 us/op
+Iteration   5: 3,938 us/op
+Iteration   6: 3,937 us/op
+Iteration   7: 3,938 us/op
+Iteration   8: 3,942 us/op
+Iteration   9: 3,938 us/op
+Iteration  10: 3,942 us/op
+
+
+Result: 3,938 ñ(99.9%) 0,005 us/op [Average]
+  Statistics: (min, avg, max) = (3,933, 3,938, 3,942), stdev = 0,003
+  Confidence interval (99.9%): [3,933, 3,942]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkFind
+# Parameters: (name = test9)
+
+# Run progress: 74,07% complete, ETA 00:09:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,823 us/op
+# Warmup Iteration   2: 3,304 us/op
+# Warmup Iteration   3: 3,349 us/op
+# Warmup Iteration   4: 3,194 us/op
+# Warmup Iteration   5: 3,189 us/op
+# Warmup Iteration   6: 3,184 us/op
+# Warmup Iteration   7: 3,188 us/op
+# Warmup Iteration   8: 3,190 us/op
+# Warmup Iteration   9: 3,195 us/op
+# Warmup Iteration  10: 3,203 us/op
+Iteration   1: 3,198 us/op
+Iteration   2: 3,216 us/op
+Iteration   3: 3,228 us/op
+Iteration   4: 3,226 us/op
+Iteration   5: 3,246 us/op
+Iteration   6: 3,237 us/op
+Iteration   7: 3,243 us/op
+Iteration   8: 3,239 us/op
+Iteration   9: 3,236 us/op
+Iteration  10: 3,240 us/op
+
+
+Result: 3,231 ñ(99.9%) 0,022 us/op [Average]
+  Statistics: (min, avg, max) = (3,198, 3,231, 3,246), stdev = 0,015
+  Confidence interval (99.9%): [3,209, 3,253]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test1)
+
+# Run progress: 75,00% complete, ETA 00:09:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 3182,326 us/op
+# Warmup Iteration   2: 2496,359 us/op
+# Warmup Iteration   3: 1654,642 us/op
+# Warmup Iteration   4: 1504,384 us/op
+# Warmup Iteration   5: 1616,312 us/op
+# Warmup Iteration   6: 1508,993 us/op
+# Warmup Iteration   7: 1502,879 us/op
+# Warmup Iteration   8: 1501,526 us/op
+# Warmup Iteration   9: 1501,511 us/op
+# Warmup Iteration  10: 1576,064 us/op
+Iteration   1: 1495,509 us/op
+Iteration   2: 1497,119 us/op
+Iteration   3: 1496,751 us/op
+Iteration   4: 1496,919 us/op
+Iteration   5: 1497,408 us/op
+Iteration   6: 1498,411 us/op
+Iteration   7: 1499,597 us/op
+Iteration   8: 1502,641 us/op
+Iteration   9: 1500,586 us/op
+Iteration  10: 1511,530 us/op
+
+
+Result: 1499,647 ñ(99.9%) 7,072 us/op [Average]
+  Statistics: (min, avg, max) = (1495,509, 1499,647, 1511,530), stdev = 4,678
+  Confidence interval (99.9%): [1492,575, 1506,720]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test2)
+
+# Run progress: 75,93% complete, ETA 00:08:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 3102,414 us/op
+# Warmup Iteration   2: 2449,846 us/op
+# Warmup Iteration   3: 1760,518 us/op
+# Warmup Iteration   4: 1522,664 us/op
+# Warmup Iteration   5: 1510,578 us/op
+# Warmup Iteration   6: 1514,012 us/op
+# Warmup Iteration   7: 1506,440 us/op
+# Warmup Iteration   8: 1504,602 us/op
+# Warmup Iteration   9: 1501,725 us/op
+# Warmup Iteration  10: 1525,620 us/op
+Iteration   1: 1505,395 us/op
+Iteration   2: 1501,339 us/op
+Iteration   3: 1508,813 us/op
+Iteration   4: 1508,653 us/op
+Iteration   5: 1512,319 us/op
+Iteration   6: 1521,809 us/op
+Iteration   7: 1521,301 us/op
+Iteration   8: 1523,516 us/op
+Iteration   9: 1524,022 us/op
+Iteration  10: 1524,569 us/op
+
+
+Result: 1515,174 ñ(99.9%) 13,294 us/op [Average]
+  Statistics: (min, avg, max) = (1501,339, 1515,174, 1524,569), stdev = 8,793
+  Confidence interval (99.9%): [1501,879, 1528,468]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test3)
+
+# Run progress: 76,85% complete, ETA 00:08:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 3611,062 us/op
+# Warmup Iteration   2: 2628,883 us/op
+# Warmup Iteration   3: 1746,808 us/op
+# Warmup Iteration   4: 1558,509 us/op
+# Warmup Iteration   5: 1515,993 us/op
+# Warmup Iteration   6: 1516,606 us/op
+# Warmup Iteration   7: 1509,900 us/op
+# Warmup Iteration   8: 1510,906 us/op
+# Warmup Iteration   9: 1509,632 us/op
+# Warmup Iteration  10: 1519,185 us/op
+Iteration   1: 1510,095 us/op
+Iteration   2: 1508,362 us/op
+Iteration   3: 1507,984 us/op
+Iteration   4: 1510,459 us/op
+Iteration   5: 1513,193 us/op
+Iteration   6: 1523,048 us/op
+Iteration   7: 1533,977 us/op
+Iteration   8: 1531,838 us/op
+Iteration   9: 1531,306 us/op
+Iteration  10: 1533,814 us/op
+
+
+Result: 1520,408 ñ(99.9%) 17,290 us/op [Average]
+  Statistics: (min, avg, max) = (1507,984, 1520,408, 1533,977), stdev = 11,436
+  Confidence interval (99.9%): [1503,118, 1537,697]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test4)
+
+# Run progress: 77,78% complete, ETA 00:08:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 3110,531 us/op
+# Warmup Iteration   2: 2363,152 us/op
+# Warmup Iteration   3: 1676,400 us/op
+# Warmup Iteration   4: 1580,599 us/op
+# Warmup Iteration   5: 1509,141 us/op
+# Warmup Iteration   6: 1518,008 us/op
+# Warmup Iteration   7: 1503,620 us/op
+# Warmup Iteration   8: 1504,371 us/op
+# Warmup Iteration   9: 1504,293 us/op
+# Warmup Iteration  10: 1521,523 us/op
+Iteration   1: 1501,285 us/op
+Iteration   2: 1505,027 us/op
+Iteration   3: 1506,590 us/op
+Iteration   4: 1510,098 us/op
+Iteration   5: 1524,438 us/op
+Iteration   6: 1523,657 us/op
+Iteration   7: 1520,777 us/op
+Iteration   8: 1526,348 us/op
+Iteration   9: 1526,159 us/op
+Iteration  10: 1525,150 us/op
+
+
+Result: 1516,953 ñ(99.9%) 15,101 us/op [Average]
+  Statistics: (min, avg, max) = (1501,285, 1516,953, 1526,348), stdev = 9,988
+  Confidence interval (99.9%): [1501,852, 1532,054]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test5)
+
+# Run progress: 78,70% complete, ETA 00:07:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 413,477 us/op
+# Warmup Iteration   2: 299,393 us/op
+# Warmup Iteration   3: 228,430 us/op
+# Warmup Iteration   4: 192,525 us/op
+# Warmup Iteration   5: 190,513 us/op
+# Warmup Iteration   6: 188,683 us/op
+# Warmup Iteration   7: 189,473 us/op
+# Warmup Iteration   8: 190,038 us/op
+# Warmup Iteration   9: 189,224 us/op
+# Warmup Iteration  10: 189,624 us/op
+Iteration   1: 190,422 us/op
+Iteration   2: 189,936 us/op
+Iteration   3: 189,329 us/op
+Iteration   4: 190,656 us/op
+Iteration   5: 190,154 us/op
+Iteration   6: 191,001 us/op
+Iteration   7: 191,558 us/op
+Iteration   8: 192,097 us/op
+Iteration   9: 192,182 us/op
+Iteration  10: 191,814 us/op
+
+
+Result: 190,915 ñ(99.9%) 1,477 us/op [Average]
+  Statistics: (min, avg, max) = (189,329, 190,915, 192,182), stdev = 0,977
+  Confidence interval (99.9%): [189,437, 192,392]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test6)
+
+# Run progress: 79,63% complete, ETA 00:07:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 446,714 us/op
+# Warmup Iteration   2: 319,594 us/op
+# Warmup Iteration   3: 219,030 us/op
+# Warmup Iteration   4: 196,347 us/op
+# Warmup Iteration   5: 189,575 us/op
+# Warmup Iteration   6: 189,099 us/op
+# Warmup Iteration   7: 188,423 us/op
+# Warmup Iteration   8: 188,834 us/op
+# Warmup Iteration   9: 189,183 us/op
+# Warmup Iteration  10: 188,961 us/op
+Iteration   1: 189,655 us/op
+Iteration   2: 189,817 us/op
+Iteration   3: 189,137 us/op
+Iteration   4: 190,142 us/op
+Iteration   5: 189,484 us/op
+Iteration   6: 189,751 us/op
+Iteration   7: 190,468 us/op
+Iteration   8: 191,709 us/op
+Iteration   9: 193,081 us/op
+Iteration  10: 191,693 us/op
+
+
+Result: 190,494 ñ(99.9%) 1,906 us/op [Average]
+  Statistics: (min, avg, max) = (189,137, 190,494, 193,081), stdev = 1,261
+  Confidence interval (99.9%): [188,588, 192,400]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test7)
+
+# Run progress: 80,56% complete, ETA 00:07:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 921,318 us/op
+# Warmup Iteration   2: 784,101 us/op
+# Warmup Iteration   3: 545,060 us/op
+# Warmup Iteration   4: 551,038 us/op
+# Warmup Iteration   5: 581,331 us/op
+# Warmup Iteration   6: 523,619 us/op
+# Warmup Iteration   7: 524,221 us/op
+# Warmup Iteration   8: 523,605 us/op
+# Warmup Iteration   9: 524,481 us/op
+# Warmup Iteration  10: 525,173 us/op
+Iteration   1: 526,050 us/op
+Iteration   2: 528,427 us/op
+Iteration   3: 531,087 us/op
+Iteration   4: 530,319 us/op
+Iteration   5: 529,990 us/op
+Iteration   6: 532,162 us/op
+Iteration   7: 528,509 us/op
+Iteration   8: 530,210 us/op
+Iteration   9: 530,003 us/op
+Iteration  10: 529,963 us/op
+
+
+Result: 529,672 ñ(99.9%) 2,531 us/op [Average]
+  Statistics: (min, avg, max) = (526,050, 529,672, 532,162), stdev = 1,674
+  Confidence interval (99.9%): [527,141, 532,203]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test8)
+
+# Run progress: 81,48% complete, ETA 00:06:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 19918,959 us/op
+# Warmup Iteration   2: 17806,336 us/op
+# Warmup Iteration   3: 15375,671 us/op
+# Warmup Iteration   4: 15019,761 us/op
+# Warmup Iteration   5: 14177,964 us/op
+# Warmup Iteration   6: 14103,271 us/op
+# Warmup Iteration   7: 14083,410 us/op
+# Warmup Iteration   8: 14075,141 us/op
+# Warmup Iteration   9: 14048,587 us/op
+# Warmup Iteration  10: 14036,892 us/op
+Iteration   1: 14083,754 us/op
+Iteration   2: 14064,121 us/op
+Iteration   3: 14080,213 us/op
+Iteration   4: 14120,321 us/op
+Iteration   5: 14212,811 us/op
+Iteration   6: 14196,022 us/op
+Iteration   7: 14159,890 us/op
+Iteration   8: 14178,503 us/op
+Iteration   9: 14169,934 us/op
+Iteration  10: 14150,039 us/op
+
+
+Result: 14141,561 ñ(99.9%) 78,354 us/op [Average]
+  Statistics: (min, avg, max) = (14064,121, 14141,561, 14212,811), stdev = 51,826
+  Confidence interval (99.9%): [14063,207, 14219,915]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexOptimizedMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test9)
+
+# Run progress: 82,41% complete, ETA 00:06:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 11875,974 us/op
+# Warmup Iteration   2: 11266,005 us/op
+# Warmup Iteration   3: 8671,286 us/op
+# Warmup Iteration   4: 8141,640 us/op
+# Warmup Iteration   5: 8028,912 us/op
+# Warmup Iteration   6: 8028,192 us/op
+# Warmup Iteration   7: 8002,963 us/op
+# Warmup Iteration   8: 7985,545 us/op
+# Warmup Iteration   9: 7978,647 us/op
+# Warmup Iteration  10: 8012,382 us/op
+Iteration   1: 8040,632 us/op
+Iteration   2: 8063,123 us/op
+Iteration   3: 8108,635 us/op
+Iteration   4: 8055,752 us/op
+Iteration   5: 8063,786 us/op
+Iteration   6: 8093,211 us/op
+Iteration   7: 8062,417 us/op
+Iteration   8: 8064,151 us/op
+Iteration   9: 8066,010 us/op
+Iteration  10: 8076,280 us/op
+
+
+Result: 8069,400 ñ(99.9%) 29,065 us/op [Average]
+  Statistics: (min, avg, max) = (8040,632, 8069,400, 8108,635), stdev = 19,225
+  Confidence interval (99.9%): [8040,335, 8098,465]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test1)
+
+# Run progress: 83,33% complete, ETA 00:06:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,274 us/op
+# Warmup Iteration   2: 0,256 us/op
+# Warmup Iteration   3: 0,243 us/op
+# Warmup Iteration   4: 0,243 us/op
+# Warmup Iteration   5: 0,244 us/op
+# Warmup Iteration   6: 0,244 us/op
+# Warmup Iteration   7: 0,246 us/op
+# Warmup Iteration   8: 0,246 us/op
+# Warmup Iteration   9: 0,245 us/op
+# Warmup Iteration  10: 0,245 us/op
+Iteration   1: 0,245 us/op
+Iteration   2: 0,245 us/op
+Iteration   3: 0,245 us/op
+Iteration   4: 0,245 us/op
+Iteration   5: 0,245 us/op
+Iteration   6: 0,245 us/op
+Iteration   7: 0,246 us/op
+Iteration   8: 0,245 us/op
+Iteration   9: 0,245 us/op
+Iteration  10: 0,246 us/op
+
+
+Result: 0,245 ñ(99.9%) 0,000 us/op [Average]
+  Statistics: (min, avg, max) = (0,245, 0,245, 0,246), stdev = 0,000
+  Confidence interval (99.9%): [0,245, 0,246]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test2)
+
+# Run progress: 84,26% complete, ETA 00:05:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,948 us/op
+# Warmup Iteration   2: 0,853 us/op
+# Warmup Iteration   3: 0,822 us/op
+# Warmup Iteration   4: 0,822 us/op
+# Warmup Iteration   5: 0,822 us/op
+# Warmup Iteration   6: 0,824 us/op
+# Warmup Iteration   7: 0,823 us/op
+# Warmup Iteration   8: 0,823 us/op
+# Warmup Iteration   9: 0,828 us/op
+# Warmup Iteration  10: 0,832 us/op
+Iteration   1: 0,832 us/op
+Iteration   2: 0,834 us/op
+Iteration   3: 0,831 us/op
+Iteration   4: 0,837 us/op
+Iteration   5: 0,832 us/op
+Iteration   6: 0,831 us/op
+Iteration   7: 0,812 us/op
+Iteration   8: 0,810 us/op
+Iteration   9: 0,810 us/op
+Iteration  10: 0,811 us/op
+
+
+Result: 0,824 ñ(99.9%) 0,018 us/op [Average]
+  Statistics: (min, avg, max) = (0,810, 0,824, 0,837), stdev = 0,012
+  Confidence interval (99.9%): [0,806, 0,842]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test3)
+
+# Run progress: 85,19% complete, ETA 00:05:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 6,141 us/op
+# Warmup Iteration   2: 5,994 us/op
+# Warmup Iteration   3: 6,058 us/op
+# Warmup Iteration   4: 6,079 us/op
+# Warmup Iteration   5: 6,062 us/op
+# Warmup Iteration   6: 6,050 us/op
+# Warmup Iteration   7: 6,061 us/op
+# Warmup Iteration   8: 6,058 us/op
+# Warmup Iteration   9: 6,060 us/op
+# Warmup Iteration  10: 6,068 us/op
+Iteration   1: 6,062 us/op
+Iteration   2: 6,053 us/op
+Iteration   3: 6,062 us/op
+Iteration   4: 6,058 us/op
+Iteration   5: 6,056 us/op
+Iteration   6: 6,066 us/op
+Iteration   7: 5,919 us/op
+Iteration   8: 5,917 us/op
+Iteration   9: 6,053 us/op
+Iteration  10: 5,918 us/op
+
+
+Result: 6,016 ñ(99.9%) 0,103 us/op [Average]
+  Statistics: (min, avg, max) = (5,917, 6,016, 6,066), stdev = 0,068
+  Confidence interval (99.9%): [5,914, 6,119]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test4)
+
+# Run progress: 86,11% complete, ETA 00:05:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 5,487 us/op
+# Warmup Iteration   2: 5,336 us/op
+# Warmup Iteration   3: 5,590 us/op
+# Warmup Iteration   4: 5,579 us/op
+# Warmup Iteration   5: 5,603 us/op
+# Warmup Iteration   6: 5,590 us/op
+# Warmup Iteration   7: 5,581 us/op
+# Warmup Iteration   8: 5,591 us/op
+# Warmup Iteration   9: 5,595 us/op
+# Warmup Iteration  10: 5,591 us/op
+Iteration   1: 5,586 us/op
+Iteration   2: 5,598 us/op
+Iteration   3: 5,595 us/op
+Iteration   4: 5,588 us/op
+Iteration   5: 5,600 us/op
+Iteration   6: 5,585 us/op
+Iteration   7: 5,570 us/op
+Iteration   8: 5,574 us/op
+Iteration   9: 5,562 us/op
+Iteration  10: 5,569 us/op
+
+
+Result: 5,583 ñ(99.9%) 0,020 us/op [Average]
+  Statistics: (min, avg, max) = (5,562, 5,583, 5,600), stdev = 0,013
+  Confidence interval (99.9%): [5,563, 5,603]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test5)
+
+# Run progress: 87,04% complete, ETA 00:04:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,550 us/op
+# Warmup Iteration   2: 0,563 us/op
+# Warmup Iteration   3: 0,474 us/op
+# Warmup Iteration   4: 0,475 us/op
+# Warmup Iteration   5: 0,474 us/op
+# Warmup Iteration   6: 0,475 us/op
+# Warmup Iteration   7: 0,474 us/op
+# Warmup Iteration   8: 0,474 us/op
+# Warmup Iteration   9: 0,475 us/op
+# Warmup Iteration  10: 0,475 us/op
+Iteration   1: 0,474 us/op
+Iteration   2: 0,474 us/op
+Iteration   3: 0,475 us/op
+Iteration   4: 0,475 us/op
+Iteration   5: 0,474 us/op
+Iteration   6: 0,475 us/op
+Iteration   7: 0,476 us/op
+Iteration   8: 0,476 us/op
+Iteration   9: 0,477 us/op
+Iteration  10: 0,477 us/op
+
+
+Result: 0,475 ñ(99.9%) 0,002 us/op [Average]
+  Statistics: (min, avg, max) = (0,474, 0,475, 0,477), stdev = 0,001
+  Confidence interval (99.9%): [0,473, 0,477]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test6)
+
+# Run progress: 87,96% complete, ETA 00:04:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,787 us/op
+# Warmup Iteration   2: 0,758 us/op
+# Warmup Iteration   3: 0,755 us/op
+# Warmup Iteration   4: 0,755 us/op
+# Warmup Iteration   5: 0,756 us/op
+# Warmup Iteration   6: 0,757 us/op
+# Warmup Iteration   7: 0,757 us/op
+# Warmup Iteration   8: 0,758 us/op
+# Warmup Iteration   9: 0,761 us/op
+# Warmup Iteration  10: 0,764 us/op
+Iteration   1: 0,765 us/op
+Iteration   2: 0,765 us/op
+Iteration   3: 0,763 us/op
+Iteration   4: 0,762 us/op
+Iteration   5: 0,763 us/op
+Iteration   6: 0,762 us/op
+Iteration   7: 0,761 us/op
+Iteration   8: 0,806 us/op
+Iteration   9: 0,754 us/op
+Iteration  10: 0,755 us/op
+
+
+Result: 0,766 ñ(99.9%) 0,022 us/op [Average]
+  Statistics: (min, avg, max) = (0,754, 0,766, 0,806), stdev = 0,015
+  Confidence interval (99.9%): [0,743, 0,788]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test7)
+
+# Run progress: 88,89% complete, ETA 00:04:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,696 us/op
+# Warmup Iteration   2: 1,595 us/op
+# Warmup Iteration   3: 1,596 us/op
+# Warmup Iteration   4: 1,594 us/op
+# Warmup Iteration   5: 1,596 us/op
+# Warmup Iteration   6: 1,598 us/op
+# Warmup Iteration   7: 1,599 us/op
+# Warmup Iteration   8: 1,602 us/op
+# Warmup Iteration   9: 1,606 us/op
+# Warmup Iteration  10: 1,614 us/op
+Iteration   1: 1,615 us/op
+Iteration   2: 1,611 us/op
+Iteration   3: 1,614 us/op
+Iteration   4: 1,612 us/op
+Iteration   5: 1,610 us/op
+Iteration   6: 1,613 us/op
+Iteration   7: 1,613 us/op
+Iteration   8: 1,613 us/op
+Iteration   9: 1,619 us/op
+Iteration  10: 1,617 us/op
+
+
+Result: 1,614 ñ(99.9%) 0,004 us/op [Average]
+  Statistics: (min, avg, max) = (1,610, 1,614, 1,619), stdev = 0,003
+  Confidence interval (99.9%): [1,610, 1,618]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test8)
+
+# Run progress: 89,81% complete, ETA 00:03:44
+# Fork: 1 of 1
+# Warmup Iteration   1: 4,533 us/op
+# Warmup Iteration   2: 4,395 us/op
+# Warmup Iteration   3: 4,399 us/op
+# Warmup Iteration   4: 4,414 us/op
+# Warmup Iteration   5: 4,520 us/op
+# Warmup Iteration   6: 4,588 us/op
+# Warmup Iteration   7: 4,407 us/op
+# Warmup Iteration   8: 4,354 us/op
+# Warmup Iteration   9: 4,357 us/op
+# Warmup Iteration  10: 4,355 us/op
+Iteration   1: 4,360 us/op
+Iteration   2: 4,423 us/op
+Iteration   3: 4,435 us/op
+Iteration   4: 4,411 us/op
+Iteration   5: 4,350 us/op
+Iteration   6: 4,355 us/op
+Iteration   7: 4,483 us/op
+Iteration   8: 4,475 us/op
+Iteration   9: 4,481 us/op
+Iteration  10: 4,482 us/op
+
+
+Result: 4,425 ñ(99.9%) 0,083 us/op [Average]
+  Statistics: (min, avg, max) = (4,350, 4,425, 4,483), stdev = 0,055
+  Confidence interval (99.9%): [4,342, 4,508]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkFind
+# Parameters: (name = test9)
+
+# Run progress: 90,74% complete, ETA 00:03:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 7,256 us/op
+# Warmup Iteration   2: 6,987 us/op
+# Warmup Iteration   3: 7,003 us/op
+# Warmup Iteration   4: 6,979 us/op
+# Warmup Iteration   5: 6,971 us/op
+# Warmup Iteration   6: 6,979 us/op
+# Warmup Iteration   7: 6,968 us/op
+# Warmup Iteration   8: 6,985 us/op
+# Warmup Iteration   9: 6,996 us/op
+# Warmup Iteration  10: 6,973 us/op
+Iteration   1: 6,972 us/op
+Iteration   2: 6,995 us/op
+Iteration   3: 6,982 us/op
+Iteration   4: 6,966 us/op
+Iteration   5: 6,990 us/op
+Iteration   6: 7,489 us/op
+Iteration   7: 6,964 us/op
+Iteration   8: 6,978 us/op
+Iteration   9: 6,975 us/op
+Iteration  10: 6,982 us/op
+
+
+Result: 7,030 ñ(99.9%) 0,245 us/op [Average]
+  Statistics: (min, avg, max) = (6,964, 7,030, 7,489), stdev = 0,162
+  Confidence interval (99.9%): [6,785, 7,274]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test1)
+
+# Run progress: 91,67% complete, ETA 00:03:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 3157,137 us/op
+# Warmup Iteration   2: 2507,425 us/op
+# Warmup Iteration   3: 1687,797 us/op
+# Warmup Iteration   4: 1515,731 us/op
+# Warmup Iteration   5: 1503,987 us/op
+# Warmup Iteration   6: 1509,644 us/op
+# Warmup Iteration   7: 1506,126 us/op
+# Warmup Iteration   8: 1502,915 us/op
+# Warmup Iteration   9: 1498,176 us/op
+# Warmup Iteration  10: 1528,849 us/op
+Iteration   1: 1497,434 us/op
+Iteration   2: 1495,916 us/op
+Iteration   3: 1502,449 us/op
+Iteration   4: 1504,266 us/op
+Iteration   5: 1508,725 us/op
+Iteration   6: 1519,104 us/op
+Iteration   7: 1516,262 us/op
+Iteration   8: 1520,052 us/op
+Iteration   9: 1522,638 us/op
+Iteration  10: 1515,122 us/op
+
+
+Result: 1510,197 ñ(99.9%) 14,748 us/op [Average]
+  Statistics: (min, avg, max) = (1495,916, 1510,197, 1522,638), stdev = 9,755
+  Confidence interval (99.9%): [1495,448, 1524,945]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test2)
+
+# Run progress: 92,59% complete, ETA 00:02:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 2877,406 us/op
+# Warmup Iteration   2: 2263,419 us/op
+# Warmup Iteration   3: 1686,672 us/op
+# Warmup Iteration   4: 1493,214 us/op
+# Warmup Iteration   5: 1493,662 us/op
+# Warmup Iteration   6: 1493,801 us/op
+# Warmup Iteration   7: 1486,112 us/op
+# Warmup Iteration   8: 1490,169 us/op
+# Warmup Iteration   9: 1495,095 us/op
+# Warmup Iteration  10: 1560,068 us/op
+Iteration   1: 1482,485 us/op
+Iteration   2: 1484,120 us/op
+Iteration   3: 1480,416 us/op
+Iteration   4: 1481,700 us/op
+Iteration   5: 1485,908 us/op
+Iteration   6: 1482,341 us/op
+Iteration   7: 1486,551 us/op
+Iteration   8: 1490,611 us/op
+Iteration   9: 1487,902 us/op
+Iteration  10: 1496,445 us/op
+
+
+Result: 1485,848 ñ(99.9%) 7,355 us/op [Average]
+  Statistics: (min, avg, max) = (1480,416, 1485,848, 1496,445), stdev = 4,865
+  Confidence interval (99.9%): [1478,493, 1493,203]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test3)
+
+# Run progress: 93,52% complete, ETA 00:02:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 3198,981 us/op
+# Warmup Iteration   2: 2574,376 us/op
+# Warmup Iteration   3: 1743,888 us/op
+# Warmup Iteration   4: 1534,906 us/op
+# Warmup Iteration   5: 1509,508 us/op
+# Warmup Iteration   6: 1510,069 us/op
+# Warmup Iteration   7: 1513,946 us/op
+# Warmup Iteration   8: 1503,589 us/op
+# Warmup Iteration   9: 1505,038 us/op
+# Warmup Iteration  10: 1542,987 us/op
+Iteration   1: 1507,703 us/op
+Iteration   2: 1505,158 us/op
+Iteration   3: 1510,317 us/op
+Iteration   4: 1586,164 us/op
+Iteration   5: 1524,626 us/op
+Iteration   6: 1505,724 us/op
+Iteration   7: 1502,434 us/op
+Iteration   8: 1501,792 us/op
+Iteration   9: 1506,188 us/op
+Iteration  10: 1504,956 us/op
+
+
+Result: 1515,506 ñ(99.9%) 38,786 us/op [Average]
+  Statistics: (min, avg, max) = (1501,792, 1515,506, 1586,164), stdev = 25,655
+  Confidence interval (99.9%): [1476,720, 1554,292]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test4)
+
+# Run progress: 94,44% complete, ETA 00:02:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 3217,376 us/op
+# Warmup Iteration   2: 2562,055 us/op
+# Warmup Iteration   3: 1621,901 us/op
+# Warmup Iteration   4: 1494,327 us/op
+# Warmup Iteration   5: 1497,089 us/op
+# Warmup Iteration   6: 1497,178 us/op
+# Warmup Iteration   7: 1487,288 us/op
+# Warmup Iteration   8: 1487,342 us/op
+# Warmup Iteration   9: 1502,163 us/op
+# Warmup Iteration  10: 1501,861 us/op
+Iteration   1: 1487,974 us/op
+Iteration   2: 1487,672 us/op
+Iteration   3: 1486,402 us/op
+Iteration   4: 1494,367 us/op
+Iteration   5: 1498,413 us/op
+Iteration   6: 1511,629 us/op
+Iteration   7: 1506,577 us/op
+Iteration   8: 1507,228 us/op
+Iteration   9: 1506,973 us/op
+Iteration  10: 1511,449 us/op
+
+
+Result: 1499,868 ñ(99.9%) 15,336 us/op [Average]
+  Statistics: (min, avg, max) = (1486,402, 1499,868, 1511,629), stdev = 10,144
+  Confidence interval (99.9%): [1484,533, 1515,204]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test5)
+
+# Run progress: 95,37% complete, ETA 00:01:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 455,135 us/op
+# Warmup Iteration   2: 298,811 us/op
+# Warmup Iteration   3: 213,960 us/op
+# Warmup Iteration   4: 195,272 us/op
+# Warmup Iteration   5: 191,858 us/op
+# Warmup Iteration   6: 191,338 us/op
+# Warmup Iteration   7: 190,587 us/op
+# Warmup Iteration   8: 190,876 us/op
+# Warmup Iteration   9: 191,996 us/op
+# Warmup Iteration  10: 191,433 us/op
+Iteration   1: 191,018 us/op
+Iteration   2: 191,695 us/op
+Iteration   3: 192,884 us/op
+Iteration   4: 191,351 us/op
+Iteration   5: 192,622 us/op
+Iteration   6: 192,401 us/op
+Iteration   7: 193,443 us/op
+Iteration   8: 194,075 us/op
+Iteration   9: 193,523 us/op
+Iteration  10: 194,225 us/op
+
+
+Result: 192,724 ñ(99.9%) 1,688 us/op [Average]
+  Statistics: (min, avg, max) = (191,018, 192,724, 194,225), stdev = 1,117
+  Confidence interval (99.9%): [191,035, 194,412]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test6)
+
+# Run progress: 96,30% complete, ETA 00:01:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 408,665 us/op
+# Warmup Iteration   2: 278,730 us/op
+# Warmup Iteration   3: 207,905 us/op
+# Warmup Iteration   4: 184,337 us/op
+# Warmup Iteration   5: 183,537 us/op
+# Warmup Iteration   6: 182,306 us/op
+# Warmup Iteration   7: 182,884 us/op
+# Warmup Iteration   8: 182,135 us/op
+# Warmup Iteration   9: 183,054 us/op
+# Warmup Iteration  10: 184,096 us/op
+Iteration   1: 181,614 us/op
+Iteration   2: 183,095 us/op
+Iteration   3: 190,552 us/op
+Iteration   4: 183,086 us/op
+Iteration   5: 183,582 us/op
+Iteration   6: 184,084 us/op
+Iteration   7: 185,939 us/op
+Iteration   8: 185,400 us/op
+Iteration   9: 186,121 us/op
+Iteration  10: 186,009 us/op
+
+
+Result: 184,948 ñ(99.9%) 3,762 us/op [Average]
+  Statistics: (min, avg, max) = (181,614, 184,948, 190,552), stdev = 2,488
+  Confidence interval (99.9%): [181,186, 188,710]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test7)
+
+# Run progress: 97,22% complete, ETA 00:01:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 3377,950 us/op
+# Warmup Iteration   2: 2130,495 us/op
+# Warmup Iteration   3: 1806,349 us/op
+# Warmup Iteration   4: 1772,360 us/op
+# Warmup Iteration   5: 1767,797 us/op
+# Warmup Iteration   6: 1764,205 us/op
+# Warmup Iteration   7: 1763,503 us/op
+# Warmup Iteration   8: 1766,417 us/op
+# Warmup Iteration   9: 1770,526 us/op
+# Warmup Iteration  10: 1775,082 us/op
+Iteration   1: 1950,485 us/op
+Iteration   2: 1768,948 us/op
+Iteration   3: 1769,559 us/op
+Iteration   4: 1766,608 us/op
+Iteration   5: 1770,681 us/op
+Iteration   6: 1766,061 us/op
+Iteration   7: 1758,456 us/op
+Iteration   8: 1766,331 us/op
+Iteration   9: 1767,587 us/op
+Iteration  10: 1778,603 us/op
+
+
+Result: 1786,332 ñ(99.9%) 87,524 us/op [Average]
+  Statistics: (min, avg, max) = (1758,456, 1786,332, 1950,485), stdev = 57,892
+  Confidence interval (99.9%): [1698,808, 1873,856]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test8)
+
+# Run progress: 98,15% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 56506,445 us/op
+# Warmup Iteration   2: 53217,115 us/op
+# Warmup Iteration   3: 44730,833 us/op
+# Warmup Iteration   4: 47645,133 us/op
+# Warmup Iteration   5: 43253,721 us/op
+# Warmup Iteration   6: 43126,171 us/op
+# Warmup Iteration   7: 43020,050 us/op
+# Warmup Iteration   8: 42876,638 us/op
+# Warmup Iteration   9: 42871,023 us/op
+# Warmup Iteration  10: 43114,393 us/op
+Iteration   1: 43077,905 us/op
+Iteration   2: 43007,774 us/op
+Iteration   3: 43263,590 us/op
+Iteration   4: 43358,578 us/op
+Iteration   5: 43391,176 us/op
+Iteration   6: 43476,696 us/op
+Iteration   7: 43451,560 us/op
+Iteration   8: 43403,015 us/op
+Iteration   9: 43771,808 us/op
+Iteration  10: 43758,948 us/op
+
+
+Result: 43396,105 ñ(99.9%) 374,918 us/op [Average]
+  Statistics: (min, avg, max) = (43007,774, 43396,105, 43771,808), stdev = 247,985
+  Confidence interval (99.9%): [43021,186, 43771,023]
+
+
+# JMH 1.5.1 (released 5 days ago)
+# VM invoker: C:\Program Files\Java\jre1.8.0_31\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.almondtools.regexbench.RelexSearchMatcherBenchmark.benchmarkPrepare
+# Parameters: (name = test9)
+
+# Run progress: 99,07% complete, ETA 00:00:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 36894,665 us/op
+# Warmup Iteration   2: 30985,258 us/op
+# Warmup Iteration   3: 27186,402 us/op
+# Warmup Iteration   4: 28048,897 us/op
+# Warmup Iteration   5: 26428,004 us/op
+# Warmup Iteration   6: 26105,546 us/op
+# Warmup Iteration   7: 26121,388 us/op
+# Warmup Iteration   8: 26075,373 us/op
+# Warmup Iteration   9: 26067,706 us/op
+# Warmup Iteration  10: 26881,643 us/op
+Iteration   1: 26522,005 us/op
+Iteration   2: 25949,803 us/op
+Iteration   3: 25980,545 us/op
+Iteration   4: 26024,324 us/op
+Iteration   5: 26024,361 us/op
+Iteration   6: 25998,444 us/op
+Iteration   7: 26039,485 us/op
+Iteration   8: 26203,627 us/op
+Iteration   9: 26258,439 us/op
+Iteration  10: 26265,245 us/op
+
+
+Result: 26126,628 ñ(99.9%) 274,364 us/op [Average]
+  Statistics: (min, avg, max) = (25949,803, 26126,628, 26522,005), stdev = 181,475
+  Confidence interval (99.9%): [25852,264, 26400,991]
+
+
+# Run complete. Total time: 00:36:46
+
+Benchmark                                        (name)  Mode  Cnt      Score     Error  Units
+BriksMatcherBenchmark.benchmarkFind               test1  avgt   10      0,046 ñ   0,009  us/op
+BriksMatcherBenchmark.benchmarkFind               test2  avgt   10      0,229 ñ   0,016  us/op
+BriksMatcherBenchmark.benchmarkFind               test3  avgt   10      3,191 ñ   0,027  us/op
+BriksMatcherBenchmark.benchmarkFind               test4  avgt   10      2,432 ñ   0,091  us/op
+BriksMatcherBenchmark.benchmarkFind               test5  avgt   10      4,187 ñ   0,228  us/op
+BriksMatcherBenchmark.benchmarkFind               test6  avgt   10      1,963 ñ   0,052  us/op
+BriksMatcherBenchmark.benchmarkFind               test7  avgt   10      1,172 ñ   0,092  us/op
+BriksMatcherBenchmark.benchmarkFind               test8  avgt   10      5,472 ñ   0,094  us/op
+BriksMatcherBenchmark.benchmarkFind               test9  avgt   10      3,302 ñ   0,076  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test1  avgt   10    305,152 ñ  44,583  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test2  avgt   10    296,936 ñ  25,006  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test3  avgt   10    404,913 ñ  46,907  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test4  avgt   10    390,306 ñ  13,032  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test5  avgt   10    130,716 ñ   8,073  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test6  avgt   10    144,570 ñ  20,308  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test7  avgt   10     74,859 ñ   5,256  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test8  avgt   10   1063,899 ñ 339,611  us/op
+BriksMatcherBenchmark.benchmarkPrepare            test9  avgt   10    788,689 ñ  17,380  us/op
+JRegexMatcherBenchmark.benchmarkFind              test1  avgt   10      1,262 ñ   0,009  us/op
+JRegexMatcherBenchmark.benchmarkFind              test2  avgt   10      5,926 ñ   0,124  us/op
+JRegexMatcherBenchmark.benchmarkFind              test3  avgt   10     75,850 ñ   0,250  us/op
+JRegexMatcherBenchmark.benchmarkFind              test4  avgt   10     71,649 ñ   0,216  us/op
+JRegexMatcherBenchmark.benchmarkFind              test5  avgt   10      4,867 ñ   0,249  us/op
+JRegexMatcherBenchmark.benchmarkFind              test6  avgt   10      2,487 ñ   0,013  us/op
+JRegexMatcherBenchmark.benchmarkFind              test7  avgt   10      3,286 ñ   0,116  us/op
+JRegexMatcherBenchmark.benchmarkFind              test8  avgt   10     27,407 ñ   2,056  us/op
+JRegexMatcherBenchmark.benchmarkFind              test9  avgt   10     30,772 ñ   1,165  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test1  avgt   10      0,702 ñ   0,175  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test2  avgt   10      0,621 ñ   0,003  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test3  avgt   10      0,716 ñ   0,115  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test4  avgt   10      0,618 ñ   0,013  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test5  avgt   10      0,322 ñ   0,044  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test6  avgt   10      0,331 ñ   0,046  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test7  avgt   10      0,698 ñ   0,131  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test8  avgt   10      2,930 ñ   0,949  us/op
+JRegexMatcherBenchmark.benchmarkPrepare           test9  avgt   10      1,441 ñ   0,272  us/op
+JdkMatcherBenchmark.benchmarkFind                 test1  avgt   10      0,366 ñ   0,012  us/op
+JdkMatcherBenchmark.benchmarkFind                 test2  avgt   10      1,717 ñ   0,054  us/op
+JdkMatcherBenchmark.benchmarkFind                 test3  avgt   10     23,911 ñ   1,819  us/op
+JdkMatcherBenchmark.benchmarkFind                 test4  avgt   10     24,685 ñ   0,079  us/op
+JdkMatcherBenchmark.benchmarkFind                 test5  avgt   10      4,367 ñ   0,010  us/op
+JdkMatcherBenchmark.benchmarkFind                 test6  avgt   10      3,886 ñ   0,196  us/op
+JdkMatcherBenchmark.benchmarkFind                 test7  avgt   10      0,332 ñ   0,003  us/op
+JdkMatcherBenchmark.benchmarkFind                 test8  avgt   10      8,302 ñ   0,230  us/op
+JdkMatcherBenchmark.benchmarkFind                 test9  avgt   10      9,824 ñ   0,171  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test1  avgt   10      0,420 ñ   0,013  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test2  avgt   10      0,426 ñ   0,001  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test3  avgt   10      0,425 ñ   0,001  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test4  avgt   10      0,422 ñ   0,001  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test5  avgt   10      0,132 ñ   0,001  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test6  avgt   10      0,132 ñ   0,000  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test7  avgt   10      0,342 ñ   0,005  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test8  avgt   10      0,918 ñ   0,005  us/op
+JdkMatcherBenchmark.benchmarkPrepare              test9  avgt   10      0,537 ñ   0,001  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test1  avgt   10      0,153 ñ   0,007  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test2  avgt   10      0,697 ñ   0,001  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test3  avgt   10      7,216 ñ   0,108  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test4  avgt   10      5,237 ñ   0,133  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test5  avgt   10      6,499 ñ   0,018  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test6  avgt   10      4,419 ñ   0,006  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test7  avgt   10      2,491 ñ   0,050  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test8  avgt   10     11,012 ñ   0,020  us/op
+RelexDefaultMatcherBenchmark.benchmarkFind        test9  avgt   10      6,998 ñ   0,011  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test1  avgt   10    509,693 ñ  21,411  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test2  avgt   10    507,807 ñ   4,094  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test3  avgt   10    508,418 ñ   4,764  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test4  avgt   10    514,657 ñ  18,507  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test5  avgt   10     57,844 ñ   0,560  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test6  avgt   10     56,734 ñ   0,668  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test7  avgt   10    550,620 ñ  19,994  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test8  avgt   10  14777,132 ñ  90,103  us/op
+RelexDefaultMatcherBenchmark.benchmarkPrepare     test9  avgt   10   8165,791 ñ  38,301  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test1  avgt   10      0,260 ñ   0,001  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test2  avgt   10      0,838 ñ   0,003  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test3  avgt   10      6,045 ñ   0,066  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test4  avgt   10      5,333 ñ   0,016  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test5  avgt   10      0,471 ñ   0,001  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test6  avgt   10      0,747 ñ   0,003  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test7  avgt   10      0,470 ñ   0,002  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test8  avgt   10      3,938 ñ   0,005  us/op
+RelexOptimizedMatcherBenchmark.benchmarkFind      test9  avgt   10      3,231 ñ   0,022  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test1  avgt   10   1499,647 ñ   7,072  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test2  avgt   10   1515,174 ñ  13,294  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test3  avgt   10   1520,408 ñ  17,290  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test4  avgt   10   1516,953 ñ  15,101  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test5  avgt   10    190,915 ñ   1,477  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test6  avgt   10    190,494 ñ   1,906  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test7  avgt   10    529,672 ñ   2,531  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test8  avgt   10  14141,561 ñ  78,354  us/op
+RelexOptimizedMatcherBenchmark.benchmarkPrepare   test9  avgt   10   8069,400 ñ  29,065  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test1  avgt   10      0,245 ñ   0,000  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test2  avgt   10      0,824 ñ   0,018  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test3  avgt   10      6,016 ñ   0,103  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test4  avgt   10      5,583 ñ   0,020  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test5  avgt   10      0,475 ñ   0,002  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test6  avgt   10      0,766 ñ   0,022  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test7  avgt   10      1,614 ñ   0,004  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test8  avgt   10      4,425 ñ   0,083  us/op
+RelexSearchMatcherBenchmark.benchmarkFind         test9  avgt   10      7,030 ñ   0,245  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test1  avgt   10   1510,197 ñ  14,748  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test2  avgt   10   1485,848 ñ   7,355  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test3  avgt   10   1515,506 ñ  38,786  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test4  avgt   10   1499,868 ñ  15,336  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test5  avgt   10    192,724 ñ   1,688  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test6  avgt   10    184,948 ñ   3,762  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test7  avgt   10   1786,332 ñ  87,524  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test8  avgt   10  43396,105 ñ 374,918  us/op
+RelexSearchMatcherBenchmark.benchmarkPrepare      test9  avgt   10  26126,628 ñ 274,364  us/op
