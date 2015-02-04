@@ -5,14 +5,14 @@ import static com.almondtools.regexbench.AutomatonType.DFA;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import com.almondtools.relex.pattern.Finder;
-import com.almondtools.relex.pattern.OptimizedMatcherBuilder;
-import com.almondtools.relex.pattern.Pattern;
+import com.almondtools.rexlex.pattern.Finder;
+import com.almondtools.rexlex.pattern.OptimizedMatcherBuilder;
+import com.almondtools.rexlex.pattern.Pattern;
 
 @State(Scope.Thread)
-public class RelexOptimizedMatcherBenchmark extends MatcherBenchmark {
+public class RexlexOptimizedMatcherBenchmark extends MatcherBenchmark {
 
-	private static final String ID = "com.almondtools.relex Optimized String Match (DFA)";
+	private static final String ID = "com.almondtools.rexlex Optimized String Match (DFA)";
 
 	private Pattern pattern;
 

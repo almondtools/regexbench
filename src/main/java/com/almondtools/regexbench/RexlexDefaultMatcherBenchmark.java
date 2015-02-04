@@ -5,14 +5,14 @@ import static com.almondtools.regexbench.AutomatonType.DFA;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import com.almondtools.relex.pattern.DefaultMatcherBuilder;
-import com.almondtools.relex.pattern.Finder;
-import com.almondtools.relex.pattern.Pattern;
+import com.almondtools.rexlex.pattern.DefaultMatcherBuilder;
+import com.almondtools.rexlex.pattern.Finder;
+import com.almondtools.rexlex.pattern.Pattern;
 
 @State(Scope.Thread)
-public class RelexDefaultMatcherBenchmark extends MatcherBenchmark {
+public class RexlexDefaultMatcherBenchmark extends MatcherBenchmark {
 
-	private static final String ID = "com.almondtools.relex Default (DFA)";
+	private static final String ID = "com.almondtools.rexlex Default (DFA)";
 
 	private Pattern pattern;
 
