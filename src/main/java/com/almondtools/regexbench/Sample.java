@@ -29,7 +29,6 @@ public class Sample {
 		this.sample = readFile("samples/" + name + ".sample");
 		this.pattern = readFile("samples/" + name + ".pattern");
 		this.expected = readExpected("samples/" + name + ".expected"); 
-			
 	}
 
 	@TearDown
@@ -41,6 +40,10 @@ public class Sample {
 	
 	public String getName() {
 		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public int getExpected(AutomatonType type) {
