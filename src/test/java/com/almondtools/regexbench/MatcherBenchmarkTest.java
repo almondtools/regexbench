@@ -17,7 +17,8 @@ public class MatcherBenchmarkTest {
 		new JRegexMatcherBenchmark(),
 		new RexlexDefaultMatcherBenchmark(),
 		new RexlexOptimizedMatcherBenchmark(),
-		new RexlexSearchMatcherBenchmark()
+		new RexlexSearchMatcherBenchmark(),
+		new SCMultiFactorMatcherBenchmark()
 	};
 
 	@DataPoints
