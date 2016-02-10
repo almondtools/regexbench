@@ -18,7 +18,7 @@ import org.openjdk.jmh.annotations.TearDown;
 @State(Scope.Benchmark)
 public class Sample {
 
-	@Param({"test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9","test10"})
+	@Param({"test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9","test10","test11"})
 	private String name;
 	private String sample;
 	private String pattern;
@@ -83,6 +83,10 @@ public class Sample {
 			enumMap.put(DFA, 0);
 		}
 		return enumMap;
+	}
+
+	public boolean rejects(AutomatonType type) {
+		return getExpected(type) < 0;
 	}
 
 	private String readFile(String file) throws IOException {

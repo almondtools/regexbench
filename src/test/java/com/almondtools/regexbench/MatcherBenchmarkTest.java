@@ -32,13 +32,20 @@ public class MatcherBenchmarkTest {
 		createSample("test7"),
 		createSample("test8"),
 		createSample("test9"),
-		createSample("test10")
+		createSample("test10"),
+		createSample("test11")
 	};
 
 	@Theory
 	public void testBenchmarkFind(MatcherBenchmark benchmark, Sample sample) throws Exception {
+		if (sample.rejects(benchmark.getType())) {
+			return;
+		}
 		benchmark.setup(sample);
+
 		benchmark.benchmarkFind();
+
+		benchmark.tearDown();
 	}
 
 	private static Sample createSample(String name) {

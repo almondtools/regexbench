@@ -25,7 +25,7 @@ import com.almondtools.stringsandchars.search.StringFinder;
 @State(Scope.Thread)
 public class SCMultiFactorMatcherBenchmark extends MatcherBenchmark {
 
-	private static final String ID = "com.almondtools.stringsandchars BPGlushkov (DFA)";
+	private static final String ID = "com.almondtools.stringsandchars MultiFactorRE (DFA)";
 
 	private MultiFactorRE pattern;
 

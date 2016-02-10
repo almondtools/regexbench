@@ -18,6 +18,7 @@ import org.openjdk.jmh.annotations.Warmup;
 public abstract class MatcherBenchmark {
 
 	private Sample sample;
+	private int result;
 	
 
 	public abstract AutomatonType getType();
@@ -50,12 +51,12 @@ public abstract class MatcherBenchmark {
 	@Measurement(iterations = 10)
 	@Fork(1)
 	public void benchmarkFind() {
-		int result = find(sample.getSample());
-		sample.validate(result, getType());
+		result = find(sample.getSample());
 	}
 
 	@TearDown
 	public void tearDown() {
+		sample.validate(result, getType());
 		this.sample = null;
 	}
 
