@@ -33,7 +33,8 @@ public class MatcherBenchmarkTest {
 		createSample("test8"),
 		createSample("test9"),
 		createSample("test10"),
-		createSample("test11")
+		createSample("test11"),
+		createSample("test12")
 	};
 
 	@Theory

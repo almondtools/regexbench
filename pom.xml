@@ -31,7 +31,7 @@
 		<dependency>
 			<groupId>com.github.almondtools</groupId>
 			<artifactId>stringsandchars</artifactId>
-			<version>0.2.19</version>
+			<version>0.2.20</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.jregex</groupId>
