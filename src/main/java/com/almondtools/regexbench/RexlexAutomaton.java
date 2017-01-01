@@ -2,23 +2,24 @@ package com.almondtools.regexbench;
 
 import static com.almondtools.regexbench.AutomatonType.DFA;
 
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
-
 import com.almondtools.rexlex.pattern.Finder;
-import com.almondtools.rexlex.pattern.OptimizedMatcherBuilder;
+import com.almondtools.rexlex.pattern.MatcherBuilder;
 import com.almondtools.rexlex.pattern.Pattern;
 
-@State(Scope.Thread)
-public class RexlexOptimizedMatcherBenchmark extends MatcherBenchmark {
+public class RexlexAutomaton implements Automaton {
 
-	private static final String ID = "com.almondtools.rexlex Optimized String Match (DFA)";
-
+	private String id;
+	private MatcherBuilder builder;
 	private Pattern pattern;
 
+	public RexlexAutomaton(String id, MatcherBuilder builder) {
+		this.id = id;
+		this.builder = builder;
+	}
+	
 	@Override
 	public void prepare(String pattern) {
-		this.pattern = Pattern.compile(pattern, new OptimizedMatcherBuilder());
+		this.pattern = Pattern.compile(pattern, builder);
 	}
 
 	@Override
@@ -33,12 +34,11 @@ public class RexlexOptimizedMatcherBenchmark extends MatcherBenchmark {
 
 	@Override
 	public String getId() {
-		return ID;
+		return id;
 	}
 
 	@Override
 	public AutomatonType getType() {
 		return DFA;
 	}
-
 }

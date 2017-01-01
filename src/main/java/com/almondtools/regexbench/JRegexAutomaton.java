@@ -2,22 +2,21 @@ package com.almondtools.regexbench;
 
 import static com.almondtools.regexbench.AutomatonType.NFA;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import jregex.Matcher;
+import jregex.Pattern;
 
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
+public class JRegexAutomaton implements Automaton {
 
-@State(Scope.Thread)
-public class JdkMatcherBenchmark extends MatcherBenchmark {
-
-	private static final String ID = "Java.util.regex (NFA)";
-
+	private String id;
 	private Pattern pattern;
+
+	public JRegexAutomaton(String id) {
+		this.id = id;
+	}
 
 	@Override
 	public void prepare(String pattern) {
-		this.pattern = Pattern.compile(pattern);
+		this.pattern = new Pattern(pattern);
 	}
 
 	@Override
@@ -30,15 +29,14 @@ public class JdkMatcherBenchmark extends MatcherBenchmark {
 		}
 		return result;
 	}
-	
+
 	@Override
 	public String getId() {
-		return ID;
+		return id;
 	}
 
 	@Override
 	public AutomatonType getType() {
 		return NFA;
 	}
-
 }

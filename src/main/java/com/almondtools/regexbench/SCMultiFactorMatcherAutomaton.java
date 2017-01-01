@@ -9,9 +9,6 @@ import static net.amygdalum.stringsearchalgorithms.search.MatchOption.NON_OVERLA
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
-
 import net.amygdalum.stringsearchalgorithms.io.CharProvider;
 import net.amygdalum.stringsearchalgorithms.io.StringCharProvider;
 import net.amygdalum.stringsearchalgorithms.patternsearch.chars.GlushkovPrefixExtender;
@@ -22,12 +19,14 @@ import net.amygdalum.stringsearchalgorithms.regex.RegexParser;
 import net.amygdalum.stringsearchalgorithms.search.StringFinder;
 import net.amygdalum.stringsearchalgorithms.search.chars.AhoCorasick;
 
-@State(Scope.Thread)
-public class SCMultiFactorMatcherBenchmark extends MatcherBenchmark {
+public class SCMultiFactorMatcherAutomaton implements Automaton {
 
-	private static final String ID = "com.almondtools.stringsandchars MultiFactorRE (DFA)";
-
+	private String id;
 	private MultiFactorRE pattern;
+
+	public SCMultiFactorMatcherAutomaton(String id) {
+		this.id = id;
+	}
 
 	@Override
 	public void prepare(String pattern) {
@@ -58,12 +57,11 @@ public class SCMultiFactorMatcherBenchmark extends MatcherBenchmark {
 
 	@Override
 	public String getId() {
-		return ID;
+		return id;
 	}
 
 	@Override
 	public AutomatonType getType() {
 		return DFA;
 	}
-
 }

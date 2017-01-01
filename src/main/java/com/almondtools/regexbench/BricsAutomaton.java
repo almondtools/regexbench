@@ -2,19 +2,18 @@ package com.almondtools.regexbench;
 
 import static com.almondtools.regexbench.AutomatonType.DFA;
 
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
-
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
-@State(Scope.Thread)
-public class BriksMatcherBenchmark extends MatcherBenchmark {
-
-	private static final String ID = "dk.brics.automaton (DFA)";
-
+public class BricsAutomaton implements Automaton {
+	
+	private String id;
 	private RunAutomaton ra;
+
+	public BricsAutomaton(String id) {
+		this.id = id;
+	}
 
 	@Override
 	public void prepare(String pattern) {
@@ -34,12 +33,11 @@ public class BriksMatcherBenchmark extends MatcherBenchmark {
 
 	@Override
 	public String getId() {
-		return ID;
+		return id;
 	}
-	
+
 	@Override
 	public AutomatonType getType() {
 		return DFA;
 	}
-
 }
