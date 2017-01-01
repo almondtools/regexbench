@@ -1,10 +1,10 @@
 package com.almondtools.regexbench;
 
 import static com.almondtools.regexbench.AutomatonType.DFA;
-import static com.almondtools.stringsandchars.regex.RegexParserOption.DOT_ALL;
-import static com.almondtools.stringsandchars.search.MatchOption.LONGEST_MATCH;
-import static com.almondtools.stringsandchars.search.MatchOption.NON_OVERLAP;
 import static java.util.Arrays.asList;
+import static net.amygdalum.stringsearchalgorithms.regex.RegexParserOption.DOT_ALL;
+import static net.amygdalum.stringsearchalgorithms.search.MatchOption.LONGEST_MATCH;
+import static net.amygdalum.stringsearchalgorithms.search.MatchOption.NON_OVERLAP;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,15 +12,15 @@ import java.util.List;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import com.almondtools.stringsandchars.io.CharProvider;
-import com.almondtools.stringsandchars.io.StringCharProvider;
-import com.almondtools.stringsandchars.patternsearch.GlushkovPrefixExtender;
-import com.almondtools.stringsandchars.patternsearch.MultiFactorRE;
-import com.almondtools.stringsandchars.regex.AlternativesNode;
-import com.almondtools.stringsandchars.regex.RegexNode;
-import com.almondtools.stringsandchars.regex.RegexParser;
-import com.almondtools.stringsandchars.search.AhoCorasick;
-import com.almondtools.stringsandchars.search.StringFinder;
+import net.amygdalum.stringsearchalgorithms.io.CharProvider;
+import net.amygdalum.stringsearchalgorithms.io.StringCharProvider;
+import net.amygdalum.stringsearchalgorithms.patternsearch.chars.GlushkovPrefixExtender;
+import net.amygdalum.stringsearchalgorithms.patternsearch.chars.MultiFactorRE;
+import net.amygdalum.stringsearchalgorithms.regex.AlternativesNode;
+import net.amygdalum.stringsearchalgorithms.regex.RegexNode;
+import net.amygdalum.stringsearchalgorithms.regex.RegexParser;
+import net.amygdalum.stringsearchalgorithms.search.StringFinder;
+import net.amygdalum.stringsearchalgorithms.search.chars.AhoCorasick;
 
 @State(Scope.Thread)
 public class SCMultiFactorMatcherBenchmark extends MatcherBenchmark {

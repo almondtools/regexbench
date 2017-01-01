@@ -15,23 +15,23 @@
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>
 			<artifactId>jmh-core</artifactId>
-			<version>1.11.2</version>
+			<version>1.17.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>
 			<artifactId>jmh-generator-annprocess</artifactId>
-			<version>1.11.2</version>
+			<version>1.17.3</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.github.almondtools</groupId>
 			<artifactId>rexlex</artifactId>
-			<version>0.2.5</version>
+			<version>0.2.6</version>
 		</dependency>
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>stringsearchalgorithms</artifactId>
-			<version>0.3.0</version>
+			<version>0.3.13</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.jregex</groupId>
@@ -42,6 +42,16 @@
 			<groupId>dk.brics.automaton</groupId>
 			<artifactId>automaton</artifactId>
 			<version>1.11-8</version>
+		</dependency>
+		<dependency>
+			<groupId>net.automatalib</groupId>
+			<artifactId>automata-api</artifactId>
+			<version>0.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.automatalib</groupId>
+			<artifactId>automata-core</artifactId>
+			<version>0.6.0</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
