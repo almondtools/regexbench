@@ -8,7 +8,7 @@ public class SCMultiFactorMatcherPrepareBenchmark extends MatcherPrepareBenchmar
 
 	@Override
 	public Automaton getAutomaton() {
-		return new SCMultiFactorMatcherAutomaton("com.almondtools.stringsandchars MultiFactorRE (DFA)");
+		return new SCMultiFactorMatcherAutomaton("net.amygdalum.stringsearchalgorithms MultiFactorRE (DFA)");
 	}
 
 }

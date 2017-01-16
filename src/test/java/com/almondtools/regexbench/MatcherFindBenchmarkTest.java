@@ -18,6 +18,7 @@ public class MatcherFindBenchmarkTest {
 		new RexlexDefaultMatcherFindBenchmark(),
 		new RexlexOptimizedMatcherFindBenchmark(),
 		new RexlexSearchMatcherFindBenchmark(),
+		new SCBPGlushkovMatcherFindBenchmark(),
 		new SCMultiFactorMatcherFindBenchmark()
 	};
 
@@ -29,6 +30,7 @@ public class MatcherFindBenchmarkTest {
 		new RexlexDefaultMatcherPrepareBenchmark(),
 		new RexlexOptimizedMatcherPrepareBenchmark(),
 		new RexlexSearchMatcherPrepareBenchmark(),
+		new SCBPGlushkovMatcherPrepareBenchmark(),
 		new SCMultiFactorMatcherPrepareBenchmark()
 	};
 

@@ -4,11 +4,11 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 @State(Scope.Thread)
-public class SCMultiFactorMatcherFindBenchmark extends MatcherFindBenchmark {
+public class SCBPGlushkovMatcherFindBenchmark extends MatcherFindBenchmark {
 
 	@Override
 	public Automaton getAutomaton() {
-		return new SCMultiFactorMatcherAutomaton("net.amygdalum.stringsearchalgorithms MultiFactorRE (DFA)");
+		return new SCBPGlushkovMatcherAutomaton("net.amygdalum.stringsearchalgorithms Glushkov (BPNFA)");
 	}
 
 }
