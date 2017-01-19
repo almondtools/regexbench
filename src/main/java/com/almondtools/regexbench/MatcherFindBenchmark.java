@@ -27,8 +27,7 @@ public abstract class MatcherFindBenchmark {
 	public void setup(Sample sample) {
 		this.sample = sample;
 		this.automaton = getAutomaton();
-		automaton.preparePattern(sample.getPattern());
-		automaton.prepareText(sample.getSample());
+		automaton.prepare(sample.getPattern());
 	}
 
 	@Benchmark
@@ -36,9 +35,9 @@ public abstract class MatcherFindBenchmark {
 	@OutputTimeUnit(TimeUnit.MICROSECONDS)
 	@Warmup(iterations = 10)
 	@Measurement(iterations = 10)
-	@Fork(1)//(value = 1, jvmArgsAppend = "-Djmh.stack.lines=3")
+	@Fork(1)
 	public void benchmarkFind() {
-		result = automaton.find();
+		result = automaton.find(sample.getSample());
 	}
 
 	@TearDown

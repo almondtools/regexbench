@@ -23,14 +23,13 @@ public class SCMultiFactorMatcherAutomaton implements Automaton {
 
 	private String id;
 	private MultiFactorRE pattern;
-	private StringFinder finder;
 
 	public SCMultiFactorMatcherAutomaton(String id) {
 		this.id = id;
 	}
 
 	@Override
-	public void preparePattern(String pattern) {
+	public void prepare(String pattern) {
 		List<String> patterns = split(pattern);
 		this.pattern = new MultiFactorRE(new AhoCorasick.Factory(), new GlushkovPrefixExtender.Factory(), patterns);
 	}
@@ -50,13 +49,9 @@ public class SCMultiFactorMatcherAutomaton implements Automaton {
 	}
 
 	@Override
-	public void prepareText(String text) {
+	public int find(String text) {
 		CharProvider provider = new StringCharProvider(text, 0);
-		finder = pattern.createFinder(provider, LONGEST_MATCH, NON_OVERLAP);
-	}
-	
-	@Override
-	public int find() {
+		StringFinder finder = pattern.createFinder(provider, LONGEST_MATCH, NON_OVERLAP);
 		return finder.findAll().size();
 	}
 

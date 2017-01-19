@@ -3,10 +3,9 @@ package com.almondtools.regexbench;
 public interface Automaton {
 
 	AutomatonType getType();
-	void preparePattern(String pattern);
-	void prepareText(String text);
+	void prepare(String pattern);
 
-	int find();
+	int find(String text);
 
 	String getId();
 }

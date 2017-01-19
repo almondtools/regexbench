@@ -13,25 +13,20 @@ public class SCBPGlushkovMatcherAutomaton implements Automaton {
 
 	private String id;
 	private BPGlushkov pattern;
-	private StringFinder finder;
 
 	public SCBPGlushkovMatcherAutomaton(String id) {
 		this.id = id;
 	}
 
 	@Override
-	public void preparePattern(String pattern) {
+	public void prepare(String pattern) {
 		this.pattern = new BPGlushkov(pattern);
-	}
-	
-	@Override
-	public void prepareText(String text) {
-		CharProvider provider = new StringCharProvider(text, 0);
-		finder = pattern.createFinder(provider, LONGEST_MATCH, NON_OVERLAP);
 	}
 
 	@Override
-	public int find() {
+	public int find(String text) {
+		CharProvider provider = new StringCharProvider(text, 0);
+		StringFinder finder = pattern.createFinder(provider, LONGEST_MATCH, NON_OVERLAP);
 		return finder.findAll().size();
 	}
 
