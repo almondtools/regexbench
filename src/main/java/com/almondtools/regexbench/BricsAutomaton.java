@@ -7,24 +7,29 @@ import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
 public class BricsAutomaton implements Automaton {
-	
+
 	private String id;
 	private RunAutomaton ra;
+	private AutomatonMatcher matcher;
 
 	public BricsAutomaton(String id) {
 		this.id = id;
 	}
 
 	@Override
-	public void prepare(String pattern) {
+	public void preparePattern(String pattern) {
 		RegExp r = new RegExp(pattern);
 		ra = new RunAutomaton(r.toAutomaton());
 	}
 
 	@Override
-	public int find(String text) {
+	public void prepareText(String text) {
+		matcher = ra.newMatcher(text);
+	}
+
+	@Override
+	public int find() {
 		int result = 0;
-		AutomatonMatcher matcher = ra.newMatcher(text);
 		while (matcher.find()) {
 			result++;
 		}

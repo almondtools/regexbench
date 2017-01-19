@@ -9,23 +9,27 @@ public class JRegexAutomaton implements Automaton {
 
 	private String id;
 	private Pattern pattern;
+	private Matcher matcher;
 
 	public JRegexAutomaton(String id) {
 		this.id = id;
 	}
 
 	@Override
-	public void prepare(String pattern) {
+	public void preparePattern(String pattern) {
 		this.pattern = new Pattern(pattern);
+	}
+	
+	@Override
+	public void prepareText(String text) {
+		matcher = pattern.matcher(text);
 	}
 
 	@Override
-	public int find(String text) {
+	public int find() {
 		int result = 0;
-		Matcher matcher = pattern.matcher(text);
 		while (matcher.find()) {
 			result++;
-
 		}
 		return result;
 	}

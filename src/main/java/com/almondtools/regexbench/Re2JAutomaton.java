@@ -10,20 +10,25 @@ public class Re2JAutomaton implements Automaton {
 
 	private String id;
 	private Pattern pattern;
+	private Matcher matcher;
 
 	public Re2JAutomaton(String id) {
 		this.id = id;
 	}
 	
 	@Override
-	public void prepare(String pattern) {
+	public void preparePattern(String pattern) {
 		this.pattern = Pattern.compile(pattern);
 	}
 
 	@Override
-	public int find(String text) {
+	public void prepareText(String text) {
+		matcher = pattern.matcher(text);
+	}
+	
+	@Override
+	public int find() {
 		int result = 0;
-		Matcher matcher = pattern.matcher(text);
 		while (matcher.find()) {
 			result++;
 		}

@@ -35,7 +35,7 @@ public abstract class MatcherPrepareBenchmark {
 	@Measurement(iterations = 10)
 	@Fork(1)
 	public void benchmarkPrepare() {
-		automaton.prepare(sample.getPattern());
+		automaton.preparePattern(sample.getPattern());
 	}
 	@TearDown
 	public void tearDown() {

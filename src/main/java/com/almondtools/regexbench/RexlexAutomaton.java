@@ -11,6 +11,7 @@ public class RexlexAutomaton implements Automaton {
 	private String id;
 	private MatcherBuilder builder;
 	private Pattern pattern;
+	private Finder matcher;
 
 	public RexlexAutomaton(String id, MatcherBuilder builder) {
 		this.id = id;
@@ -18,14 +19,18 @@ public class RexlexAutomaton implements Automaton {
 	}
 	
 	@Override
-	public void prepare(String pattern) {
+	public void preparePattern(String pattern) {
 		this.pattern = Pattern.compile(pattern, builder);
 	}
 
 	@Override
-	public int find(String text) {
+	public void prepareText(String text) {
+		this.matcher = pattern.finder(text);
+	}
+	
+	@Override
+	public int find() {
 		int result = 0;
-		Finder matcher = pattern.finder(text);
 		while (matcher.find()) {
 			result++;
 		}
