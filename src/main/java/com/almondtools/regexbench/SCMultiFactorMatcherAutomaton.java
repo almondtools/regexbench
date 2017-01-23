@@ -2,20 +2,20 @@ package com.almondtools.regexbench;
 
 import static com.almondtools.regexbench.AutomatonType.DFA;
 import static java.util.Arrays.asList;
-import static net.amygdalum.stringsearchalgorithms.regex.RegexParserOption.DOT_ALL;
 import static net.amygdalum.stringsearchalgorithms.search.MatchOption.LONGEST_MATCH;
 import static net.amygdalum.stringsearchalgorithms.search.MatchOption.NON_OVERLAP;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import net.amygdalum.regexparser.AlternativesNode;
+import net.amygdalum.regexparser.RegexNode;
+import net.amygdalum.regexparser.RegexParser;
+import net.amygdalum.regexparser.RegexParserOption;
 import net.amygdalum.stringsearchalgorithms.io.CharProvider;
 import net.amygdalum.stringsearchalgorithms.io.StringCharProvider;
 import net.amygdalum.stringsearchalgorithms.patternsearch.chars.GlushkovPrefixExtender;
 import net.amygdalum.stringsearchalgorithms.patternsearch.chars.MultiFactorRE;
-import net.amygdalum.stringsearchalgorithms.regex.AlternativesNode;
-import net.amygdalum.stringsearchalgorithms.regex.RegexNode;
-import net.amygdalum.stringsearchalgorithms.regex.RegexParser;
 import net.amygdalum.stringsearchalgorithms.search.StringFinder;
 import net.amygdalum.stringsearchalgorithms.search.chars.AhoCorasick;
 
@@ -35,7 +35,7 @@ public class SCMultiFactorMatcherAutomaton implements Automaton {
 	}
 
 	private List<String> split(String pattern) {
-		RegexParser parser = new RegexParser(pattern, DOT_ALL);
+		RegexParser parser = new RegexParser(pattern, RegexParserOption.DOT_ALL);
 		RegexNode node = parser.parse();
 		if (node instanceof AlternativesNode) {
 			List<String> patterns = new ArrayList<>();
