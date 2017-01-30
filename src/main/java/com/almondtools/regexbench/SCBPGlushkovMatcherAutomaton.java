@@ -4,8 +4,8 @@ import static com.almondtools.regexbench.AutomatonType.DFA;
 import static net.amygdalum.stringsearchalgorithms.search.MatchOption.LONGEST_MATCH;
 import static net.amygdalum.stringsearchalgorithms.search.MatchOption.NON_OVERLAP;
 
-import net.amygdalum.stringsearchalgorithms.io.CharProvider;
-import net.amygdalum.stringsearchalgorithms.io.StringCharProvider;
+import net.amygdalum.util.io.CharProvider;
+import net.amygdalum.util.io.StringCharProvider;
 import net.amygdalum.stringsearchalgorithms.patternsearch.chars.BPGlushkov;
 import net.amygdalum.stringsearchalgorithms.search.StringFinder;
 
