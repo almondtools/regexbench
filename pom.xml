@@ -26,12 +26,12 @@
 		<dependency>
 			<groupId>com.github.almondtools</groupId>
 			<artifactId>rexlex</artifactId>
-			<version>0.2.9-SNAPSHOT</version>
+			<version>0.2.9</version>
 		</dependency>
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>stringsearchalgorithms</artifactId>
-			<version>0.3.17-SNAPSHOT</version>
+			<version>0.3.17</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.jregex</groupId>
