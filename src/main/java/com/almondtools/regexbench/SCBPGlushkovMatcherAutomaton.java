@@ -4,10 +4,10 @@ import static com.almondtools.regexbench.AutomatonType.DFA;
 import static net.amygdalum.stringsearchalgorithms.search.MatchOption.LONGEST_MATCH;
 import static net.amygdalum.stringsearchalgorithms.search.MatchOption.NON_OVERLAP;
 
-import net.amygdalum.util.io.CharProvider;
-import net.amygdalum.util.io.StringCharProvider;
 import net.amygdalum.stringsearchalgorithms.patternsearch.chars.BPGlushkov;
 import net.amygdalum.stringsearchalgorithms.search.StringFinder;
+import net.amygdalum.util.io.CharProvider;
+import net.amygdalum.util.io.StringCharProvider;
 
 public class SCBPGlushkovMatcherAutomaton implements Automaton {
 

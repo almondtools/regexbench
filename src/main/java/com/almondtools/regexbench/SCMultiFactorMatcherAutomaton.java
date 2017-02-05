@@ -12,12 +12,12 @@ import net.amygdalum.regexparser.AlternativesNode;
 import net.amygdalum.regexparser.RegexNode;
 import net.amygdalum.regexparser.RegexParser;
 import net.amygdalum.regexparser.RegexParserOption;
-import net.amygdalum.util.io.CharProvider;
-import net.amygdalum.util.io.StringCharProvider;
 import net.amygdalum.stringsearchalgorithms.patternsearch.chars.GlushkovPrefixExtender;
 import net.amygdalum.stringsearchalgorithms.patternsearch.chars.MultiFactorRE;
 import net.amygdalum.stringsearchalgorithms.search.StringFinder;
 import net.amygdalum.stringsearchalgorithms.search.chars.AhoCorasick;
+import net.amygdalum.util.io.CharProvider;
+import net.amygdalum.util.io.StringCharProvider;
 
 public class SCMultiFactorMatcherAutomaton implements Automaton {
 
