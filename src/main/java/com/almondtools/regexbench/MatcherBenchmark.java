@@ -15,18 +15,34 @@ import org.openjdk.jmh.annotations.TearDown;
 import org.openjdk.jmh.annotations.Warmup;
 
 @State(Scope.Thread)
-public abstract class MatcherFindBenchmark {
+public abstract class MatcherBenchmark {
 
 	private Automaton automaton;
+	private Automaton preparedAutomaton;
 	private Sample sample;
-	private int result;
 	
-	public abstract Automaton getAutomaton();
+	public abstract Automaton createAutomaton();
+
+	private Automaton createAutomaton(String pattern) {
+		Automaton automaton = createAutomaton();
+		automaton.prepare(pattern);
+		return automaton;
+	}
 
 	@Setup
 	public void setup(Sample sample) {
 		this.sample = sample;
-		this.automaton = getAutomaton();
+		this.automaton = createAutomaton();
+		this.preparedAutomaton = createAutomaton(sample.getPattern());
+	}
+
+	@Benchmark
+	@BenchmarkMode(Mode.AverageTime)
+	@OutputTimeUnit(TimeUnit.MICROSECONDS)
+	@Warmup(iterations = 10)
+	@Measurement(iterations = 10)
+	@Fork(1)
+	public void benchmarkPrepare() {
 		automaton.prepare(sample.getPattern());
 	}
 
@@ -37,12 +53,13 @@ public abstract class MatcherFindBenchmark {
 	@Measurement(iterations = 10)
 	@Fork(1)
 	public void benchmarkFind() {
-		result = automaton.find(sample.getSample());
+		preparedAutomaton.find(sample.getSample());
 	}
 
 	@TearDown
 	public void tearDown() {
-		sample.validate(result, automaton.getType());
+		int result = preparedAutomaton.find(sample.getSample());
+		sample.validate(result, preparedAutomaton.getType());
 		this.sample = null;
 	}
 

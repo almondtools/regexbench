@@ -12,14 +12,16 @@ public class PSAutomaton implements Automaton {
 
 	private String id;
 	private Pattern pattern;
+	private OptimizationTarget mode;
 
-	public PSAutomaton(String id) {
+	public PSAutomaton(String id, OptimizationTarget mode) {
 		this.id = id;
+		this.mode = mode;
 	}
 	
 	@Override
 	public void prepare(String pattern) {
-		this.pattern = Pattern.compile(pattern, OptimizationTarget.MATCH);
+		this.pattern = Pattern.compile(pattern, mode);
 	}
 
 	@Override

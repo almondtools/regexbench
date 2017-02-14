@@ -1,6 +1,6 @@
 package com.almondtools.regexbench;
 
-import static com.almondtools.regexbench.AutomatonType.DFA;
+import static com.almondtools.regexbench.AutomatonType.NFA;
 
 import com.google.re2j.Matcher;
 import com.google.re2j.Pattern;
@@ -37,6 +37,6 @@ public class Re2JAutomaton implements Automaton {
 
 	@Override
 	public AutomatonType getType() {
-		return DFA;
+		return NFA;
 	}
 }

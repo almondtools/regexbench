@@ -4,11 +4,11 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 @State(Scope.Thread)
-public class JRegexMatcherPrepareBenchmark extends MatcherPrepareBenchmark {
+public class JdkBenchmark extends MatcherBenchmark {
 
 	@Override
-	public Automaton getAutomaton() {
-		return new JRegexAutomaton("JRegex (NFA)");
+	public Automaton createAutomaton() {
+		return new JdkAutomaton("Java.util.regex (NFA)");
 	}
 
 }

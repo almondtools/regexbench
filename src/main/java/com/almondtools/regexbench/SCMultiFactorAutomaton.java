@@ -19,12 +19,12 @@ import net.amygdalum.stringsearchalgorithms.search.chars.AhoCorasick;
 import net.amygdalum.util.io.CharProvider;
 import net.amygdalum.util.io.StringCharProvider;
 
-public class SCMultiFactorMatcherAutomaton implements Automaton {
+public class SCMultiFactorAutomaton implements Automaton {
 
 	private String id;
 	private MultiFactorRE pattern;
 
-	public SCMultiFactorMatcherAutomaton(String id) {
+	public SCMultiFactorAutomaton(String id) {
 		this.id = id;
 	}
 

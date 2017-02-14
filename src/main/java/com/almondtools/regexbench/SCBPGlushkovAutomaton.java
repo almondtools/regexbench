@@ -9,12 +9,12 @@ import net.amygdalum.stringsearchalgorithms.search.StringFinder;
 import net.amygdalum.util.io.CharProvider;
 import net.amygdalum.util.io.StringCharProvider;
 
-public class SCBPGlushkovMatcherAutomaton implements Automaton {
+public class SCBPGlushkovAutomaton implements Automaton {
 
 	private String id;
 	private BPGlushkov pattern;
 
-	public SCBPGlushkovMatcherAutomaton(String id) {
+	public SCBPGlushkovAutomaton(String id) {
 		this.id = id;
 	}
 

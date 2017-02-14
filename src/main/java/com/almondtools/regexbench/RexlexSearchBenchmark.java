@@ -6,10 +6,10 @@ import org.openjdk.jmh.annotations.State;
 import com.almondtools.rexlex.pattern.SearchMatcherBuilder;
 
 @State(Scope.Thread)
-public class RexlexSearchMatcherPrepareBenchmark extends MatcherPrepareBenchmark {
+public class RexlexSearchBenchmark extends MatcherBenchmark {
 
 	@Override
-	public Automaton getAutomaton() {
+	public Automaton createAutomaton() {
 		return new RexlexAutomaton("com.almondtools.rexlex Optimized Search (DFA)", new SearchMatcherBuilder());
 	}
 }

@@ -4,10 +4,10 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 @State(Scope.Thread)
-public class BricsMatcherPrepareBenchmark extends MatcherPrepareBenchmark {
+public class BricsBenchmark extends MatcherBenchmark {
 
 	@Override
-	public Automaton getAutomaton() {
+	public Automaton createAutomaton() {
 		return new BricsAutomaton("dk.brics.automaton (DFA)");
 	}
 	
