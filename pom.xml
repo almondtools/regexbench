@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>com.github.almondtools</groupId>
 			<artifactId>rexlex</artifactId>
-			<version>0.2.9</version>
+			<version>0.2.10</version>
 		</dependency>
 		<dependency>
 			<groupId>net.amygdalum</groupId>
@@ -44,7 +44,7 @@
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>patternsearchalgorithms</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.jregex</groupId>
@@ -66,6 +66,11 @@
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.amygdalum</groupId>
+			<artifactId>compilerutils</artifactId>
+			<version>0.0.5</version>
 		</dependency>
 	</dependencies>
 	<build>
