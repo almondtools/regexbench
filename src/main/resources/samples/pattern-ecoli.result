@@ -1,0 +1,10 @@
+c(g|t)*ctggtc(ga)*cg:30
+ggc(g|a)*cg:12399
+cgg(ca)+t+gcta:8
+a(ttg|ctgctc)*ttg:21031
+gac(a|aac)*c*acgta*g:55
+ga{1,3}c(gc)?tc(gc)*:3167
+gt+cacg(g|t)+ccgact:1
+gct((ggt)?ca(gc)*)?cactga:15
+gca(gc|cg)*tcagcag(at|ag)t:0
+gaaa{2,3}gttgga+t+:0

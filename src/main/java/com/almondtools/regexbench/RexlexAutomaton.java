@@ -2,6 +2,11 @@ package com.almondtools.regexbench;
 
 import static com.almondtools.regexbench.AutomatonType.DFA;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+
 import com.almondtools.rexlex.pattern.Finder;
 import com.almondtools.rexlex.pattern.MatcherBuilder;
 import com.almondtools.rexlex.pattern.Pattern;
@@ -23,7 +28,23 @@ public class RexlexAutomaton implements Automaton {
 	}
 
 	@Override
+	public String getPattern() {
+		return pattern.pattern();
+	}
+
+	@Override
 	public int find(String text) {
+		int result = 0;
+		Finder matcher = pattern.finder(text);
+		while (matcher.find()) {
+			result++;
+		}
+		return result;
+	}
+
+	@Override
+	public int find(File file) throws IOException {
+		String text = new String(Files.readAllBytes(file.toPath()), StandardCharsets.UTF_8);
 		int result = 0;
 		Finder matcher = pattern.finder(text);
 		while (matcher.find()) {
