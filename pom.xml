@@ -29,17 +29,17 @@
 		<dependency>
 			<groupId>com.github.almondtools</groupId>
 			<artifactId>rexlex</artifactId>
-			<version>0.2.11-SNAPSHOT</version>
+			<version>0.2.11</version>
 		</dependency>
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>stringsearchalgorithms</artifactId>
-			<version>0.3.18-SNAPSHOT</version>
+			<version>0.3.18</version>
 		</dependency>
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>patternsearchalgorithms</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.jregex</groupId>
@@ -61,10 +61,12 @@
 			<artifactId>dfargx</artifactId>
 			<version>0.2.1</version>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>compilerutils</artifactId>
-			<version>0.0.5</version>
+			<version>0.0.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>
