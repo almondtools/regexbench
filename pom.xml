@@ -29,7 +29,7 @@
 		<dependency>
 			<groupId>com.github.almondtools</groupId>
 			<artifactId>rexlex</artifactId>
-			<version>0.2.11</version>
+			<version>0.2.12-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>net.amygdalum</groupId>
@@ -39,7 +39,7 @@
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>patternsearchalgorithms</artifactId>
-			<version>0.0.2</version>
+			<version>0.0.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.jregex</groupId>
