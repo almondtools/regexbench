@@ -76,6 +76,7 @@ public class GenerateSamples {
 
 	public static BufferedReader open(String fileName) throws IOException {
 		fileName = BASE.resolve(fileName).toString();
+		System.out.println(fileName);
 		return new BufferedReader(new InputStreamReader(GenerateSamples.class.getClassLoader().getResourceAsStream(fileName), "UTF-8"));
 	}
 
