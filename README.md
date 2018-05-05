@@ -7,6 +7,7 @@ regexbench is a jmh benchmark project comparing known java regular expression pa
 - jregex
 - dk.brics.automaton
 - rexlex
+- patternsearchalgorithms
 
 The benchmark yet exposes:
 - average time of preparing/compiling a regular expression
