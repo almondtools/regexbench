@@ -58,8 +58,18 @@ public abstract class ScalingPatternMatcherBenchmarkTest extends ScalingPatternT
 	}
 
 	@Test
+	public void testBenchmarkFindInString_ecoli_search() throws Exception {
+		findInStringSample("ecoli:search");
+	}
+
+	@Test
 	public void testBenchmarkFindInString_humanprotein() throws Exception {
 		findInStringSample("human-protein");
+	}
+
+	@Test
+	public void testBenchmarkFindInString_humanprotein_search() throws Exception {
+		findInStringSample("human-protein:search");
 	}
 
 	@Test
@@ -68,8 +78,18 @@ public abstract class ScalingPatternMatcherBenchmarkTest extends ScalingPatternT
 	}
 
 	@Test
+	public void testBenchmarkFindInString_kjb_search() throws Exception {
+		findInStringSample("kjb:search");
+	}
+	
+	@Test
 	public void testBenchmarkFindInFile_ecoli() throws Exception {
 		findInFileSample("ecoli");
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_ecoli_search() throws Exception {
+		findInFileSample("ecoli:search");
 	}
 
 	@Test
@@ -78,7 +98,17 @@ public abstract class ScalingPatternMatcherBenchmarkTest extends ScalingPatternT
 	}
 
 	@Test
+	public void testBenchmarkFindInFile_humanprotein_search() throws Exception {
+		findInFileSample("human-protein:search");
+	}
+
+	@Test
 	public void testBenchmarkFindInFile_kjb() throws Exception {
 		findInFileSample("kjb");
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_kjb_search() throws Exception {
+		findInFileSample("kjb:search");
 	}
 }

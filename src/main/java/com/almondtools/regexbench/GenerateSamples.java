@@ -24,15 +24,15 @@ public class GenerateSamples {
 	private GenerateSamples() {
 	}
 
-	public static File locateFile(String sampleKey) {
-		File file = files.computeIfAbsent(sampleKey, key -> createTempFile(key));
+	public static File locateFile(String key) {
+		File file = files.computeIfAbsent(key, k -> createTempFile(k));
 		file.deleteOnExit();
 		return file;
 	}
 
-	private static File createTempFile(String sampleKey) {
+	private static File createTempFile(String key) {
 		try {
-			String file = sampleKey + ".sample";
+			String file = sampleFile(key);
 			InputStream resourceAsStream = GenerateSamples.class.getClassLoader().getResourceAsStream(file);
 			Path tempFile = Files.createTempFile(Paths.get(file).getFileName().toString(), "");
 			Files.copy(resourceAsStream, tempFile, REPLACE_EXISTING);
@@ -42,8 +42,8 @@ public class GenerateSamples {
 		}
 	}
 
-	public static String readSample(String sampleKey) throws IOException {
-		try (BufferedReader reader = open(sampleKey + ".sample")) {
+	public static String readSample(String key) throws IOException {
+		try (BufferedReader reader = open(sampleFile(key))) {
 			StringBuilder buffer = new StringBuilder();
 			char[] chars = new char[8192];
 			int n = 0;
@@ -54,9 +54,10 @@ public class GenerateSamples {
 		}
 	}
 
-	public static Map<String, Integer> readPatterns(String resultKey) throws IOException {
-		try (BufferedReader reader = open(resultKey + ".result")) {
+	public static Map<String, Integer> readPatterns(String key) throws IOException {
+		try (BufferedReader reader = open(resultFile(key))) {
 			return reader.lines()
+				.filter(line -> !line.trim().isEmpty() && !line.startsWith("#"))
 				.map(line -> unescape(line))
 				.map(line -> splitPattern(line))
 				.collect(toMap(value -> value[0], value -> Integer.parseInt(value[1]), (v1, v2) -> Math.max(v1, v2), LinkedHashMap::new));
@@ -67,6 +68,18 @@ public class GenerateSamples {
 	public static BufferedReader open(String fileName) throws IOException {
 		System.out.println(fileName);
 		return new BufferedReader(new InputStreamReader(GenerateSamples.class.getClassLoader().getResourceAsStream(fileName), "UTF-8"));
+	}
+
+	private static String sampleFile(String key) {
+		int profile = key.indexOf(':');
+		if (profile > 0) {
+			key = key.substring(0, profile);
+		}
+		return  key + ".sample";
+	}
+
+	private static String resultFile(String key) {
+		return key.replace(':', '-') + ".result";
 	}
 
 	private static String[] splitPattern(String line) {
