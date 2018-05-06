@@ -38,18 +38,32 @@ public abstract class ScalingPatternMatcherBenchmarkTest extends ScalingPatternT
 
 	public void findInStringSample(String corpus) {
 		ScalingPatternSample sample = createSample(corpus);
+		long start = System.currentTimeMillis();
 		System.out.println("[Search in String] " + benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
+		long prepare = System.currentTimeMillis();
+		System.out.println("preparing in " + (prepare - start) + " milliseconds");
 		benchmark.benchmarkFindInString();
+		long find = System.currentTimeMillis();
+		System.out.println("finding in " + (find - prepare) + " milliseconds");
 		benchmark.validate();
+		long finish = System.currentTimeMillis();
+		System.out.println("overall " + (finish - start) + " milliseconds");
 	}
 
 	public void findInFileSample(String corpus) throws Exception {
 		ScalingPatternSample sample = createSample(corpus);
+		long start = System.currentTimeMillis();
 		System.out.println("[Search in String] " + benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
+		long prepare = System.currentTimeMillis();
+		System.out.println("preparing in " + (prepare - start) + " milliseconds");
 		benchmark.benchmarkFindInFile();
+		long find = System.currentTimeMillis();
+		System.out.println("finding in " + (find - prepare) + " milliseconds");
 		benchmark.validate();
+		long finish = System.currentTimeMillis();
+		System.out.println("overall " + (finish - start) + " milliseconds");
 	}
 
 	@Test
@@ -81,7 +95,7 @@ public abstract class ScalingPatternMatcherBenchmarkTest extends ScalingPatternT
 	public void testBenchmarkFindInString_kjb_search() throws Exception {
 		findInStringSample("kjb:search");
 	}
-	
+
 	@Test
 	public void testBenchmarkFindInFile_ecoli() throws Exception {
 		findInFileSample("ecoli");
