@@ -46,8 +46,8 @@ public class ScalingPatternSample {
 
 	@Setup
 	public void setup() throws IOException {
-		String sampleKey = "sample-" + patternCorpus;
-		String patternKey = "pattern-" + patternCorpus;
+		String sampleKey = "samples/sample-" + patternCorpus;
+		String patternKey = "samples/pattern-" + patternCorpus;
 		this.sample = GenerateSamples.readSample(sampleKey);
 		this.file = GenerateSamples.locateFile(sampleKey);
 		this.patterns = GenerateSamples.readPatterns(patternKey);

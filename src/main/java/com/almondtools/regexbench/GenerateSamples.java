@@ -18,7 +18,6 @@ import java.util.regex.Pattern;
 
 public class GenerateSamples {
 	private static final Pattern PATTERN_LINE = Pattern.compile(":(\\d+)$");
-	private static final Path BASE = Paths.get("samples");
 
 	private static Map<String, File> files = new LinkedHashMap<>();
 
@@ -34,8 +33,8 @@ public class GenerateSamples {
 	private static File createTempFile(String sampleKey) {
 		try {
 			String file = sampleKey + ".sample";
-			InputStream resourceAsStream = GenerateSamples.class.getClassLoader().getResourceAsStream(BASE.resolve(file).toString());
-			Path tempFile = Files.createTempFile(file, "");
+			InputStream resourceAsStream = GenerateSamples.class.getClassLoader().getResourceAsStream(file);
+			Path tempFile = Files.createTempFile(Paths.get(file).getFileName().toString(), "");
 			Files.copy(resourceAsStream, tempFile, REPLACE_EXISTING);
 			return tempFile.toFile();
 		} catch (IOException e) {
@@ -65,17 +64,7 @@ public class GenerateSamples {
 
 	}
 
-	public static Map<Integer, Integer> readAll(String resultKey) throws IOException {
-		try (BufferedReader reader = open(resultKey + ".multi.result")) {
-			return reader.lines()
-				.map(line -> unescape(line))
-				.map(line -> splitPattern(line))
-				.collect(toMap(value -> Integer.parseInt(value[0]), value -> Integer.parseInt(value[1])));
-		}
-	}
-
 	public static BufferedReader open(String fileName) throws IOException {
-		fileName = BASE.resolve(fileName).toString();
 		System.out.println(fileName);
 		return new BufferedReader(new InputStreamReader(GenerateSamples.class.getClassLoader().getResourceAsStream(fileName), "UTF-8"));
 	}
