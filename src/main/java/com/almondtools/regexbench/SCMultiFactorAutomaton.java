@@ -37,7 +37,7 @@ public class SCMultiFactorAutomaton implements Automaton {
 	public void prepare(String pattern) {
 		this.rawPattern = pattern;
 		List<String> patterns = split(pattern);
-		this.pattern = new MultiFactorRE(new AhoCorasick.Factory(), new GlushkovPrefixExtender.Factory(), patterns);
+		this.pattern = new MultiFactorRE(new AhoCorasick.Factory(), new GlushkovPrefixExtender.Factory(), 5, patterns);
 	}
 
 	@Override
@@ -68,7 +68,7 @@ public class SCMultiFactorAutomaton implements Automaton {
 
 	@Override
 	public int find(File file) throws IOException {
-		CharProvider provider = new ReaderCharProvider(Files.newBufferedReader(file.toPath()), 0, 4096, 4);
+		CharProvider provider = new ReaderCharProvider(Files.newBufferedReader(file.toPath()), 0, 8192, 32);
 		StringFinder finder = pattern.createFinder(provider, LONGEST_MATCH, NON_OVERLAP);
 		return finder.findAll().size();
 	}

@@ -44,7 +44,7 @@ public class SCBPGlushkovAutomaton implements Automaton {
 
 	@Override
 	public int find(File file) throws IOException {
-		CharProvider provider = new ReaderCharProvider(Files.newBufferedReader(file.toPath()), 0, 4096, 4);
+		CharProvider provider = new ReaderCharProvider(Files.newBufferedReader(file.toPath()), 0, 8192, 32);
 		StringFinder finder = pattern.createFinder(provider, LONGEST_MATCH, NON_OVERLAP);
 		return finder.findAll().size();
 	}
