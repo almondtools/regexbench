@@ -8,4 +8,3 @@ gt+cacg(g|t)+ccgact:1
 gct((ggt)?ca(gc)*)?cactga:15
 gca(gc|cg)*tcagcag(at|ag)t:0
 gaaa{2,3}gttgga+t+:0
-(a*tgc*|t*acg*)*(cg){1,20}(a|t)*:314149
