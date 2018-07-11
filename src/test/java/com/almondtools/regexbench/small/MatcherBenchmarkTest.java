@@ -33,7 +33,8 @@ public abstract class MatcherBenchmarkTest {
 			createSample("test9"),
 			createSample("test10"),
 			createSample("test11"),
-			createSample("test12"));
+			createSample("test12"),
+			createSample("test13"));
 	}
 	
 	public abstract MatcherBenchmark getBenchmark();
