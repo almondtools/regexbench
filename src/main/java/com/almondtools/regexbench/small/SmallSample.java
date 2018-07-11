@@ -20,7 +20,7 @@ import com.almondtools.regexbench.AutomatonType;
 @State(Scope.Benchmark)
 public class SmallSample {
 
-	@Param({"test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9","test10","test11","test12"})
+	@Param({"test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9","test10","test11","test12","test12"})
 	private String name;
 	private String sample;
 	private String pattern;
