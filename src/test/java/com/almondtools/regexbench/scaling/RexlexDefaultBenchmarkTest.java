@@ -1,5 +1,9 @@
 package com.almondtools.regexbench.scaling;
 
+import static java.util.Arrays.asList;
+
+import java.util.List;
+
 public class RexlexDefaultBenchmarkTest extends ScalingPatternMatcherBenchmarkTest {
 
 	@Override
@@ -7,4 +11,8 @@ public class RexlexDefaultBenchmarkTest extends ScalingPatternMatcherBenchmarkTe
 		return new RexlexDefaultBenchmark();
 	}
 
+	@Override
+	protected List<String> excluded() {
+		return asList("human-protein:search", "kjb:search");
+	}
 }

@@ -1,7 +1,8 @@
 package com.almondtools.regexbench.scaling;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import static java.util.Arrays.asList;
+
+import java.util.List;
 
 public class JdkBenchmarkTest extends ScalingPatternMatcherBenchmarkTest {
 
@@ -10,13 +11,8 @@ public class JdkBenchmarkTest extends ScalingPatternMatcherBenchmarkTest {
 		return new JdkBenchmark();
 	}
 
-	@Test 
-	@Ignore
-	public void testBenchmarkFindInString_kjb_search() throws Exception {
-	}
-
-	@Test 
-	@Ignore
-	public void testBenchmarkFindInFile_kjb_search() throws Exception {
+	@Override
+	protected List<String> excluded() {
+		return asList("kjb:search");
 	}
 }

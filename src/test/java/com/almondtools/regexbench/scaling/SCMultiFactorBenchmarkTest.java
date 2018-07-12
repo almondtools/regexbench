@@ -1,5 +1,9 @@
 package com.almondtools.regexbench.scaling;
 
+import static java.util.Arrays.asList;
+
+import java.util.List;
+
 public class SCMultiFactorBenchmarkTest extends ScalingPatternMatcherBenchmarkTest {
 
 	@Override
@@ -7,4 +11,8 @@ public class SCMultiFactorBenchmarkTest extends ScalingPatternMatcherBenchmarkTe
 		return new SCMultiFactorBenchmark();
 	}
 
+	@Override
+	protected List<String> excluded() {
+		return asList("human-protein:search");
+	}
 }
