@@ -13,6 +13,6 @@ public class SCMultiFactorBenchmarkTest extends ScalingPatternMatcherBenchmarkTe
 
 	@Override
 	protected List<String> excluded() {
-		return asList("human-protein:search");
+		return asList("kjb:search", "human-protein:search");
 	}
 }
