@@ -1,6 +1,6 @@
 regexbench
 ==========
-[![Build Status](https://api.travis-ci.org/almondtools/regexbench.svg)](https://travis-ci.org/almondtools/regexbench)
+[![Build Status](https://api.travis-ci.org/almondtools/regexbench.svg?branch=master)](https://travis-ci.org/almondtools/regexbench)
 
 regexbench is a jmh benchmark project comparing known java regular expression packages:
 - java.util.regex
