@@ -9,6 +9,7 @@ regexbench is a jmh benchmark project comparing known java regular expression pa
 - [re2j](https://github.com/google/re2j)
 - [rexlex](https://github.com/almondtools/rexlex)
 - [patternsearchalgorithms](http://patternsearchalgorithms.amygdalum.net/)
+- [DFA-Regex](https://github.com/zhztheplayer/DFA-Regex) (not yet benchmarked)
 - [Dregex](https://github.com/marianobarrios/dregex) (not yet benchmarked)
 
 The benchmark yet exposes:
