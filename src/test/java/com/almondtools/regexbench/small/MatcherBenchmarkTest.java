@@ -10,16 +10,13 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
-import com.almondtools.regexbench.small.MatcherBenchmark;
-import com.almondtools.regexbench.small.SmallSample;
-
 @RunWith(Parameterized.class)
 public abstract class MatcherBenchmarkTest {
-	
+
 	@Parameter
 	public SmallSample sample;
 
-	@Parameters(name="{0}")
+	@Parameters(name = "{0}")
 	public static List<SmallSample> samples() {
 		return Arrays.asList(
 			createSample("test1"),
@@ -34,9 +31,10 @@ public abstract class MatcherBenchmarkTest {
 			createSample("test10"),
 			createSample("test11"),
 			createSample("test12"),
-			createSample("test13"));
+			createSample("test13"),
+			createSample("test14"));
 	}
-	
+
 	public abstract MatcherBenchmark getBenchmark();
 
 	@Test
@@ -51,7 +49,6 @@ public abstract class MatcherBenchmarkTest {
 
 		benchmark.tearDown();
 	}
-
 
 	private static SmallSample createSample(String name) {
 		try {

@@ -9,8 +9,9 @@ regexbench is a jmh benchmark project comparing known java regular expression pa
 - [re2j](https://github.com/google/re2j)
 - [rexlex](https://github.com/almondtools/rexlex)
 - [patternsearchalgorithms](http://patternsearchalgorithms.amygdalum.net/)
-- [DFA-Regex](https://github.com/zhztheplayer/DFA-Regex) (not yet benchmarked)
-- [Dregex](https://github.com/marianobarrios/dregex) (not yet benchmarked)
+- [DFA-Regex](https://github.com/zhztheplayer/DFA-Regex)
+
+regexbench does only benchmark regex libraries that support a `find()` operation (some candidates did only implement the `matches()` operation, which would not be a fair comparison).
 
 The benchmark yet exposes:
 - average time of preparing/compiling a regular expression
