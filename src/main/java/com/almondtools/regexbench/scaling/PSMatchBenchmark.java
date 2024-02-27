@@ -11,14 +11,14 @@ import net.amygdalum.patternsearchalgorithms.pattern.OptimizationTarget;
 @State(Scope.Thread)
 public class PSMatchBenchmark extends ScalingPatternMatcherBenchmark {
 
-	@Override
-	public String getId() {
-		return "Patternsearchalgorithms (DFA)";
-	}
+    @Override
+    public String getId() {
+        return "Patternsearchalgorithms (DFA)";
+    }
 
-	@Override
-	public Automaton createAutomaton(String id) {
-		return new PSAutomaton(id, OptimizationTarget.MATCH);
-	}
+    @Override
+    public Automaton createAutomaton(String id) {
+        return new PSAutomaton(id, OptimizationTarget.MATCH);
+    }
 
 }

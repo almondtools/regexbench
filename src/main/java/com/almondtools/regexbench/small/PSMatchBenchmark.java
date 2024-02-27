@@ -11,9 +11,9 @@ import net.amygdalum.patternsearchalgorithms.pattern.OptimizationTarget;
 @State(Scope.Thread)
 public class PSMatchBenchmark extends MatcherBenchmark {
 
-	@Override
-	public Automaton createAutomaton() {
-		return new PSAutomaton("Patternsearchalgorithms (DFA)", OptimizationTarget.MATCH);
-	}
+    @Override
+    public Automaton createAutomaton() {
+        return new PSAutomaton("Patternsearchalgorithms (DFA)", OptimizationTarget.MATCH);
+    }
 
 }

@@ -9,9 +9,9 @@ import com.almondtools.regexbench.BricsAutomaton;
 @State(Scope.Thread)
 public class BricsBenchmark extends MatcherBenchmark {
 
-	@Override
-	public Automaton createAutomaton() {
-		return new BricsAutomaton("dk.brics.automaton (DFA)");
-	}
-	
+    @Override
+    public Automaton createAutomaton() {
+        return new BricsAutomaton("dk.brics.automaton (DFA)");
+    }
+
 }

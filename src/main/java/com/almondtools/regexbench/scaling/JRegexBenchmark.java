@@ -9,14 +9,14 @@ import com.almondtools.regexbench.JRegexAutomaton;
 @State(Scope.Thread)
 public class JRegexBenchmark extends ScalingPatternMatcherBenchmark {
 
-	@Override
-	public String getId() {
-		return "JRegex (NFA)";
-	}
+    @Override
+    public String getId() {
+        return "JRegex (NFA)";
+    }
 
-	@Override
-	public Automaton createAutomaton(String id) {
-		return new JRegexAutomaton(id);
-	}
+    @Override
+    public Automaton createAutomaton(String id) {
+        return new JRegexAutomaton(id);
+    }
 
 }

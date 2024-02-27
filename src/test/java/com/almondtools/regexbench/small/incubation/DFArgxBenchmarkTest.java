@@ -10,9 +10,9 @@ import com.almondtools.regexbench.small.MatcherBenchmarkTest;
 @RunWith(Parameterized.class)
 public class DFArgxBenchmarkTest extends MatcherBenchmarkTest {
 
-	@Override
-	public MatcherBenchmark getBenchmark() {
-		return new DFArgxBenchmark();
-	}
+    @Override
+    public MatcherBenchmark getBenchmark() {
+        return new DFArgxBenchmark();
+    }
 
 }

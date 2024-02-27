@@ -6,13 +6,13 @@ import java.util.List;
 
 public class SCMultiFactorBenchmarkTest extends ScalingPatternMatcherBenchmarkTest {
 
-	@Override
-	protected ScalingPatternMatcherBenchmark getBenchmark() {
-		return new SCMultiFactorBenchmark();
-	}
+    @Override
+    protected ScalingPatternMatcherBenchmark getBenchmark() {
+        return new SCMultiFactorBenchmark();
+    }
 
-	@Override
-	protected List<String> excluded() {
-		return asList("kjb:search", "human-protein:search");
-	}
+    @Override
+    protected List<String> excluded() {
+        return asList("kjb:search", "human-protein:search");
+    }
 }

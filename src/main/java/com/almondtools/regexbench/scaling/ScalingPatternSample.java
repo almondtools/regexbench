@@ -23,77 +23,77 @@ import net.amygdalum.util.text.CharUtils;
 @State(Scope.Benchmark)
 public class ScalingPatternSample {
 
-	@Param({ "ecoli", "human-protein", "kjb" })
-	private String patternCorpus;
+    @Param({"ecoli", "human-protein", "kjb"})
+    private String patternCorpus;
 
-	private String sample;
-	private File file;
-	private Map<String, Integer> patterns;
-	private int[] all;
+    private String sample;
+    private File file;
+    private Map<String, Integer> patterns;
+    private int[] all;
 
-	public void setPatternCorpus(String patternCorpus) {
-		this.patternCorpus = patternCorpus;
-	}
+    public void setPatternCorpus(String patternCorpus) {
+        this.patternCorpus = patternCorpus;
+    }
 
-	public boolean isValid() {
-		return sample != null && patterns != null && !patterns.isEmpty();
-	}
+    public boolean isValid() {
+        return sample != null && patterns != null && !patterns.isEmpty();
+    }
 
-	@Override
-	public String toString() {
-		return "corpus : " + patternCorpus;
-	}
+    @Override
+    public String toString() {
+        return "corpus : " + patternCorpus;
+    }
 
-	@Setup
-	public void setup() throws IOException {
-		String sampleKey = "samples/sample-" + patternCorpus;
-		String patternKey = "samples/pattern-" + patternCorpus;
-		this.sample = GenerateSamples.readSample(sampleKey);
-		this.file = GenerateSamples.locateFile(sampleKey);
-		this.patterns = GenerateSamples.readPatterns(patternKey);
-		this.all = patterns.values().stream()
-			.mapToInt(value -> value.intValue())
-			.toArray();
-	}
+    @Setup
+    public void setup() throws IOException {
+        String sampleKey = "samples/sample-" + patternCorpus;
+        String patternKey = "samples/pattern-" + patternCorpus;
+        this.sample = GenerateSamples.readSample(sampleKey);
+        this.file = GenerateSamples.locateFile(sampleKey);
+        this.patterns = GenerateSamples.readPatterns(patternKey);
+        this.all = patterns.values().stream()
+            .mapToInt(value -> value.intValue())
+            .toArray();
+    }
 
-	public String getSample() {
-		return sample;
-	}
+    public String getSample() {
+        return sample;
+    }
 
-	public File getFile() {
-		return file;
-	}
+    public File getFile() {
+        return file;
+    }
 
-	public List<String> getPattern() {
-		return patterns.keySet().stream()
-			.distinct()
-			.collect(toList());
-	}
+    public List<String> getPattern() {
+        return patterns.keySet().stream()
+            .distinct()
+            .collect(toList());
+    }
 
-	@TearDown
-	public synchronized void tearDown() {
-		this.sample = null;
-		this.patterns = null;
-		this.all = null;
-	}
+    @TearDown
+    public synchronized void tearDown() {
+        this.sample = null;
+        this.patterns = null;
+        this.all = null;
+    }
 
-	public void validate(List<String> pattern, int[] result) {
-		if (result == null) {
-			throw new ResultSizeNotAcceptedException(pattern.stream()
-				.map(str -> toReadableString(str))
-				.collect(joining(",", "{", "}")), all, result);
-		}
-		if (!Arrays.equals(result ,all)) {
-			throw new ResultSizeNotAcceptedException(pattern.stream()
-				.map(str -> toReadableString(str))
-				.collect(joining(",", "{", "}")), all, result);
-		}
-	}
+    public void validate(List<String> pattern, int[] result) {
+        if (result == null) {
+            throw new ResultSizeNotAcceptedException(pattern.stream()
+                .map(str -> toReadableString(str))
+                .collect(joining(",", "{", "}")), all, result);
+        }
+        if (!Arrays.equals(result, all)) {
+            throw new ResultSizeNotAcceptedException(pattern.stream()
+                .map(str -> toReadableString(str))
+                .collect(joining(",", "{", "}")), all, result);
+        }
+    }
 
-	private String toReadableString(String str) {
-		return str.chars()
-			.mapToObj(c -> CharUtils.charToString((char) c))
-			.collect(joining());
-	}
+    private String toReadableString(String str) {
+        return str.chars()
+            .mapToObj(c -> CharUtils.charToString((char) c))
+            .collect(joining());
+    }
 
 }

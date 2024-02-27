@@ -9,9 +9,9 @@ import com.almondtools.regexbench.SCBPGlushkovAutomaton;
 @State(Scope.Thread)
 public class SCBPGlushkovBenchmark extends MatcherBenchmark {
 
-	@Override
-	public Automaton createAutomaton() {
-		return new SCBPGlushkovAutomaton("net.amygdalum.stringsearchalgorithms Glushkov (BPNFA)");
-	}
+    @Override
+    public Automaton createAutomaton() {
+        return new SCBPGlushkovAutomaton("net.amygdalum.stringsearchalgorithms Glushkov (BPNFA)");
+    }
 
 }

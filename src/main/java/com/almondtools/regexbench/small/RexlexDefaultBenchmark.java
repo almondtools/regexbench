@@ -10,9 +10,9 @@ import com.almondtools.rexlex.pattern.DefaultMatcherBuilder;
 @State(Scope.Thread)
 public class RexlexDefaultBenchmark extends MatcherBenchmark {
 
-	@Override
-	public Automaton createAutomaton() {
-		return new RexlexAutomaton("com.almondtools.rexlex Default (DFA)", new DefaultMatcherBuilder());
-	}
+    @Override
+    public Automaton createAutomaton() {
+        return new RexlexAutomaton("com.almondtools.rexlex Default (DFA)", new DefaultMatcherBuilder());
+    }
 
 }

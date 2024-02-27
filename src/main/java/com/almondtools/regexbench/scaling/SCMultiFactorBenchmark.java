@@ -9,14 +9,14 @@ import com.almondtools.regexbench.SCMultiFactorAutomaton;
 @State(Scope.Thread)
 public class SCMultiFactorBenchmark extends ScalingPatternMatcherBenchmark {
 
-	@Override
-	public String getId() {
-		return "net.amygdalum.stringsearchalgorithms MultiFactorRE (DFA)";
-	}
+    @Override
+    public String getId() {
+        return "net.amygdalum.stringsearchalgorithms MultiFactorRE (DFA)";
+    }
 
-	@Override
-	public Automaton createAutomaton(String id) {
-		return new SCMultiFactorAutomaton(id);
-	}
+    @Override
+    public Automaton createAutomaton(String id) {
+        return new SCMultiFactorAutomaton(id);
+    }
 
 }

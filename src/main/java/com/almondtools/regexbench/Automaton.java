@@ -5,14 +5,16 @@ import java.io.IOException;
 
 public interface Automaton {
 
-	AutomatonType getType();
-	
-	void prepare(String pattern);
-	String getPattern();
+    AutomatonType getType();
 
-	String getId();
+    void prepare(String pattern);
 
-	int find(String text);
-	int find(File file) throws IOException;
+    String getPattern();
+
+    String getId();
+
+    int find(String text);
+
+    int find(File file) throws IOException;
 
 }

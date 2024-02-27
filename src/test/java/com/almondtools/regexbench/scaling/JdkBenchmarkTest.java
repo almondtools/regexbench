@@ -6,13 +6,13 @@ import java.util.List;
 
 public class JdkBenchmarkTest extends ScalingPatternMatcherBenchmarkTest {
 
-	@Override
-	protected ScalingPatternMatcherBenchmark getBenchmark() {
-		return new JdkBenchmark();
-	}
+    @Override
+    protected ScalingPatternMatcherBenchmark getBenchmark() {
+        return new JdkBenchmark();
+    }
 
-	@Override
-	protected List<String> excluded() {
-		return asList("kjb:search");
-	}
+    @Override
+    protected List<String> excluded() {
+        return asList("kjb:search");
+    }
 }

@@ -9,9 +9,9 @@ import com.almondtools.regexbench.DFArgxAutomaton;
 @State(Scope.Thread)
 public class DFArgxBenchmark extends MatcherBenchmark {
 
-	@Override
-	public Automaton createAutomaton() {
-		return new DFArgxAutomaton("top.yatt.dfargx (DFA)");
-	}
-	
+    @Override
+    public Automaton createAutomaton() {
+        return new DFArgxAutomaton("top.yatt.dfargx (DFA)");
+    }
+
 }

@@ -9,9 +9,9 @@ import com.almondtools.regexbench.JRegexAutomaton;
 @State(Scope.Thread)
 public class JRegexBenchmark extends MatcherBenchmark {
 
-	@Override
-	public Automaton createAutomaton() {
-		return new JRegexAutomaton("JRegex (NFA)");
-	}
+    @Override
+    public Automaton createAutomaton() {
+        return new JRegexAutomaton("JRegex (NFA)");
+    }
 
 }

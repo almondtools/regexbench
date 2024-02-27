@@ -10,14 +10,14 @@ import com.almondtools.rexlex.pattern.DefaultMatcherBuilder;
 @State(Scope.Thread)
 public class RexlexDefaultBenchmark extends ScalingPatternMatcherBenchmark {
 
-	@Override
-	public String getId() {
-		return "com.almondtools.rexlex Default (DFA)";
-	}
+    @Override
+    public String getId() {
+        return "com.almondtools.rexlex Default (DFA)";
+    }
 
-	@Override
-	public Automaton createAutomaton(String id) {
-		return new RexlexAutomaton(id, new DefaultMatcherBuilder());
-	}
+    @Override
+    public Automaton createAutomaton(String id) {
+        return new RexlexAutomaton(id, new DefaultMatcherBuilder());
+    }
 
 }

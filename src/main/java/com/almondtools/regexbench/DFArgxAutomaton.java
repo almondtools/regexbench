@@ -11,55 +11,55 @@ import top.yatt.dfargx.RegexSearcher;
 
 public class DFArgxAutomaton implements Automaton {
 
-	private String id;
-	private String pattern;
-	private RegexSearcher searcher;
+    private String id;
+    private String pattern;
+    private RegexSearcher searcher;
 
-	public DFArgxAutomaton(String id) {
-		this.id = id;
-	}
+    public DFArgxAutomaton(String id) {
+        this.id = id;
+    }
 
-	@Override
-	public void prepare(String pattern) {
-		this.pattern = pattern;
-		this.searcher = new RegexSearcher(pattern);
-	}
+    @Override
+    public void prepare(String pattern) {
+        this.pattern = pattern;
+        this.searcher = new RegexSearcher(pattern);
+    }
 
-	@Override
-	public int find(String text) {
-		int result = 0;
-		searcher.search(text);
-		while (searcher.hasMoreElements()) {
-			searcher.nextElement();
-			result++;
-		}
-		return result;
-	}
-	
-	@Override
-	public String getPattern() {
-		return pattern;
-	}
+    @Override
+    public int find(String text) {
+        int result = 0;
+        searcher.search(text);
+        while (searcher.hasMoreElements()) {
+            searcher.nextElement();
+            result++;
+        }
+        return result;
+    }
 
-	@Override
-	public int find(File file) throws IOException {
-		int result = 0;
-		String text = new String(Files.readAllBytes(file.toPath()), StandardCharsets.UTF_8);
-		searcher.search(text);
-		while (searcher.hasMoreElements()) {
-			searcher.nextElement();
-			result++;
-		}
-		return result;
-	}
+    @Override
+    public String getPattern() {
+        return pattern;
+    }
 
-	@Override
-	public String getId() {
-		return id;
-	}
+    @Override
+    public int find(File file) throws IOException {
+        int result = 0;
+        String text = new String(Files.readAllBytes(file.toPath()), StandardCharsets.UTF_8);
+        searcher.search(text);
+        while (searcher.hasMoreElements()) {
+            searcher.nextElement();
+            result++;
+        }
+        return result;
+    }
 
-	@Override
-	public AutomatonType getType() {
-		return DFA;
-	}
+    @Override
+    public String getId() {
+        return id;
+    }
+
+    @Override
+    public AutomatonType getType() {
+        return DFA;
+    }
 }

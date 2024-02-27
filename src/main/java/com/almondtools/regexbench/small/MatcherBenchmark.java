@@ -19,50 +19,50 @@ import com.almondtools.regexbench.Automaton;
 @State(Scope.Thread)
 public abstract class MatcherBenchmark {
 
-	private Automaton automaton;
-	private Automaton preparedAutomaton;
-	private SmallSample sample;
-	
-	public abstract Automaton createAutomaton();
+    private Automaton automaton;
+    private Automaton preparedAutomaton;
+    private SmallSample sample;
 
-	private Automaton createAutomaton(String pattern) {
-		Automaton automaton = createAutomaton();
-		automaton.prepare(pattern);
-		return automaton;
-	}
+    public abstract Automaton createAutomaton();
 
-	@Setup
-	public void setup(SmallSample sample) {
-		this.sample = sample;
-		this.automaton = createAutomaton();
-		this.preparedAutomaton = createAutomaton(sample.getPattern());
-	}
+    private Automaton createAutomaton(String pattern) {
+        Automaton automaton = createAutomaton();
+        automaton.prepare(pattern);
+        return automaton;
+    }
 
-	@Benchmark
-	@BenchmarkMode(Mode.AverageTime)
-	@OutputTimeUnit(TimeUnit.MICROSECONDS)
-	@Warmup(iterations = 10)
-	@Measurement(iterations = 10)
-	@Fork(1)
-	public void benchmarkPrepare() {
-		automaton.prepare(sample.getPattern());
-	}
+    @Setup
+    public void setup(SmallSample sample) {
+        this.sample = sample;
+        this.automaton = createAutomaton();
+        this.preparedAutomaton = createAutomaton(sample.getPattern());
+    }
 
-	@Benchmark
-	@BenchmarkMode(Mode.AverageTime)
-	@OutputTimeUnit(TimeUnit.MICROSECONDS)
-	@Warmup(iterations = 10)
-	@Measurement(iterations = 10)
-	@Fork(1)
-	public void benchmarkFind() {
-		preparedAutomaton.find(sample.getSample());
-	}
+    @Benchmark
+    @BenchmarkMode(Mode.AverageTime)
+    @OutputTimeUnit(TimeUnit.MICROSECONDS)
+    @Warmup(iterations = 10)
+    @Measurement(iterations = 10)
+    @Fork(1)
+    public void benchmarkPrepare() {
+        automaton.prepare(sample.getPattern());
+    }
 
-	@TearDown
-	public void tearDown() {
-		int result = preparedAutomaton.find(sample.getSample());
-		sample.validate(result, preparedAutomaton.getType());
-		this.sample = null;
-	}
+    @Benchmark
+    @BenchmarkMode(Mode.AverageTime)
+    @OutputTimeUnit(TimeUnit.MICROSECONDS)
+    @Warmup(iterations = 10)
+    @Measurement(iterations = 10)
+    @Fork(1)
+    public void benchmarkFind() {
+        preparedAutomaton.find(sample.getSample());
+    }
+
+    @TearDown
+    public void tearDown() {
+        int result = preparedAutomaton.find(sample.getSample());
+        sample.validate(result, preparedAutomaton.getType());
+        this.sample = null;
+    }
 
 }

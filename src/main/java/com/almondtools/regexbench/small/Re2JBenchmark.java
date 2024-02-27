@@ -9,9 +9,9 @@ import com.almondtools.regexbench.Re2JAutomaton;
 @State(Scope.Thread)
 public class Re2JBenchmark extends MatcherBenchmark {
 
-	@Override
-	public Automaton createAutomaton() {
-		return new Re2JAutomaton("Re2/J (NFA)");
-	}
+    @Override
+    public Automaton createAutomaton() {
+        return new Re2JAutomaton("Re2/J (NFA)");
+    }
 
 }

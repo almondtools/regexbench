@@ -13,52 +13,52 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 public abstract class MatcherBenchmarkTest {
 
-	@Parameter
-	public SmallSample sample;
+    @Parameter
+    public SmallSample sample;
 
-	@Parameters(name = "{0}")
-	public static List<SmallSample> samples() {
-		return Arrays.asList(
-			createSample("test1"),
-			createSample("test2"),
-			createSample("test3"),
-			createSample("test4"),
-			createSample("test5"),
-			createSample("test6"),
-			createSample("test7"),
-			createSample("test8"),
-			createSample("test9"),
-			createSample("test10"),
-			createSample("test11"),
-			createSample("test12"),
-			createSample("test13"),
-			createSample("test14"));
-	}
+    @Parameters(name = "{0}")
+    public static List<SmallSample> samples() {
+        return Arrays.asList(
+            createSample("test1"),
+            createSample("test2"),
+            createSample("test3"),
+            createSample("test4"),
+            createSample("test5"),
+            createSample("test6"),
+            createSample("test7"),
+            createSample("test8"),
+            createSample("test9"),
+            createSample("test10"),
+            createSample("test11"),
+            createSample("test12"),
+            createSample("test13"),
+            createSample("test14"));
+    }
 
-	public abstract MatcherBenchmark getBenchmark();
+    public abstract MatcherBenchmark getBenchmark();
 
-	@Test
-	public void testBenchmarkFind() throws Exception {
-		MatcherBenchmark benchmark = getBenchmark();
-		if (sample.rejects(benchmark.createAutomaton().getType())) {
-			return;
-		}
-		benchmark.setup(sample);
+    @Test
+    public void testBenchmarkFind() throws Exception {
+        MatcherBenchmark benchmark = getBenchmark();
+        if (sample.rejects(benchmark.createAutomaton().getType())) {
+            return;
+        }
+        benchmark.setup(sample);
 
-		benchmark.benchmarkFind();
+        benchmark.benchmarkFind();
 
-		benchmark.tearDown();
-	}
+        benchmark.tearDown();
+    }
 
-	private static SmallSample createSample(String name) {
-		try {
-			SmallSample sample = new SmallSample();
-			sample.setName(name);
-			sample.setup();
-			return sample;
-		} catch (IOException e) {
-			throw new AssertionError(e);
-		}
-	}
+    private static SmallSample createSample(String name) {
+        try {
+            SmallSample sample = new SmallSample();
+            sample.setName(name);
+            sample.setup();
+            return sample;
+        } catch (IOException e) {
+            throw new AssertionError(e);
+        }
+    }
 
 }

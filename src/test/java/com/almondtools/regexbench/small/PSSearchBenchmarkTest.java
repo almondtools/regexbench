@@ -6,9 +6,9 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class PSSearchBenchmarkTest extends MatcherBenchmarkTest {
 
-	@Override
-	public MatcherBenchmark getBenchmark() {
-		return new PSSearchBenchmark();
-	}
+    @Override
+    public MatcherBenchmark getBenchmark() {
+        return new PSSearchBenchmark();
+    }
 
 }
