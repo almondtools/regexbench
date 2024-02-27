@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public interface Automaton {
 
-    AutomatonType getType();
+    SearchType getType();
 
     void prepare(String pattern);
 

@@ -1,6 +1,6 @@
 package com.almondtools.regexbench;
 
-import static com.almondtools.regexbench.AutomatonType.DFA;
+import static com.almondtools.regexbench.SearchType.LONGEST;
 import static net.amygdalum.patternsearchalgorithms.pattern.SearchMode.LONGEST_NON_OVERLAPPING;
 
 import java.io.File;
@@ -59,7 +59,7 @@ public class PSAutomaton implements Automaton {
     }
 
     @Override
-    public AutomatonType getType() {
-        return DFA;
+    public SearchType getType() {
+        return LONGEST;
     }
 }

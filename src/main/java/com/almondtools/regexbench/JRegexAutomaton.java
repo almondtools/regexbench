@@ -1,6 +1,6 @@
 package com.almondtools.regexbench;
 
-import static com.almondtools.regexbench.AutomatonType.NFA;
+import static com.almondtools.regexbench.SearchType.FIRST;
 
 import java.io.File;
 import java.io.IOException;
@@ -56,7 +56,7 @@ public class JRegexAutomaton implements Automaton {
     }
 
     @Override
-    public AutomatonType getType() {
-        return NFA;
+    public SearchType getType() {
+        return FIRST;
     }
 }

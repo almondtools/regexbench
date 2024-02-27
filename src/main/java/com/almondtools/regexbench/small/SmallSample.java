@@ -1,7 +1,7 @@
 package com.almondtools.regexbench.small;
 
-import static com.almondtools.regexbench.AutomatonType.DFA;
-import static com.almondtools.regexbench.AutomatonType.NFA;
+import static com.almondtools.regexbench.SearchType.LONGEST;
+import static com.almondtools.regexbench.SearchType.FIRST;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
-import com.almondtools.regexbench.AutomatonType;
+import com.almondtools.regexbench.SearchType;
 
 @State(Scope.Benchmark)
 public class SmallSample {
@@ -24,7 +24,7 @@ public class SmallSample {
     private String name;
     private String sample;
     private String pattern;
-    private Map<AutomatonType, Integer> expected;
+    private Map<SearchType, Integer> expected;
 
     @Setup
     public void setup() throws IOException {
@@ -48,7 +48,7 @@ public class SmallSample {
         this.name = name;
     }
 
-    public int getExpected(AutomatonType type) {
+    public int getExpected(SearchType type) {
         return expected.get(type);
     }
 
@@ -60,34 +60,34 @@ public class SmallSample {
         return sample;
     }
 
-    public void validate(int result, AutomatonType type) {
+    public void validate(int result, SearchType type) {
         if (result != getExpected(type)) {
             throw new IllegalStateException("expected " + getExpected(type) + " matches, but found " + result);
         }
     }
 
-    private EnumMap<AutomatonType, Integer> readExpected(String file) throws IOException {
+    private EnumMap<SearchType, Integer> readExpected(String file) throws IOException {
         String[] expectedByType = readFile(file).split("/");
-        EnumMap<AutomatonType, Integer> enumMap = new EnumMap<AutomatonType, Integer>(AutomatonType.class);
+        EnumMap<SearchType, Integer> enumMap = new EnumMap<SearchType, Integer>(SearchType.class);
         try {
             if (expectedByType.length == 1) {
-                enumMap.put(NFA, Integer.parseInt(expectedByType[0]));
-                enumMap.put(DFA, Integer.parseInt(expectedByType[0]));
+                enumMap.put(FIRST, Integer.parseInt(expectedByType[0]));
+                enumMap.put(LONGEST, Integer.parseInt(expectedByType[0]));
             } else {
-                enumMap.put(NFA, Integer.parseInt(expectedByType[0]));
-                enumMap.put(DFA, Integer.parseInt(expectedByType[1]));
+                enumMap.put(FIRST, Integer.parseInt(expectedByType[0]));
+                enumMap.put(LONGEST, Integer.parseInt(expectedByType[1]));
             }
         } catch (NullPointerException e) {
-            enumMap.put(NFA, 0);
-            enumMap.put(DFA, 0);
+            enumMap.put(FIRST, 0);
+            enumMap.put(LONGEST, 0);
         } catch (NumberFormatException e) {
-            enumMap.put(NFA, 0);
-            enumMap.put(DFA, 0);
+            enumMap.put(FIRST, 0);
+            enumMap.put(LONGEST, 0);
         }
         return enumMap;
     }
 
-    public boolean rejects(AutomatonType type) {
+    public boolean rejects(SearchType type) {
         return getExpected(type) < 0;
     }
 

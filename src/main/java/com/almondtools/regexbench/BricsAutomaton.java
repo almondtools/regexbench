@@ -1,6 +1,6 @@
 package com.almondtools.regexbench;
 
-import static com.almondtools.regexbench.AutomatonType.DFA;
+import static com.almondtools.regexbench.SearchType.LONGEST;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,7 +60,7 @@ public class BricsAutomaton implements Automaton {
     }
 
     @Override
-    public AutomatonType getType() {
-        return DFA;
+    public SearchType getType() {
+        return LONGEST;
     }
 }

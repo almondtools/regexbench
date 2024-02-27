@@ -1,6 +1,6 @@
 package com.almondtools.regexbench;
 
-import static com.almondtools.regexbench.AutomatonType.DFA;
+import static com.almondtools.regexbench.SearchType.LONGEST;
 import static java.util.Arrays.asList;
 import static net.amygdalum.stringsearchalgorithms.search.MatchOption.LONGEST_MATCH;
 import static net.amygdalum.stringsearchalgorithms.search.MatchOption.NON_OVERLAP;
@@ -79,7 +79,7 @@ public class SCMultiFactorAutomaton implements Automaton {
     }
 
     @Override
-    public AutomatonType getType() {
-        return DFA;
+    public SearchType getType() {
+        return LONGEST;
     }
 }
