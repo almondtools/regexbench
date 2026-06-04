@@ -29,17 +29,17 @@
 		<dependency>
 			<groupId>com.github.almondtools</groupId>
 			<artifactId>rexlex</artifactId>
-			<version>0.3.2</version>
+			<version>0.3.3</version>
 		</dependency>
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>stringsearchalgorithms</artifactId>
-			<version>0.4.3</version>
+			<version>0.4.5</version>
 		</dependency>
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>patternsearchalgorithms</artifactId>
-			<version>0.1.2</version>
+			<version>0.1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.jregex</groupId>
@@ -49,7 +49,7 @@
 		<dependency>
 			<groupId>com.google.re2j</groupId>
 			<artifactId>re2j</artifactId>
-			<version>1.7</version>
+			<version>1.8</version>
 		</dependency>
 		<dependency>
 			<groupId>dk.brics</groupId>
@@ -65,17 +65,17 @@
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>compilerutils</artifactId>
-            <version>0.2.3</version>
+            <version>0.2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>
 			<artifactId>jmh-core</artifactId>
-			<version>1.21</version>
+			<version>1.37</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>
 			<artifactId>jmh-generator-annprocess</artifactId>
-			<version>1.21</version>
+			<version>1.37</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
